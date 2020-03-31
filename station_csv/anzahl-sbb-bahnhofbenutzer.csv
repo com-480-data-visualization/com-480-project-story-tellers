@@ -1,0 +1,26 @@
+bahnhof_gare_stazione_station;einheit;2012;2013;2014;2015;2016;2017;2018;2019;bemerkungen;bpuic;didok;lod;geopos;tu_nummer;abkuerzung
+Chur;PB/Werktag;—;—;—;27000;27000;27000;27000;28000.0;;8509000;9000;http://lod.opentransportdata.swiss/didok/8509000;46.853084163, 9.52893771993;11;CH
+Winterthur;PB/Werktag;120000;112000;115000;121000;121000;117000;121000;128000.0;;8506000;6000;http://lod.opentransportdata.swiss/didok/8506000;47.5003337739, 8.72382110762;11;W
+Zug;PB/Werktag;62000;62000;62000;64000;66000;66000;66000;68000.0;;8502204;2204;http://lod.opentransportdata.swiss/didok/8502204;47.1737069864, 8.51504936752;11;ZG
+Baden;PB/Werktag;—;—;—;63000;63000;63000;61000;60000.0;;8503504;3504;http://lod.opentransportdata.swiss/didok/8503504;47.4764242751, 8.30770954022;11;BD
+Genève;PB/Werktag;—;—;—;151000;163000;166000;171000;177000.0;;8501008;1008;http://lod.opentransportdata.swiss/didok/8501008;46.2102129079, 6.14245160789;11;GE
+Lausanne;PB/Werktag;132000;139000;140000;143000;149000;148000;145000;152000.0;;8501120;1120;http://lod.opentransportdata.swiss/didok/8501120;46.5167918174, 6.62909229044;11;LS
+Neuchâtel;PB/Werktag;—;—;—;33000;33000;33000;33000;33000.0;;8504221;4221;http://lod.opentransportdata.swiss/didok/8504221;46.9967268195, 6.93570168072;11;NE
+Zürich Enge;PB/Werktag;—;—;—;21000;23000;23000;25000;25000.0;;8503010;3010;http://lod.opentransportdata.swiss/didok/8503010;47.3640988005, 8.53082052143;11;ZEN
+Aarau;PB/Werktag;—;—;—;71000;72000;73000;72000;76000.0;;8502113;2113;http://lod.opentransportdata.swiss/didok/8502113;47.3913594962, 8.05127371849;11;AA
+Basel SBB;PB/Werktag;136000;134000;135000;134000;135000;133000;134000;136000.0;;8500010;10;http://lod.opentransportdata.swiss/didok/8500010;47.547412091, 7.58956277697;11;BS
+Bellinzona;PB/Werktag;—;—;—;—;—;15000;15000;15000.0;;8505213;5213;http://lod.opentransportdata.swiss/didok/8505213;46.1954317737, 9.0295185506;11;BEL
+Bern;PB/Werktag;310000;306000;305000;313000;318000;324000;326000;330000.0;;8507000;7000;http://lod.opentransportdata.swiss/didok/8507000;46.9488322725, 7.4391309556;11;BN
+Biel/Bienne;PB/Werktag;—;—;—;68000;67000;67000;69000;69000.0;;8504300;4300;http://lod.opentransportdata.swiss/didok/8504300;47.1328978528, 7.24291053739;11;BI
+Luzern;PB/Werktag;149000;160000;157000;159000;163000;164000;167000;167000.0;;8505000;5000;http://lod.opentransportdata.swiss/didok/8505000;47.0501778105, 8.31018315401;11;LZ
+Thun;PB/Werktag;—;—;—;43000;43000;42000;49000;45000.0;;8507100;7100;http://lod.opentransportdata.swiss/didok/8507100;46.7548527757, 7.62960576339;11;TH
+Zürich Hardbrücke;PB/Werktag;—;—;—;39000;48000;—;49000;55000.0;;8503020;3020;http://lod.opentransportdata.swiss/didok/8503020;47.385197873, 8.51712625407;11;ZHDB
+Zürich Oerlikon;PB/Werktag;—;—;—;—;—;106000;112000;117000.0;;8503006;3006;http://lod.opentransportdata.swiss/didok/8503006;47.4115300323, 8.54413989655;11;ZOER
+Fribourg/Freiburg;PB/Werktag;—;—;—;31000;31000;31000;31000;32000.0;;8504100;4100;http://lod.opentransportdata.swiss/didok/8504100;46.8031481543, 7.15104693583;11;FRI
+Olten;PB/Werktag;—;—;—;73000;74000;75000;76000;77000.0;;8500218;218;http://lod.opentransportdata.swiss/didok/8500218;47.3519347412, 7.90769966099;11;OL
+Zürich Altstetten;PB/Werktag;—;—;—;57000;60000;64000;62000;;Wegen Umbau des Bahnhofes stehen keine Angaben für das Jahr 2019 zur Verfügung.;8503001;3001;http://lod.opentransportdata.swiss/didok/8503001;47.3914830997, 8.48896269022;11;ZAS
+Zürich Stadelhofen;PB/Werktag;—;—;—;92000;95000;100000;99000;100000.0;;8503003;3003;http://lod.opentransportdata.swiss/didok/8503003;47.3666097487, 8.54848908807;11;ZSTH
+Genève Aéroport;PB/Werktag;—;—;—;41000;42000;44000;44000;46000.0;;;;;;;
+Lugano;PB/Werktag;—;—;—;—;—;24000;26000;26000.0;;8505300;5300;http://lod.opentransportdata.swiss/didok/8505300;46.0055005508, 8.94699524398;11;LG
+St. Gallen;PB/Werktag;75000;79000;77000;78000;77000;—;—;82000.0;;;;;;;
+Zürich HB;PB/Werktag;412000;429000;437000;437000;439000;438000;443000;461000.0;;8503000;3000;http://lod.opentransportdata.swiss/didok/8503000;47.3781766923, 8.54021233623;11;ZUE
