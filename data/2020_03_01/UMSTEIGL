@@ -1,0 +1,332 @@
+8301113 000011 S   *        * 007000 B   *        * 003  Luino (I)
+8301113 007000 B   *        * 000011 S   *        * 003  Luino (I)
+8301307 000011 S   *        * 3270__ S   *        * 005  Como S. Giovanni
+8301307 3270__ S   *        * 000011 S   *        * 005  Como S. Giovanni
+8500010 000011 EC  *        * 000011 TE2 *        * 011  Basel SBB
+8500010 000011 EC  *        * 000011 TER *        * 011  Basel SBB
+8500010 000011 EC  *        * 085000 TE2 *        * 011  Basel SBB
+8500010 000011 EC  *        * 085000 TER *        * 011  Basel SBB
+8500010 000011 EN  *        * 000011 TE2 *        * 011  Basel SBB
+8500010 000011 EN  *        * 000011 TER *        * 011  Basel SBB
+8500010 000011 EN  *        * 085000 TE2 *        * 011  Basel SBB
+8500010 000011 EN  *        * 085000 TER *        * 011  Basel SBB
+8500010 000011 EXT *        * 000011 TE2 *        * 011  Basel SBB
+8500010 000011 EXT *        * 000011 TER *        * 011  Basel SBB
+8500010 000011 EXT *        * 085000 TE2 *        * 011  Basel SBB
+8500010 000011 EXT *        * 085000 TER *        * 011  Basel SBB
+8500010 000011 IC  *        * 000011 TE2 *        * 011  Basel SBB
+8500010 000011 IC  *        * 000011 TER *        * 011  Basel SBB
+8500010 000011 IC  *        * 085000 TE2 *        * 011  Basel SBB
+8500010 000011 IC  *        * 085000 TER *        * 011  Basel SBB
+8500010 000011 ICE *        * 000011 TE2 *        * 011  Basel SBB
+8500010 000011 ICE *        * 000011 TER *        * 011  Basel SBB
+8500010 000011 ICE *        * 085000 TE2 *        * 011  Basel SBB
+8500010 000011 ICE *        * 085000 TER *        * 011  Basel SBB
+8500010 000011 ICN *        * 085000 TE2 *        * 011  Basel SBB
+8500010 000011 ICN *        * 085000 TER *        * 011  Basel SBB
+8500010 000011 IR  *        * 000011 TE2 *        * 011  Basel SBB
+8500010 000011 IR  *        * 000011 TER *        * 011  Basel SBB
+8500010 000011 IR  *        * 085000 TE2 *        * 011  Basel SBB
+8500010 000011 IR  *        * 085000 TER *        * 011  Basel SBB
+8500010 000011 RE  *        * 000011 TE2 *        * 011  Basel SBB
+8500010 000011 RE  *        * 000011 TER *        * 011  Basel SBB
+8500010 000011 RE  *        * 085000 TE2 *        * 011  Basel SBB
+8500010 000011 RE  *        * 085000 TER *        * 011  Basel SBB
+8500010 000011 S   *        * 000011 TE2 *        * 011  Basel SBB
+8500010 000011 S   *        * 000011 TER *        * 011  Basel SBB
+8500010 000011 S   *        * 085000 TE2 *        * 011  Basel SBB
+8500010 000011 S   *        * 085000 TER *        * 011  Basel SBB
+8500010 000011 SN  *        * 000011 TE2 *        * 011  Basel SBB
+8500010 000011 SN  *        * 000011 TER *        * 011  Basel SBB
+8500010 000011 SN  *        * 085000 TE2 *        * 011  Basel SBB
+8500010 000011 SN  *        * 085000 TER *        * 011  Basel SBB
+8500010 000011 TE2 *        * 000011 EC  *        * 011  Basel SBB
+8500010 000011 TE2 *        * 000011 EN  *        * 011  Basel SBB
+8500010 000011 TE2 *        * 000011 EXT *        * 011  Basel SBB
+8500010 000011 TE2 *        * 000011 IC  *        * 011  Basel SBB
+8500010 000011 TE2 *        * 000011 ICE *        * 011  Basel SBB
+8500010 000011 TE2 *        * 000011 IR  *        * 011  Basel SBB
+8500010 000011 TE2 *        * 000011 RE  *        * 011  Basel SBB
+8500010 000011 TE2 *        * 000011 S   *        * 011  Basel SBB
+8500010 000011 TE2 *        * 000011 SN  *        * 011  Basel SBB
+8500010 000011 TE2 *        * 000011 TGV *        * 011  Basel SBB
+8500010 000011 TE2 *        * 000351 S   *        * 011  Basel SBB
+8500010 000011 TER *        * 000011 EC  *        * 011  Basel SBB
+8500010 000011 TER *        * 000011 EN  *        * 011  Basel SBB
+8500010 000011 TER *        * 000011 EXT *        * 011  Basel SBB
+8500010 000011 TER *        * 000011 IC  *        * 011  Basel SBB
+8500010 000011 TER *        * 000011 ICE *        * 011  Basel SBB
+8500010 000011 TER *        * 000011 IR  *        * 011  Basel SBB
+8500010 000011 TER *        * 000011 RE  *        * 011  Basel SBB
+8500010 000011 TER *        * 000011 S   *        * 011  Basel SBB
+8500010 000011 TER *        * 000011 SN  *        * 011  Basel SBB
+8500010 000011 TER *        * 000011 TGV *        * 011  Basel SBB
+8500010 000011 TER *        * 000351 S   *        * 011  Basel SBB
+8500010 000011 TGV *        * 000011 TE2 *        * 011  Basel SBB
+8500010 000011 TGV *        * 000011 TER *        * 011  Basel SBB
+8500010 000351 S   *        * 000011 TE2 *        * 011  Basel SBB
+8500010 000351 S   *        * 000011 TER *        * 011  Basel SBB
+8500010 87____ TE2 *        * 000011 EC  *        * 011  Basel SBB
+8500010 87____ TE2 *        * 000011 EN  *        * 011  Basel SBB
+8500010 87____ TE2 *        * 000011 EXT *        * 011  Basel SBB
+8500010 87____ TE2 *        * 000011 IC  *        * 011  Basel SBB
+8500010 87____ TE2 *        * 000011 ICE *        * 011  Basel SBB
+8500010 87____ TE2 *        * 000011 ICN *        * 011  Basel SBB
+8500010 87____ TE2 *        * 000011 IR  *        * 011  Basel SBB
+8500010 87____ TE2 *        * 000011 RE  *        * 011  Basel SBB
+8500010 87____ TE2 *        * 000011 S   *        * 011  Basel SBB
+8500010 87____ TE2 *        * 000011 SN  *        * 011  Basel SBB
+8500010 87____ TER *        * 000011 EC  *        * 011  Basel SBB
+8500010 87____ TER *        * 000011 EN  *        * 011  Basel SBB
+8500010 87____ TER *        * 000011 EXT *        * 011  Basel SBB
+8500010 87____ TER *        * 000011 IC  *        * 011  Basel SBB
+8500010 87____ TER *        * 000011 ICE *        * 011  Basel SBB
+8500010 87____ TER *        * 000011 ICN *        * 011  Basel SBB
+8500010 87____ TER *        * 000011 IR  *        * 011  Basel SBB
+8500010 87____ TER *        * 000011 RE  *        * 011  Basel SBB
+8500010 87____ TER *        * 000011 S   *        * 011  Basel SBB
+8500010 87____ TER *        * 000011 SN  *        * 011  Basel SBB
+8500090 099000 B   *        * L7____ S   *        * 006  Basel Bad Bf
+8500090 L7____ S   *        * 099000 B   *        * 006  Basel Bad Bf
+8500096 000037 T   *        * 000823 T   *        * 001  Basel, Dreispitz
+8500096 000823 B   *        * 000879 B   *        * 001  Basel, Dreispitz
+8500096 000823 T   *        * 000037 T   *        * 001  Basel, Dreispitz
+8500096 000879 B   *        * 000823 B   *        * 001  Basel, Dreispitz
+8500171 000043 B   *        * 000043 R   *        * 000  Les Reussilles
+8500171 000043 R   *        * 000043 B   *        * 000  Les Reussilles
+8500202 000011 IC  *        * 000011 R   *        * 004  Grenchen Süd
+8500202 000011 R   *        * 000011 IC  *        * 004  Grenchen Süd
+8500468 000883 B   1        * 000883 B   1        * 000  Zuchwil, Langfeld
+8500468 000883 B   5        * 000883 B   5        * 000  Zuchwil, Langfeld
+8500468 000883 B   7        * 000883 B   7        * 000  Zuchwil, Langfeld
+8500852 000879 B   91       * 000879 B   91       * 000  Reigoldswil, Dorfplatz
+8501008 000011 EC  *        * 000011 TER *        * 010  Genève
+8501008 000011 EC  *        * 000011 TGV *        * 010  Genève
+8501008 000011 EXT *        * 000011 TER *        * 010  Genève
+8501008 000011 IC  *        * 000011 TER *        * 010  Genève
+8501008 000011 IC  *        * 000011 TGV *        * 010  Genève
+8501008 000011 IR  *        * 000011 TER *        * 010  Genève
+8501008 000011 IR  *        * 000011 TGV *        * 010  Genève
+8501008 000011 R   *        * 000011 TER *        * 010  Genève
+8501008 000011 R   *        * 000011 TGV *        * 010  Genève
+8501008 000011 RE  *        * 000011 TER *        * 010  Genève
+8501008 000011 RE  *        * 000011 TGV *        * 010  Genève
+8501008 000011 TER *        * 000011 EC  *        * 010  Genève
+8501008 000011 TER *        * 000011 EXT *        * 010  Genève
+8501008 000011 TER *        * 000011 IC  *        * 010  Genève
+8501008 000011 TER *        * 000011 IR  *        * 010  Genève
+8501008 000011 TER *        * 000011 R   *        * 010  Genève
+8501008 000011 TER *        * 000011 RE  *        * 010  Genève
+8501008 000011 TER *        * 000011 TGV *        * 010  Genève
+8501008 000011 TGV *        * 000011 EC  *        * 010  Genève
+8501008 000011 TGV *        * 000011 IC  *        * 010  Genève
+8501008 000011 TGV *        * 000011 IR  *        * 010  Genève
+8501008 000011 TGV *        * 000011 R   *        * 010  Genève
+8501008 000011 TGV *        * 000011 RE  *        * 010  Genève
+8501008 000011 TGV *        * 000011 TER *        * 010  Genève
+8501037 000011 IR  *        * 000011 RE  *        * 006  Morges
+8501037 000011 RE  *        * 000011 IR  *        * 006  Morges
+8501068 000066 B   *        * 000066 R   *        * 000  Trélex
+8501068 000066 R   *        * 000066 B   *        * 000  Trélex
+8501609 000011 ATZ *        * 000011 EC  *        * 008  Brig
+8501609 000011 ATZ *        * 000011 EXT *        * 008  Brig
+8501609 000011 ATZ *        * 000011 IC  *        * 008  Brig
+8501609 000011 ATZ *        * 000011 IR  *        * 008  Brig
+8501609 000011 ATZ *        * 000011 R   *        * 008  Brig
+8501609 000011 ATZ *        * 000011 TGV *        * 008  Brig
+8501609 000011 ATZ *        * 000033 EXT *        * 008  Brig
+8501609 000011 ATZ *        * 000033 RE  *        * 008  Brig
+8501609 000011 ATZ *        * 000074 R   *        * 008  Brig
+8501609 000011 EC  *        * 000011 ATZ *        * 008  Brig
+8501609 000011 EXT *        * 000011 ATZ *        * 008  Brig
+8501609 000011 IC  *        * 000011 ATZ *        * 008  Brig
+8501609 000011 IR  *        * 000011 ATZ *        * 008  Brig
+8501609 000011 R   *        * 000011 ATZ *        * 008  Brig
+8501609 000011 TGV *        * 000011 ATZ *        * 008  Brig
+8501609 000033 EXT *        * 000011 ATZ *        * 008  Brig
+8501609 000033 RE  *        * 000011 ATZ *        * 008  Brig
+8501609 000074 R   *        * 000011 ATZ *        * 008  Brig
+8502115 000011 RE  *        * 000011 S   29       * 006  Wildegg
+8502115 000011 S   29       * 000011 RE  *        * 005  Wildegg
+8502280 000839 B   14       * 000839 B   1        * 005  Zug, Bahnhofplatz
+8502280 000839 B   14       * 000839 B   12       * 005  Zug, Bahnhofplatz
+8502280 000839 B   14       * 000839 B   13       * 005  Zug, Bahnhofplatz
+8502280 000839 B   14       * 000839 B   2        * 005  Zug, Bahnhofplatz
+8502280 000839 B   14       * 000839 B   5        * 005  Zug, Bahnhofplatz
+8502282 000839 B   1        H 000839 B   34       R 003! Baar, Talacher
+8502282 000839 B   2        H 000839 B   34       R 003! Baar, Talacher
+8502282 000839 B   34       H 000839 B   1        R 003! Baar, Talacher
+8502282 000839 B   34       H 000839 B   2        R 003! Baar, Talacher
+8502998 000819 B   66       * 000819 B   65       * 002  Sursee, Bahnhof
+8503000 000011 IC  5        * 000011 S   6        * 012  Zürich HB
+8503000 000011 IR  13       * 000011 S   6        * 012  Zürich HB
+8503000 000011 S   12       * 000011 S   14       * 010  Zürich HB
+8503000 000011 S   14       * 000011 S   12       * 008  Zürich HB
+8503000 000011 S   14       * 000011 S   2        * 003  Zürich HB
+8503000 000011 S   14       * 000011 S   3        * 014  Zürich HB
+8503000 000011 S   2        * 000011 S   14       * 003! Zürich HB
+8503000 000011 S   3        * 000011 S   14       * 014  Zürich HB
+8503000 000011 S   6        * 000011 IC  5        * 012  Zürich HB
+8503000 000011 S   6        * 000011 IR  13       * 012  Zürich HB
+8503006 000011 S   14       * 000011 S   2        * 003  Zürich Oerlikon
+8503006 000011 S   2        * 000011 S   14       * 003  Zürich Oerlikon
+8503016 000011 EC  *        * 000011 IC  *        * 010  Zürich Flughafen
+8503206 000011 S   8        * 000011 RE  *        * 012  Wädenswil
+8503206 000011 S   8        * 000011 S   25       * 010  Wädenswil
+8504283 000834 B   130      * 000834 B   130      * 000  St. Silvester, Dorf
+8504856 000834 B   129      * 000834 B   130      * 000  Giffers, Dorf
+8504856 000834 B   130      * 000834 B   129      * 000  Giffers, Dorf
+8505095 000841 B   1        * 000841 B   3        * 003  Schwyz, Post
+8505095 000841 B   1        * 000841 B   5        * 000  Schwyz, Post
+8505095 000841 B   3        * 000841 B   1        * 003  Schwyz, Post
+8505095 000841 B   3        * 000841 B   2        * 003  Schwyz, Post
+8505095 000841 B   3        * 000841 B   20       * 003  Schwyz, Post
+8505095 000841 B   3        * 000841 B   30       * 003  Schwyz, Post
+8505095 000841 B   3        * 000841 B   31       * 003  Schwyz, Post
+8505095 000841 B   3        * 000841 B   5        * 003  Schwyz, Post
+8505112 000011 EC  *        * 000011 S   2        * 004  Flüelen
+8505112 000011 EXT *        * 000011 S   2        * 004  Flüelen
+8505112 000011 IC  *        * 000011 S   2        * 004  Flüelen
+8505112 000011 IR  *        * 000011 S   2        * 004  Flüelen
+8505112 000011 S   2        * 000011 EC  *        * 004  Flüelen
+8505112 000011 S   2        * 000011 EXT *        * 004  Flüelen
+8505112 000011 S   2        * 000011 IC  *        * 004  Flüelen
+8505112 000011 S   2        * 000011 IR  *        * 004  Flüelen
+8505213 000011 S   20       * 000011 S   10       * 005  Bellinzona
+8505672 000839 B   22       * 000839 B   53       * 001  Immensee, Hohle Gasse
+8506000 000011 EC  *        * 000011 ICN *        * 010  Winterthur
+8506000 000011 S   8        * 000065 S   30       * 002! Winterthur
+8506004 007000 B   26       * 000801 B   832      * 000  Kollbrunn
+8506105 000011 IC  *        * 007000 B   *        * 002  Weinfelden
+8506171 000051 S   15       * 007001 B   *        * 000! Frauenfeld Marktplatz
+8506171 007001 B   *        * 000051 S   15       * 000! Frauenfeld Marktplatz
+8506302 000011 EC  *        * 000011 ICN *        * 010  St. Gallen
+8506302 000011 RE  *        * 000065 S   55       * 004  St. Gallen
+8506302 000065 S   55       * 000011 RE  *        * 004  St. Gallen
+8506306 000022 S   25       * 000022 S   25       * 015  Rorschach Hafen
+8506311 000022 S   25       * 000065 S   7        * 002  Rorschach
+8506311 000065 S   7        * 000022 S   25       * 002! Rorschach
+8506314 000011 RE  *        * 000082 S   4        * 007  St. Margrethen
+8507050 000827 T   8        * 000850 B   40       * 004  Bern, Egghölzli
+8507100 000011 EC  *        * 000011 EC  *        * 006  Thun
+8507100 000011 EC  *        * 000011 IC  *        * 006  Thun
+8507100 000011 EC  *        * 000011 ICE *        * 006  Thun
+8507100 000011 IC  *        * 000011 EC  *        * 006  Thun
+8507100 000011 IC  *        * 000011 IC  *        * 006  Thun
+8507100 000011 IC  *        * 000011 ICE *        * 006  Thun
+8507100 000011 ICE *        * 000011 IC  *        * 006  Thun
+8507100 000011 ICE *        * 000011 ICE *        * 006  Thun
+8507100 000033 R   *        * 000033 RE  *        * 004  Thun
+8507292 000033 RE  *        * 000033 R   *        * 004  Boltigen
+8507483 000011 EC  *        * 000011 EC  *        * 006  Spiez
+8507483 000011 EC  *        * 000011 IC  *        * 006  Spiez
+8507483 000011 EC  *        * 000011 ICE *        * 006  Spiez
+8507483 000011 IC  *        * 000011 EC  *        * 006  Spiez
+8507483 000011 IC  *        * 000011 IC  *        * 006  Spiez
+8507483 000011 IC  *        * 000011 ICE *        * 006  Spiez
+8507483 000011 ICE *        * 000011 EC  *        * 006  Spiez
+8507483 000011 ICE *        * 000011 IC  *        * 006  Spiez
+8507483 000011 ICE *        * 000011 ICE *        * 006  Spiez
+8507483 000033 RE  *        * 000011 IC  8        * 002  Spiez
+8508059 000088 S   8        * 000088 RE  *        * 003  Jegenstorf
+8508207 000033 RE  *        * 000033 S   2        * 004  Langnau i.E.
+8509002 000011 RE  *        * 000065 S   12       * 008  Landquart
+8509002 000065 S   12       * 000011 RE  *        * 010  Landquart
+8509773 000801 B   081      * 000801 B   081      * 004  Flims Dorf, Post
+8509780 000801 B   790      * 000138 B   411      * 000  Gams, Zentrum
+8509870 000766 B   1        * 000716 B   9        * 002  St. Moritz Bad, Post
+8509870 000801 B   4        * 000716 B   9        * 002  St. Moritz Bad, Post
+8572373 000883 B   1        * 000883 B   1        * 000  Solothurn, Hauptbahnhof
+8572397 000801 B   135      * 000801 B   135      * 015  Frick, Unterdorf
+8572544 000801 B   341      * 000801 B   OW1      * 003  Wohlen AG, Coop
+8573492 000846 B   N76      * 000846 B   24       * 000  Thayngen, Bahnhof
+8574949 000766 B   1        * 000716 B   9        * 002  St. Moritz Bad, Via San Gian
+8574949 000801 B   4        * 000716 B   9        * 002  St. Moritz Bad, Via San Gian
+8576723 000889 B   1        * 000889 B   2        * 003  Biel/Bienne, Orpundplatz
+8576937 000870 B   51       * 000870 B   52       * 002  Langenthal, Bahnhof
+8576937 000870 B   52       * 000870 B   51       * 002  Langenthal, Bahnhof
+8577174 000820 B   1        * 000820 B   23       * 005  Ebikon, Fildern
+8577174 000820 B   23       * 000820 B   1        * 005  Ebikon, Fildern
+8577530 000839 B   11       * 000839 B   1        * 005  Zug, Postplatz
+8577530 000839 B   11       * 000839 B   12       * 005  Zug, Postplatz
+8577530 000839 B   11       * 000839 B   13       * 005  Zug, Postplatz
+8577530 000839 B   11       * 000839 B   2        * 005  Zug, Postplatz
+8577530 000839 B   11       * 000839 B   5        * 005  Zug, Postplatz
+8577530 000839 B   3        * 000839 B   1        * 005  Zug, Postplatz
+8577530 000839 B   3        * 000839 B   12       * 005  Zug, Postplatz
+8577530 000839 B   3        * 000839 B   13       * 005  Zug, Postplatz
+8577530 000839 B   3        * 000839 B   2        * 005  Zug, Postplatz
+8577530 000839 B   3        * 000839 B   5        * 005  Zug, Postplatz
+8577530 000839 B   4        * 000839 B   1        * 007  Zug, Postplatz
+8577530 000839 B   4        * 000839 B   12       * 005  Zug, Postplatz
+8577530 000839 B   4        * 000839 B   13       * 005  Zug, Postplatz
+8577530 000839 B   4        * 000839 B   2        * 005  Zug, Postplatz
+8577530 000839 B   4        * 000839 B   5        * 005  Zug, Postplatz
+8577530 000839 B   6        * 000839 B   1        * 005  Zug, Postplatz
+8577530 000839 B   6        * 000839 B   12       * 005  Zug, Postplatz
+8577530 000839 B   6        * 000839 B   13       * 005  Zug, Postplatz
+8577530 000839 B   6        * 000839 B   2        * 007  Zug, Postplatz
+8577530 000839 B   6        * 000839 B   5        * 005  Zug, Postplatz
+8577530 000839 B   7        * 000839 B   1        * 005  Zug, Postplatz
+8577530 000839 B   7        * 000839 B   12       * 005  Zug, Postplatz
+8577530 000839 B   7        * 000839 B   13       * 005  Zug, Postplatz
+8577530 000839 B   7        * 000839 B   2        * 005  Zug, Postplatz
+8577530 000839 B   7        * 000839 B   5        * 007  Zug, Postplatz
+8577580 000839 B   42       * 000839 B   6        * 003  Cham, Neudorf
+8577580 000839 B   6        * 000839 B   42       * 003  Cham, Neudorf
+8577727 000053 B   *        * 000834 B   *        * 001  Broc-Village, gare
+8578067 000883 B   7        * 000883 B   7        * 000  Derendingen, Kreuzplatz
+8578112 000883 B   7        * 000883 B   7        * 000  Derendingen, Ritterplatz
+8578157 000823 B   *        * 000879 B   *        * 001  Basel, Neuweilerstrasse
+8578157 000879 B   *        * 000823 B   *        * 001  Basel, Neuweilerstrasse
+8579168 000876 B   212      * 000876 B   212      * 001  Fenil-sur-Corsier, Pont
+8579170 000876 B   212      * 000876 B   212      * 001  Fenil-sur-Corsier, vieille rte
+8580522 003849 T   13       * 003849 T   8        * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   13       * 000849 B   33       * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   13       * 000849 B   72       * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   13       * 000849 B   83       * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   17       * 003849 T   8        * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   17       * 000849 B   33       * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   17       * 000849 B   72       * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   17       * 000849 B   83       * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   4        * 003849 T   8        * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   4        * 000849 B   33       * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   4        * 000849 B   72       * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   4        * 000849 B   83       * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   8        * 003849 T   13       * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   8        * 003849 T   17       * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   8        * 003849 T   4        * 003  Zürich, Escher-Wyss-Platz
+8580522 003849 T   8        * 000849 B   33       * 002  Zürich, Escher-Wyss-Platz
+8580522 003849 T   8        * 000849 B   72       * 002  Zürich, Escher-Wyss-Platz
+8580522 003849 T   8        * 000849 B   83       * 002  Zürich, Escher-Wyss-Platz
+8580522 000849 B   33       * 003849 T   13       * 003  Zürich, Escher-Wyss-Platz
+8580522 000849 B   33       * 003849 T   17       * 003  Zürich, Escher-Wyss-Platz
+8580522 000849 B   33       * 003849 T   4        * 003  Zürich, Escher-Wyss-Platz
+8580522 000849 B   33       * 003849 T   8        * 002  Zürich, Escher-Wyss-Platz
+8580522 000849 B   72       * 003849 T   13       * 003  Zürich, Escher-Wyss-Platz
+8580522 000849 B   72       * 003849 T   17       * 003  Zürich, Escher-Wyss-Platz
+8580522 000849 B   72       * 003849 T   4        * 003  Zürich, Escher-Wyss-Platz
+8580522 000849 B   72       * 003849 T   8        * 002  Zürich, Escher-Wyss-Platz
+8580522 000849 B   83       * 003849 T   13       * 003  Zürich, Escher-Wyss-Platz
+8580522 000849 B   83       * 003849 T   17       * 003  Zürich, Escher-Wyss-Platz
+8580522 000849 B   83       * 003849 T   4        * 003  Zürich, Escher-Wyss-Platz
+8580522 000849 B   83       * 003849 T   8        * 002  Zürich, Escher-Wyss-Platz
+8581241 000801 B   5        * 000801 B   5        * 000  Bellinzona, Ospedale
+8587848 000883 B   *        * 000883 B   *        * 000  Luterbach, Bahnhof Nordseite
+8588489 000823 B   3        * 000823 B   30       * 007  Basel, Universität
+8588489 000823 B   30       * 000823 B   3        * 007  Basel, Universität
+8588489 000823 B   30       * 000823 B   34       * 007  Basel, Universität
+8588489 000823 B   30       * 000823 T   3        * 007  Basel, Universität
+8588489 000823 B   34       * 000823 B   30       * 007  Basel, Universität
+8588489 000823 T   3        * 000823 B   30       * 007  Basel, Universität
+8588943 000823 B   *        * 000823 B   *        * 001  Basel, St. Jakob
+8588943 000823 B   *        * 000879 B   *        * 001  Basel, St. Jakob
+8588943 000879 B   *        * 000823 B   *        * 001  Basel, St. Jakob
+8588943 000879 B   *        * 000879 B   *        * 001  Basel, St. Jakob
+8591233 000849 B   31       * 000849 B   701      * 003  Zürich, Klusplatz
+8591233 000849 B   701      * 000849 B   31       * 003  Zürich, Klusplatz
+8592545 000836 B   4        * 000836 B   4        * 000! Schaffhausen, Gruben
+8594089 000889 B   *        * 000889 B   *        * 001  Nidau, Bahnhof
+8595702 000811 B   82       * 000811 B   82       * 000  Pratteln, Chästeli
+8718213 000011 TE2 *        * 87____ TE2 *        * 004  Saint-Louis (Haut-Rhin)
+8718213 87____ TE2 *        * 000011 TE2 *        * 004  Saint-Louis (Haut-Rhin)

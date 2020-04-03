@@ -1,0 +1,134 @@
+1  0   1  5 Seulement 1re classe#
+2  0   1  6 Seulement 2e classe#
+AW 0   4  6 Voiture panoramique à ciel ouvert#
+B  0   4  4 Bar#
+BE 0   0  0 Service de substitution#
+BH 3   2  2 Stopps uniquement à la demande précédente (téléphone)#
+BK 0   2  2 Vente des billets dans le train (avec supplément)#
+BL 0   0  0 BAGAGES : transport limité#
+BR 0   3  1 BUS: Autres bus sur demande#
+BZ 0   4  7 Espace affaires en 1re classe#
+CC 0   5  2 Voiture-couchettes#
+DS 0   1  9 Bateau à vapeur#
+DZ 0   1  9 Train à vapeur#
+EP 0   7  2 Service à la place en 1re cl., boissons/snacks en 2e cl.#
+FA 0   4  6 Voiture-familles avec aire de jeux#
+FL 0   2  7 1 train avec plusieurs dest.:Nous vous pr. d'obs. les écr. sur les véh#
+FW 0   4  6 Compartiment spécial photo#
+FZ 0   4  6 Espace familles sans aire de jeux#
+GK 0   4  5 Contrôle douanier possible, prévoir davantage de temps#
+GL 0   6  2 GROUPES: transport limité#
+GN 0   6  1 GROUPES: transport non autorisé#
+GP 0   1  1 Prix global#
+GR 0   6  3 GROUPES: réservation obligatoire#
+GZ 0   6  4 GROUPES: supplément#
+HN 0   6  5 Les chiens ne sont pas admis à bord#
+KB 0   0  0 Minibus#
+MI 0   2  7 Minibar ou zone catering#
+MP 0   4  3 Minibar / restauration à la place#
+NF 0   0  0 Accès à plancher surbaissé#
+PA 0   4  5 Voiture panoramique#
+PL 0   8  4 Nombre de places limité#
+PR 0   4  5 Voiture-panoramique: réservation obligatoire#
+R  0   8  1 Réservation possible#
+RE 0   7  1 Réservation recommandée#
+RR 0   2  2 Réservation obligatoire#
+RT 0   2  5 Réservation: voir www.tableaux-horaires.ch#
+RZ 0   4  8 Espace silence en 1re classe#
+SB 0   2  1 Billets spéciaux#
+SC 0   2  5 Service à la place en 1re classe#
+SD 2   0  2 Arrêt seulement pour laisser descendre#
+SF 0   2  2 Véhicule autonome#
+SH 1   0  7 Arrêt saisonnier#
+SM 1   0  2 Arrêt seulement pour laisser monter#
+SV 0   1  9 Service de remplacement par bus#
+SZ 0   2  1 Billet spécial ou supplément obligatoire#
+TA 1   3  5 Les portes ferment deux minutes avant le départ#
+TF 0   3  1 Autres correspondances: voir www.tableaux-horaires.ch#
+TG 0   3  1 SANS AUCUNE GARANTIE: voir www.tableaux-horaires.ch#
+TS 0   1  1 Train supplémentaire#
+TT 0   1  1 Train pendulaire#
+TX 0   0  0 Taxi ou Minibus#
+VI 0   6  5 VELOS: Transport uniquement en trafic international#
+VL 0   6  5 VELOS: chargement libre-service limité#
+VN 0   6  5 VELOS: Pas de transport possible#
+VR 0   6  6 VELOS: Réservation obligatoire#
+VX 0   6  6 VELOS: transport non autorisé#
+WB 0   0  0 En fonction de la météo#
+WL 0   5  1 Voiture-lits#
+WR 0   1  4 Restaurant#
+WS 0   2  4 Bistro#
+X  3   0  1 Arrêt sur demande#
+XE 1   0  7 Accès seulement avec réservation, www.engadinbus.ch/nacht,1h av.départ#
+XR 1   0  7 Réservation téléphonique obligatoire#
+Y  0   5  5 A pied#
+YM 0   5  5 A pied+métro#
+Z  0   2  3 Avec supplément#
+ZM 0   1  5 Peut-être seulement de deuxième classe#
+# 1  1  1 
+# 2  2  2 
+# AW AW AW
+# B  B  B 
+# BE BE BE
+# BH BH BH
+# BK BK BK
+# BL BL BL
+# BR BR BR
+# BZ BZ BZ
+# CC CC CC
+# DS DS DS
+# DZ DZ DZ
+# EP EP EP
+# FA FA FA
+# FL FL FL
+# FW FW FW
+# FZ FZ FZ
+# GK GK GK
+# GL GL GL
+# GN GN GN
+# GP GP GP
+# GR GR GR
+# GZ GZ GZ
+# HN HN HN
+# KB KB KB
+# MI MI MI
+# MP MP MP
+# NF NF NF
+# PA PA PA
+# PL PL PL
+# PR PR PR
+# R  R  R 
+# RE RE RE
+# RR RR RR
+# RT RT RT
+# RZ RZ RZ
+# SB SB SB
+# SC SC SC
+# SD SD SD
+# SF SF SF
+# SH SH SH
+# SM SM SM
+# SV SV SV
+# SZ SZ SZ
+# TA TA TA
+# TF TF TF
+# TG TG TG
+# TS TS TS
+# TT TT TT
+# TX TX TX
+# VI VI VI
+# VL VL VL
+# VN VN VN
+# VR VR VR
+# VX VX VX
+# WB WB WB
+# WL WL WL
+# WR WR WR
+# WS WS WS
+# X  X  X 
+# XE XE XE
+# XR XR XR
+# Y  Y  Y 
+# YM YM YM
+# Z  Z  Z 
+# ZM ZM ZM

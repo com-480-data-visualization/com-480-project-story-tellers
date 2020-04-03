@@ -1,0 +1,134 @@
+1  0   1  5 Nur 1. Klasse#
+2  0   1  6 Nur 2. Klasse#
+AW 0   4  6 Offene Aussichtswagen#
+B  0   4  4 Bar#
+BE 0   0  0 Bahnersatz#
+BH 3   2  2 Bedarfshalt nur auf telefonische Voranmeldung#
+BK 0   2  2 Billettkauf im Zug möglich (mit Zuschlag)#
+BL 0   0  0 GEPÄCK : Transport eingeschränkt#
+BR 0   3  1 BUS: Weitere Busse auf Anfrage#
+BZ 0   4  7 Businesszone in 1. Klasse#
+CC 0   5  2 Liegewagen#
+DS 0   1  9 Dampfschiff#
+DZ 0   1  9 Dampfzug#
+EP 0   7  2 1. Kl. Service am Platz, 2. Kl. Getränke/Snacks#
+FA 0   4  6 Familienwagen mit Spielplatz#
+FL 0   2  7 1 Zug mit mehreren Zielen: Bitte Anschriften am Zug beachten#
+FW 0   4  6 Fotoabteil#
+FZ 0   4  6 Familienzone ohne Spielplatz#
+GK 0   4  5 Zollkontrolle möglich, mehr Zeit einrechnen#
+GL 0   6  2 GRUPPEN: Beförderung eingeschränkt#
+GN 0   6  1 GRUPPEN: Beförderung nicht möglich#
+GP 0   1  1 Globalpreis#
+GR 0   6  3 GRUPPEN: Reservierung obligatorisch#
+GZ 0   6  4 GRUPPEN: Zuschlag#
+HN 0   6  5 Hunde können nicht mitgeführt werden#
+KB 0   0  0 Kleinbus#
+MI 0   2  7 Minibar oder Cateringzone#
+MP 0   4  3 Minibar / Essen am Platz#
+NF 0   0  0 Niederflureinstieg#
+PA 0   4  5 Panoramawagen#
+PL 0   8  4 Beschränktes Platzangebot#
+PR 0   4  5 Führt reservierungspflichtige Panoramawagen#
+R  0   8  1 Reservierung möglich#
+RE 0   7  1 Reservierung empfohlen#
+RR 0   2  2 Reservierung obligatorisch#
+RT 0   2  5 Reservierung: siehe www.fahrplanfelder.ch#
+RZ 0   4  8 Ruhezone in 1. Klasse#
+SB 0   2  1 Spezialbillette#
+SC 0   2  5 Service am Platz in der 1. Klasse#
+SD 2   0  2 Halt nur zum Aussteigen#
+SF 0   2  2 Selbstfahrendes Fahrzeug#
+SH 1   0  7 Saisonale Haltestelle#
+SM 1   0  2 Halt nur zum Einsteigen#
+SV 0   1  9 Schienenersatzverkehr#
+SZ 0   2  1 Besonderer Fahrschein oder Zuschlag erforderlich#
+TA 1   3  5 Türen schliessen zwei Minuten vor Abfahrt#
+TF 0   3  1 Weitere Verbindungen: siehe www.fahrplanfelder.ch#
+TG 0   3  1 OHNE GEWÄHR: siehe www.fahrplanfelder.ch#
+TS 0   1  1 Zusatzzug#
+TT 0   1  1 Neigezug#
+TX 0   0  0 Taxi oder Kleinbus#
+VI 0   6  5 VELOS: Beförderung nur im internationalen Verkehr#
+VL 0   6  5 VELOS: Selbstverlad eingeschränkt#
+VN 0   6  5 VELOS: Keine Beförderung möglich#
+VR 0   6  6 VELOS: Reservierung obligatorisch#
+VX 0   6  6 VELOS: Beförderung nicht möglich#
+WB 0   0  0 Witterungsbedingt#
+WL 0   5  1 Schlafwagen#
+WR 0   1  4 Restaurant#
+WS 0   2  4 Bistro#
+X  3   0  1 Halt auf Verlangen#
+XE 1   0  7 Einstieg nur mit Reservierung, www.engadinbus.ch/nacht, 1h vor Abfahrt#
+XR 1   0  7 Einstieg nur nach telefonischer Voranmeldung#
+Y  0   5  5 Zu Fuss#
+YM 0   5  5 Zu Fuss+Metro#
+Z  0   2  3 Zuschlagspflichtig#
+ZM 0   1  5 Möglicherweise nur zweite Klasse#
+# 1  1  1 
+# 2  2  2 
+# AW AW AW
+# B  B  B 
+# BE BE BE
+# BH BH BH
+# BK BK BK
+# BL BL BL
+# BR BR BR
+# BZ BZ BZ
+# CC CC CC
+# DS DS DS
+# DZ DZ DZ
+# EP EP EP
+# FA FA FA
+# FL FL FL
+# FW FW FW
+# FZ FZ FZ
+# GK GK GK
+# GL GL GL
+# GN GN GN
+# GP GP GP
+# GR GR GR
+# GZ GZ GZ
+# HN HN HN
+# KB KB KB
+# MI MI MI
+# MP MP MP
+# NF NF NF
+# PA PA PA
+# PL PL PL
+# PR PR PR
+# R  R  R 
+# RE RE RE
+# RR RR RR
+# RT RT RT
+# RZ RZ RZ
+# SB SB SB
+# SC SC SC
+# SD SD SD
+# SF SF SF
+# SH SH SH
+# SM SM SM
+# SV SV SV
+# SZ SZ SZ
+# TA TA TA
+# TF TF TF
+# TG TG TG
+# TS TS TS
+# TT TT TT
+# TX TX TX
+# VI VI VI
+# VL VL VL
+# VN VN VN
+# VR VR VR
+# VX VX VX
+# WB WB WB
+# WL WL WL
+# WR WR WR
+# WS WS WS
+# X  X  X 
+# XE XE XE
+# XR XR XR
+# Y  Y  Y 
+# YM YM YM
+# Z  Z  Z 
+# ZM ZM ZM

@@ -1,0 +1,254 @@
+ASC  7 A 0 ASC      0        #001
+B    6 A 0 B        0 B      #002
+BAT  4 A 0 BAT      0        #003
+BN   6 A 0 BN       0 B      #004
+BP   6 A 0 BP       0 B      #005
+CAR  6 A 0 CAR      0 B      #006
+CC   7 A 0 CC       0        #007
+EC   1 A 0 EC       0        #008
+EN   0 A 0 EN       0        #009
+EXB  6 A 0 EXB      0 B      #010
+EXT  8 A 0 EXT      0        #011
+FAE  4 A 0 FAE      0        #012
+FUN  7 A 0 FUN      0        #013
+GB   7 A 0 GB       0        #014
+IC   1 A 0 IC       0        #015
+ICE  0 A 0 ICE      0        #016
+IR   2 A 0 IR       0        #017
+IRE  3 A 0 IRE      0        #018
+KB   6 A 0 KB       0 N      #019
+M    9 A 0 M        0        #020
+MAT 13 A 0 MAT      0 N      #021
+NJ   0 A 0 NJ       0        #022
+PB   7 A 0 PB       0        #023
+PE   2 A 0 PE       0        #024
+R    5 A 0 R        0        #025
+RB   3 A 0 RB       0        #026
+RE   3 A 0 RE       0        #027
+RJX  0 A 0 RJX      0        #028
+RUB  6 A 0 RUB      0 B      #029
+S    5 A 0 S        0        #030
+SL   7 A 0 SL       0        #031
+SN   5 A 0 SN       0 N      #032
+T    9 A 0 T        0        #033
+TE2  3 A 0 TE2      0        #034
+TER  5 A 0 TER      0        #035
+TGV  0 A 0 TGV      0        #036
+UUU  0 A 0 UUU      0        #037
+<text>
+<Deutsch>
+class00 ICE/EN/CNL/CIS/ES/MET/NZ/PEN/TGV/THA/X2
+class01 EuroCity/InterCity/ICN/InterCityNight/SuperCity
+class02 InterRegio
+class03 Schnellzug/RegioExpress
+class04 Schiff/Fähre/Dampfschiff
+class05 S-Bahn/StadtExpress/Eilzug/Regionalzug
+class06 Bus/Kutsche/Taxi
+class07 Luftseilbahn/Standseilbahn/Gondelbahn/Sesselbahn
+class08 Metro/Autoreisezug/Extrazug/UrlaubsExpress
+class09 Tram
+class13 Dienst
+option10 nur Direktverbindungen
+option11 Direkt mit Schlafwagen*
+option12 Direkt mit Liegewagen*
+option13 Veloselbstverlad zugelassen (nur Schweiz)
+option14 Gruppenbeförderung zugelassen (nur Schweiz)
+category001 Aufzug
+category002 Bus
+category003 Schiff
+category004 Nachtbus
+category005 PanoramaBus
+category006 Fernbus national
+category007 Zahnradbahn
+category008 EuroCity
+category009 EuroNight
+category010 Expressbus
+category011 Extrazug
+category012 Fähre
+category013 Standseilbahn
+category014 Gondelbahn
+category015 InterCity
+category016 InterCityExpress
+category017 InterRegio
+category018 Interregio-Express
+category019 Kleinbus
+category020 Metro
+category021 LeermaterialZ (Reisezugswagen)
+category022 nightjet
+category023 Pendelbahn
+category024 PanoramaExpress
+category025 Regio
+category026 Regionalbahn
+category027 RegioExpress
+category028 railjet xpress
+category029 Rufbus
+category030 S-Bahn
+category031 Sesselbahn
+category032 Nacht-S-Bahn
+category033 Tram
+category034 TER200
+category035 Train Express Regional
+category036 Train à grande vit.
+category037 Unbekannte Art
+<Englisch>
+class00 ICE/EN/CNL/CIS/ES/MET/NZ/PEN/TGV/THA/X2
+class01 EuroCity/InterCity/ICN/InterCityNight/SuperCity
+class02 InterRegio
+class03 Fast train/RegioExpress
+class04 Ship/Ferry/Steamer
+class05 Urban railway/StadtExpress/Semi fast train/Omnibus train
+class06 Bus/Coach/Taxi
+class07 Cableway/Funicular/Gondola lift/Chairlift
+class08 Metro/Motorail train/Special train/UrlaubsExpress
+class09 Tramway
+class13 Dienst
+option10 direct connections only
+option11 direct connections with sleepers*
+option12 direct connections with couchettes*
+option13 Self-service loading of bicycles allowed (Switzerland only)
+option14 Connections allowing group travel (Switzerland only)
+category001 Lift
+category002 Bus
+category003 Ship
+category004 Nightbus
+category005 Panorama bus
+category006 National long-distance bus
+category007 Rack-railroad
+category008 EuroCity
+category009 EuroNight
+category010 Express bus
+category011 Special train
+category012 Ferry-boat
+category013 Funicular
+category014 Gondola lift
+category015 InterCity
+category016 InterCityExpress
+category017 InterRegio
+category018 Interregio-Express
+category019 Minibus
+category020 Underground
+category021 LeermaterialZ (Reisezugswagen)
+category022 nightjet
+category023 aerial tramway
+category024 PanoramaExpress
+category025 Regio
+category026 Regionalbahn
+category027 RegioExpress
+category028 railjet xpress
+category029 On-call bus
+category030 Urban train
+category031 Chairlift
+category032 Night-urban train
+category033 Tramway
+category034 TER200
+category035 Train Express Regional
+category036 Train à grande vit.
+category037 Unbekannte Art
+<Franzoesisch>
+class00 ICE/EN/CNL/CIS/ES/MET/NZ/PEN/TGV/THA/X2
+class01 EuroCity/InterCity/ICN/InterCityNight/SuperCity
+class02 InterRegio
+class03 Train direct/RegioExpress
+class04 Bateau/Ferry/Bateau à vapeur
+class05 RER/StadtExpress/Train accéléré/Train régional
+class06 Autobus/voiture à chevaux/Taxi
+class07 Transport à câbles/Funiculaire/Télécabine/Télésiège
+class08 Metro/Train d'auto accompagnés/Train spécial/Train vacances
+class09 Tram
+class13 Dienst
+option10 Correspondances directes
+option11 Correspondances directes avec voitures-lits*
+option12 Correspondances directes avec voitures-couchettes*
+option13 Vélos autorisé (seulement en Suisse)
+option14 Transport des groupes autorisé (seulement en Suisse)
+category001 Ascenseur
+category002 Bus
+category003 Bateau
+category004 Bus ligne de nuit
+category005 PanoramaBus
+category006 Bus longues distances national
+category007 Chemin de fer à crémaillère
+category008 EuroCity
+category009 EuroNight
+category010 Bus express
+category011 Train spécial
+category012 Ferry-boat
+category013 Funiculaire
+category014 Télécabine
+category015 InterCity
+category016 InterCityExpress
+category017 InterRegio
+category018 Interregio-Express
+category019 Minibus
+category020 Métro
+category021 LeermaterialZ (Reisezugswagen)
+category022 nightjet
+category023 Téléphérique à va-et-vient
+category024 PanoramaExpress
+category025 Regio
+category026 Regionalbahn
+category027 RegioExpress
+category028 railjet xpress
+category029 Bus sur appel
+category030 RER
+category031 Télésiège
+category032 RER-nuit
+category033 Tram
+category034 TER200
+category035 Train Express Regional
+category036 Train à grande vit.
+category037 Unbekannte Art
+<Italienisch>
+class00 ICE/EN/CNL/CIS/ES/MET/NZ/PEN/TGV/THA/X2
+class01 EuroCity/InterCity/ICN/InterCityNight/SuperCity
+class02 InterRegio
+class03 Treno diretto/treno RegioExpress
+class04 batello/traghetto/batello a vapore
+class05 Rete celere regionale/treno regionale/StadtExpress
+class06 Bus/carozza/taxi
+class07 Funivia/Funiculare/Cabinovia/Seggiovia
+class08 Metro/Treno d'autoveicoli accompagnati/treno speciale/treno vaccanze
+class09 Tram
+class13 Dienst
+option10 Collegamenti diretti
+option11 Collegamenti diretti con carrozze letti*
+option12 Collegamenti diretti con carrozze cuccette*
+option13 Carico in proprio di biciclette (soltano in Svizzera)
+option14 Collegamenti con tasporto di gruppi (soltano in Svizzera)
+category001 Ascensore
+category002 Bus
+category003 Battello
+category004 Bus nottorno
+category005 Bus panoramico
+category006 Bus nazionale a lunga percorrenza
+category007 Cremagliera
+category008 EuroCity
+category009 EuroNight
+category010 Bus espresso
+category011 Treno speciale
+category012 Traghetto
+category013 Funicolare
+category014 Cabinovia
+category015 InterCity
+category016 InterCityExpress
+category017 InterRegio
+category018 Interregio-Express
+category019 Minibus
+category020 Metropolitana
+category021 LeermaterialZ (Reisezugswagen)
+category022 nightjet
+category023 funivia a va e vieni
+category024 PanoramaExpress
+category025 Regio
+category026 Regionalbahn
+category027 RegioExpress
+category028 railjet xpress
+category029 bus a chiamata
+category030 Rete celere
+category031 Seggiovia
+category032 Rete celere notte
+category033 Tram
+category034 TER200
+category035 Train Express Regional
+category036 Train à grande vit.
+category037 Unbekannte Art

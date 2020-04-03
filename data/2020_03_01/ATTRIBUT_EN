@@ -1,0 +1,134 @@
+1  0   1  5 1st class only#
+2  0   1  6 2nd class only#
+AW 0   4  6 Open panoramic cars#
+B  0   4  4 Bar#
+BE 0   0  0 Rail replacement service#
+BH 3   2  2 Stopps only on previous demand (telephone)#
+BK 0   2  2 Buy your ticket on the train (with supplement)#
+BL 0   0  0 BAGGAGE : restricted transportation#
+BR 0   3  1 BUS: Other buses on request#
+BZ 0   4  7 Business zone in 1st class#
+CC 0   5  2 Couchette car#
+DS 0   1  9 Steam ship#
+DZ 0   1  9 Steam train#
+EP 0   7  2 Service at seat in 1st cl., drinks/snacks in 2nd cl.#
+FA 0   4  6 Family Coach with play area#
+FL 0   2  7 1 train with sever dest.:Please pay attention to indications on coache#
+FW 0   4  6 Photographers' viewing area#
+FZ 0   4  6 Family zone without play area#
+GK 0   4  5 Possible customs check, please allow extra time#
+GL 0   6  2 GROUPS: transport limited#
+GN 0   6  1 GROUPS: transport not admitted#
+GP 0   1  1 Overall price#
+GR 0   6  3 GROUPS: reservation compulsory#
+GZ 0   6  4 GROUPS: supplementary charge#
+HN 0   6  5 Dogs are not permitted on board#
+KB 0   0  0 Minibus#
+MI 0   2  7 Minibar or catering zone#
+MP 0   4  3 Minibar / Meals served at your seat#
+NF 0   0  0 Low-floor access#
+PA 0   4  5 Panorama coach#
+PL 0   8  4 Limited number of seats#
+PR 0   4  5 Panorama coach: reservation compulsory#
+R  0   8  1 Reservation possible#
+RE 0   7  1 Reservation recommended#
+RR 0   2  2 Reservation compulsory#
+RT 0   2  5 Reservation: see www.fahrplanfelder.ch#
+RZ 0   4  8 Quiet zone in 1st class#
+SB 0   2  1 Special fare#
+SC 0   2  5 Seat service in 1st class#
+SD 2   0  2 Alighting only#
+SF 0   2  2 Autonomous vehicle#
+SH 1   0  7 Seasonal stop#
+SM 1   0  2 Boarding only#
+SV 0   1  9 Rail replacement service#
+SZ 0   2  1 Special ticket or supplement required#
+TA 1   3  5 Doors close two minutes before departure#
+TF 0   3  1 Other connections: see www.fahrplanfelder.ch#
+TG 0   3  1 WITHOUT ANY GUARANTEE: see www.fahrplanfelder.ch#
+TS 0   1  1 Additional train#
+TT 0   1  1 Tilting train#
+TX 0   0  0 Taxi or Minibus#
+VI 0   6  5 BICYCLES: Carriage on international services only#
+VL 0   6  5 BICYCLES: limited space available#
+VN 0   6  5 BICYCLES: Carriage not possible#
+VR 0   6  6 BICYCLES: Reservation required#
+VX 0   6  6 BICYCLES: Transport not admitted#
+WB 0   0  0 Witterungsbedingt#
+WL 0   5  1 Sleeping car#
+WR 0   1  4 Restaurant#
+WS 0   2  4 Bistro#
+X  3   0  1 Stop on request#
+XE 1   0  7 Reservation compulsory, www.engadinbus.ch/nacht, 1h be. departure#
+XR 1   0  7 Reservation by phone only#
+Y  0   5  5 Walk#
+YM 0   5  5 Walk+underground#
+Z  0   2  3 Subject to surcharge#
+ZM 0   1  5 Possibly only second class compartments#
+# 1  1  1 
+# 2  2  2 
+# AW AW AW
+# B  B  B 
+# BE BE BE
+# BH BH BH
+# BK BK BK
+# BL BL BL
+# BR BR BR
+# BZ BZ BZ
+# CC CC CC
+# DS DS DS
+# DZ DZ DZ
+# EP EP EP
+# FA FA FA
+# FL FL FL
+# FW FW FW
+# FZ FZ FZ
+# GK GK GK
+# GL GL GL
+# GN GN GN
+# GP GP GP
+# GR GR GR
+# GZ GZ GZ
+# HN HN HN
+# KB KB KB
+# MI MI MI
+# MP MP MP
+# NF NF NF
+# PA PA PA
+# PL PL PL
+# PR PR PR
+# R  R  R 
+# RE RE RE
+# RR RR RR
+# RT RT RT
+# RZ RZ RZ
+# SB SB SB
+# SC SC SC
+# SD SD SD
+# SF SF SF
+# SH SH SH
+# SM SM SM
+# SV SV SV
+# SZ SZ SZ
+# TA TA TA
+# TF TF TF
+# TG TG TG
+# TS TS TS
+# TT TT TT
+# TX TX TX
+# VI VI VI
+# VL VL VL
+# VN VN VN
+# VR VR VR
+# VX VX VX
+# WB WB WB
+# WL WL WL
+# WR WR WR
+# WS WS WS
+# X  X  X 
+# XE XE XE
+# XR XR XR
+# Y  Y  Y 
+# YM YM YM
+# Z  Z  Z 
+# ZM ZM ZM
