@@ -11,6 +11,7 @@
 ## Milestone 1 (Friday 3rd April, 5pm)
 
 **10% of the final grade**
+Please find the full report on Milestone1.ipynb
 
 
 ## Milestone 2 (Friday 1st May, 5pm)
