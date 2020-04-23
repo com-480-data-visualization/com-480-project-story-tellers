@@ -1,165 +1,90 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
-  <head>    
-    <meta charset="UTF-8">
-    <title>Story Tellers</title>
-    <!-- <meta name="description" content="Free Responsive HTML5 CSS3 Coming Soon Template">
-    <meta name="author" content="webthemez">
-    <meta name="authorUrl" content="http://webthemez.Com"> -->
-    
-    <!-- Mobile Specific Meta -->   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <head>
+        <title>Swiss Railways Transit Map</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="static/css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="map_canvas"></div>
+        <div id="panel" class="hidden">
+            <div>
+                <h3>Swiss Railways Map</h3>
+            </div>
+            <div class="section">
+                <b>Time:</b> <span id="day_time"></span> 
+                <select id="time_multiply">
+                    <option value="1" selected="selected">1x</option>
+                    <option value="5">5x</option>
+                    <option value="10">10x</option>
+                    <option value="100">100x</option>
+                </select>
+                <!-- <br/>
+                <input type="button" id="geolocation_click" />
+                <input type="text" id="user_location" / > -->
+            </div>
+            <div id="vehicle_info" class="hidden section" data-type="panel">
+                <div>
+                    <b>Vehicle:</b> <span class="vehicle_name"></span> <input type="button" class="panel_collapsible expanded" />
+                </div>
+                <div class="panel_content">
+                    <div>
+                        <input id="follow_trigger" type="button" value="Follow" data-value-toggle="STOP" />
+                        <input id="route_show_trigger" type="button" value="Draw route" data-value-toggle="HIDE route" />
+                    </div>
 
-    <!-- Custom stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css"> 
-    <!-- <link rel="stylesheet" href="assets/css/timerStyles.css"> -->
-
-    <!-- Font Awesome -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      /*#map {
-        height: 100%;
-      }*/
-      /* Optional: Makes the sample page fill the window. */
-      /*html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }*/
-    </style>
-    <!--Fav and touch icons-->
-    <!-- <link rel="shortcut icon" href="assets/images/icons/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/icons/apple-touch-icon-114x114.png"> -->
- 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
- <body>
- <div class="bg">
-	 <div class="bg-color">
-		    <div class="container content">
-				
-				<div class="row">
-					<!-- <div class="blazer clearfix"> -->
-
-						<!-- <div class="col-sm-12"> -->
-							<br>
-						   <h1>Story Tellers</h1>
-						   <h2>We're coming soon</h2>
-						   <h3>Stay tuned for something Amazing</h3>        
-						   <!-- <h3>By COM480 "Story Tellers" Group</h3>         -->
-						<!-- </div> -->
-						<!-- <div class="col-sm-12"> -->
-							<div id="map" style="width: 60%;height: 60%; margin:0 auto;"></div>
-							
-						<!-- </div> -->
-						 
-						<div id="right-block" class="col-md-12 text-center">
-							<!-- <div class="row">
-							   <div class="col-sm-offset-1 col-sm-10">
-									<div class="timing">
-										<div id="count-down" data-date="2020-04-28 00:00:00">
-											
-										</div>
-									</div>
-							   </div>
-							</div>
-							<div class="row">
-							  <div class="col-sm-offset-2 col-sm-8">
-								<p class="alert-success"></p>
-								<p class="alert-warning"></p>
-								<form class="newsletter-signup" role="form">
-								  <div class="input-group">
-									<input type="email" class="form-control" id="email" placeholder="enter your email id" required>
-									<span class="input-group-btn">
-									  <input type="submit" class="btn btn-default btn-sand" value="Submit">
-									</span>
-								  </div>
-								</form>
-							  </div>
-							</div>  -->                   
-							<p class="followus"></p>
-							<ul class="social-icon">
-								<li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
-								<li><a href=""><i class="fa fa-facebook-square"></i></a></li>
-								<li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-								<li><a href=""><i class="fa fa-youtube-square"></i></a></li>
-							</ul> 
-	                           	<div class="row">
-							<div class="col-sm-12 text-center copyRights"> Copyright 2020 | All Rights Reserved - <span> <a href="https://webthemez.com/tag/free" target="_blank">Free Templates</a> by WebThemez.com.
-							</div>
-						</div>
-		
-									
-						</div>
-					<!-- </div> -->
-				</div>
-			</div>
-			
-			<!-- .container end here -->
-	 </div>
- </div>
-   
-    
-
- <script>
-   function initMap() {
-     var map = new google.maps.Map(document.getElementById('map'), {
-       zoom: 13,
-       center: {lat: 47.378775, lng: 8.540612}
-     });
-
-     var transitLayer = new google.maps.TransitLayer();
-     transitLayer.setMap(map);
-   }
- </script>
- <script async defer
- src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyzNxxrLPxkfe2Jz1Iue1rKbNY5iw5JCQ&callback=initMap">
- </script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- <script src="assets/js/timerStyles.js"></script>
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/jquery.placeholder.js"></script> -->
-    <!-- <script type="text/javascript">
-    	$(function() {
-				// Invoke the plugin
-				$('input, textarea').placeholder();
-			});
-    </script>
-    <script>
-      $("#count-down").TimeCircles(
-       {   
-           circle_bg_color: "#ffffff",
-           use_background: true,
-           bg_width: .2,
-           fg_width: 0.013,
-           time: {
-                Days: { color: "#ffffff" },
-                Hours: { color: "#ffffff" },
-                Minutes: { color: "#ffffff" },
-                Seconds: { color: "#ffffff" }
-            }
-       }
-    );
-
-    </script> -->
-    
-  </body>
+                    <div id="vehicle_timetable_container">
+                        <table id="vehicle_timetable" class="panel_table">
+                            <thead>
+                                <tr>
+                                    <td>#</td>
+                                    <td class="station">Station</td>
+                                    <td>Arr.</td>
+                                    <td>Dep.</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="station_info" class="hidden section" data-type="panel">
+                <div>
+                    <b>Station:</b> <span class="station_name"></span> <input type="button" class="panel_collapsible expanded" />
+                </div>
+                <div class="panel_content">
+                    <table id="station_departures" class="panel_table">
+                        <thead>
+                            <tr>
+                                <td>#</td>
+                                <td class="wide">Vehicle</td>
+                                <td>To</td>
+                                <td>Dep.</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="vehicle_popup_container" class="hidden">
+            <div id="vehicle_popup">
+                <span class="vehicle_name"></span>
+                <br />
+                <p class="status"></p>
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyzNxxrLPxkfe2Jz1Iue1rKbNY5iw5JCQ&amp;v=3.20&amp;sensor=false&amp;libraries=geometry,places"></script>
+        <script type="text/javascript" src="static/js/stamen.js"></script>
+        
+        <script src="static/js/infobox_packed.js"></script>
+        <script src="static/js/map.js"></script>
+    </body>
 </html>
