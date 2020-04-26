@@ -60,7 +60,7 @@ By this graph, of course we can see the location and distance of all stations, w
 
 ### Transport resources
 We are interested to visualize the transportation type distribution in each canton. To that end we will develop a basic stacked barplot on our data. 
-![Transport_resources](https://raw.githubusercontent.com/com-480-data-visualization/com-480-project-story-tellers/master/pic/Transport_resources.jpg)
+![Transport_resources](https://raw.githubusercontent.com/com-480-data-visualization/com-480-project-story-tellers/master/pic/transport_resources.jpg)
 
 ### Team 
 
