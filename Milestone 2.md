@@ -23,11 +23,11 @@ We are going to describe the frontend and backend plan accordingly.
 
 The fronend of the website will contain 
 
-** Interactive map
-** Travel routine histogram figure
-** Connectivity
-** Transport resources
-** Team
+* Interactive map
+* Travel routine histogram figure
+* Connectivity
+* Transport resources
+* Team
 
 ### Interactive Map 
 The very initial page of the website will be the map of Switzerland bounderies and moving points as transportation. The illustration is indended to be for one normal work day from morning to night to see the flow of the transportation points. 
