@@ -12,11 +12,11 @@ Functional project prototype review.
 
 * You should have an initial website running with the basic skeleton of the visualization/widgets.
 
-# Tianchi 
+## Tianchi 
 
 ## sketches for connectivity
 
-![](connectivity.png)
+![Connectivity Graph](https://raw.githubusercontent.com/com-480-data-visualization/com-480-project-story-tellers/master/pic/connectivity.jpg)
 
 We want to use the Force Directed Graph to show the connectivity of the transportation. As we can see in the graph, the nodes are stations and the edges stand for the connectivity between each two stations. Different colors means different cantons. 
 
