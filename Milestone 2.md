@@ -21,7 +21,7 @@ We are going to describe the frontend and backend plan accordingly.
 
 ## Sketches of website/visualization
 
-The fronend of the website will contain 
+The frontend of the website will contain 
 
 * Interactive map
 * Travel routine histogram figure
@@ -30,7 +30,7 @@ The fronend of the website will contain
 * Team
 
 ### Interactive Map 
-The very initial page of the website will be the map of Switzerland bounderies and moving points as transportation. The illustration is indended to be for one normal work day from morning to night to see the flow of the transportation points. 
+The very initial page of the website will be the map of Switzerland bounderies and moving points as transportation. The illustration is intended to be for one work day from morning to night to see the flow of the transportation points. 
 
 1. The user will have opportunity to see different modes of the map by adjusting the **{Show, Colors, Filter}** sections in **Options** bar (ref n8 in sketch)
 2. There will be a **time bar** in the down of the map which will indicate the time of the day the flow is running (ref n13 in the sketch). According to the time of the day the background of the map will change from **night mode to day mode**.
@@ -64,7 +64,7 @@ We are interested to visualize the transportation type distribution in each cant
 
 ### Team 
 
-We will also introduce our team members in the end of the website scroll
+We will also introduce our team members in the end of the website.
 
 ## Tools and past lectures to use
 
