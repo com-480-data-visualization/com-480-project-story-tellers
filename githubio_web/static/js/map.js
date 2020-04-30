@@ -852,10 +852,10 @@ var simulation_manager = (function(){
                 disableDefaultUI: true,
                 zoomControl: true,
                 scaleControl: true,
-                streetViewControl: true,
+                streetViewControl: false,
                 overviewMapControl: true,
                 rotateControl: true,
-                mapTypeControl: true,
+                mapTypeControl: false,
                 mapTypeControlOptions: {
                     position: google.maps.ControlPosition.TOP_LEFT,
                     mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.SATELLITE, 'stamen']

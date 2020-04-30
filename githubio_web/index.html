@@ -1,48 +1,101 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Swiss Railways Transit Map</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Swiss Transport Map- Stroy Tellers</title>
+        <link rel="icon" type="image/x-icon" href="static/template_assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/template_assets/css/styles.css" rel="stylesheet" />
         <link href="static/css/reset.css" rel="stylesheet" type="text/css" />
         <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            @media only screen and ( min-width: 980px ) {
+            .gm-style-pbc {
+            opacity: 0 !important;
+            }
+            }
+        </style>
     </head>
-    <body>
-        <div id="map_canvas"></div>
-        <div id="panel" class="hidden">
-            <div>
-                <h3>Swiss Railways Map</h3>
-            </div>
-            <div class="section">
-                <b>Time:</b> <span id="day_time"></span> 
-                <select id="time_multiply">
-                    <option value="1" selected="selected">1x</option>
-                    <option value="5">5x</option>
-                    <option value="10">10x</option>
-                    <option value="100">100x</option>
-                </select>
-                <!-- <br/>
-                <input type="button" id="geolocation_click" />
-                <input type="text" id="user_location" / > -->
-            </div>
-            <div id="vehicle_info" class="hidden section" data-type="panel">
-                <div>
-                    <b>Vehicle:</b> <span class="vehicle_name"></span> <input type="button" class="panel_collapsible expanded" />
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 1.8em;">Story Tellers<!-- <img src="static/template_assets/img/navbar-logo.svg" /> --></a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#routine">Routine</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#connectivity">Connectivity</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resources">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                    </ul>
                 </div>
-                <div class="panel_content">
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <!-- <header class="masthead"> -->
+            <div id="map_canvas"></div>
+            <div id="panel" class="hidden">
+                <div style="">
+                    <h3>Map Filters and Info</h3>
+                </div>
+                <div class="section">
+                    <b>Time:</b> <span id="day_time"></span> 
+                    <select id="time_multiply">
+                        <option value="1" selected="selected">1x</option>
+                        <option value="5">5x</option>
+                        <option value="10">10x</option>
+                        <option value="100">100x</option>
+                    </select>
+                    <!-- <br/>
+                    <input type="button" id="geolocation_click" />
+                    <input type="text" id="user_location" / > -->
+                </div>
+                <div id="vehicle_info" class="hidden section" data-type="panel">
                     <div>
-                        <input id="follow_trigger" type="button" value="Follow" data-value-toggle="STOP" />
-                        <input id="route_show_trigger" type="button" value="Draw route" data-value-toggle="HIDE route" />
+                        <b>Vehicle:</b> <span class="vehicle_name"></span> <input type="button" class="panel_collapsible expanded" />
                     </div>
+                    <div class="panel_content">
+                        <div>
+                            <input id="follow_trigger" type="button" value="Follow" data-value-toggle="STOP" />
+                            <input id="route_show_trigger" type="button" value="Draw route" data-value-toggle="HIDE route" />
+                        </div>
 
-                    <div id="vehicle_timetable_container">
-                        <table id="vehicle_timetable" class="panel_table">
+                        <div id="vehicle_timetable_container">
+                            <table id="vehicle_timetable" class="panel_table">
+                                <thead>
+                                    <tr>
+                                        <td>#</td>
+                                        <td class="station">Station</td>
+                                        <td>Arr.</td>
+                                        <td>Dep.</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="station_info" class="hidden section" data-type="panel">
+                    <div>
+                        <b>Station:</b> <span class="station_name"></span> <input type="button" class="panel_collapsible expanded" />
+                    </div>
+                    <div class="panel_content">
+                        <table id="station_departures" class="panel_table">
                             <thead>
                                 <tr>
                                     <td>#</td>
-                                    <td class="station">Station</td>
-                                    <td>Arr.</td>
+                                    <td class="wide">Vehicle</td>
+                                    <td>To</td>
                                     <td>Dep.</td>
                                 </tr>
                             </thead>
@@ -52,39 +105,330 @@
                     </div>
                 </div>
             </div>
-            <div id="station_info" class="hidden section" data-type="panel">
-                <div>
-                    <b>Station:</b> <span class="station_name"></span> <input type="button" class="panel_collapsible expanded" />
-                </div>
-                <div class="panel_content">
-                    <table id="station_departures" class="panel_table">
-                        <thead>
-                            <tr>
-                                <td>#</td>
-                                <td class="wide">Vehicle</td>
-                                <td>To</td>
-                                <td>Dep.</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
+            <div id="vehicle_popup_container" class="hidden">
+                <div id="vehicle_popup">
+                    <span class="vehicle_name"></span>
+                    <br />
+                    <p class="status"></p>
                 </div>
             </div>
-        </div>
-        <div id="vehicle_popup_container" class="hidden">
-            <div id="vehicle_popup">
-                <span class="vehicle_name"></span>
-                <br />
-                <p class="status"></p>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyzNxxrLPxkfe2Jz1Iue1rKbNY5iw5JCQ&amp;v=3.20&amp;sensor=false&amp;libraries=geometry,places"></script>
+            <script type="text/javascript" src="static/js/stamen.js"></script>
+            
+            <script src="static/js/infobox_packed.js"></script>
+            <script src="static/js/map.js"></script>
+            <!-- <div class="container">
+                <div class="masthead-subheading">Welcome To Our Studio!</div>
+                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#routine">Tell Me More</a>
+            </div> -->
+        <!-- </header> -->
+        <!-- routine-->
+        <section class="page-section" id="routine">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Travel Routine</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-8">
+                        <script src="https://d3js.org/d3.v4.js"></script>
+                        <!-- Create a div where the graph will take place -->
+                        <div id="my_dataviz"></div>
+                        
+                        <script>
+
+                        // set the dimensions and margins of the graph
+                        var margin = {top: 10, right: 30, bottom: 30, left: 40},
+                            width = 460 - margin.left - margin.right,
+                            height = 400 - margin.top - margin.bottom;
+
+                        // append the svg object to the body of the page
+                        var svg = d3.select("#my_dataviz")
+                          .append("svg")
+                            .attr("width", width + margin.left + margin.right)
+                            .attr("height", height + margin.top + margin.bottom)
+                          .append("g")
+                            .attr("transform",
+                                  "translate(" + margin.left + "," + margin.top + ")");
+
+                        // get the data
+                        d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/1_OneNum.csv", function(data) {
+
+                          // X axis: scale and draw:
+                          var x = d3.scaleLinear()
+                              .domain([0, 1000])     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
+                              .range([0, width]);
+                          svg.append("g")
+                              .attr("transform", "translate(0," + height + ")")
+                              .call(d3.axisBottom(x));
+
+                          // Y axis: initialization
+                          var y = d3.scaleLinear()
+                              .range([height, 0]);
+                          var yAxis = svg.append("g")
+
+                          // A function that builds the graph for a specific value of bin
+                          function update(nBin) {
+
+                            // set the parameters for the histogram
+                            var histogram = d3.histogram()
+                                .value(function(d) { return d.price; })   // I need to give the vector of value
+                                .domain(x.domain())  // then the domain of the graphic
+                                .thresholds(x.ticks(nBin)); // then the numbers of bins
+
+                            // And apply this function to data to get the bins
+                            var bins = histogram(data);
+
+                            // Y axis: update now that we know the domain
+                            y.domain([0, d3.max(bins, function(d) { return d.length; })]);   // d3.hist has to be called before the Y axis obviously
+                            yAxis
+                                .transition()
+                                .duration(1000)
+                                .call(d3.axisLeft(y));
+
+                            // Join the rect with the bins data
+                            var u = svg.selectAll("rect")
+                                .data(bins)
+
+                            // Manage the existing bars and eventually the new ones:
+                            u
+                                .enter()
+                                .append("rect") // Add a new rect for each new elements
+                                .merge(u) // get the already existing elements as well
+                                .transition() // and apply changes to all of them
+                                .duration(1000)
+                                  .attr("x", 1)
+                                  .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; })
+                                  .attr("width", function(d) { return x(d.x1) - x(d.x0) -1 ; })
+                                  .attr("height", function(d) { return height - y(d.length); })
+                                  .style("fill", "#69b3a2")
+
+
+                            // If less bar in the new histogram, I delete the ones not in use anymore
+                            u
+                                .exit()
+                                .remove()
+
+                            }
+
+
+                          // Initialize with 20 bins
+                          update(80)
+
+
+                          // Listen to the button -> update if user change it
+                          d3.select("#nBin").on("input", function() {
+                            update(+this.value);
+                          });
+
+                        });
+                        </script>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="my-3">Filters and some Analysis</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <span class="fa-stack fa-4x" style="margin-top: 10%;"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-lock fa-stack-1x fa-inverse"></i></span>
+                    </div>
+                </div>
             </div>
-        </div>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyzNxxrLPxkfe2Jz1Iue1rKbNY5iw5JCQ&amp;v=3.20&amp;sensor=false&amp;libraries=geometry,places"></script>
-        <script type="text/javascript" src="static/js/stamen.js"></script>
-        
-        <script src="static/js/infobox_packed.js"></script>
-        <script src="static/js/map.js"></script>
+        </section>
+        <!-- Connectivity-->
+        <section class="page-section bg-light" id="connectivity">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Connectivity</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+
+
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <h4 class="my-3">Filters and some Analysis</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <span class="fa-stack fa-4x" style="margin-top: 10%;"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-lock fa-stack-1x fa-inverse"></i></span>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="img-fluid" src="static/template_assets/img/forcechart.png" alt=""/>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+        <!-- Transport Resources-->
+        <section class="page-section" id="resources">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Transport Resources</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-8">
+                        <div id="my_dataviz_3"></div>
+
+
+                        <script>
+
+                        // set the dimensions and margins of the graph
+                        var margin = {top: 10, right: 30, bottom: 20, left: 50},
+                            width = 460 - margin.left - margin.right,
+                            height = 400 - margin.top - margin.bottom;
+
+                        // append the svg object to the body of the page
+                        var svg_3 = d3.select("#my_dataviz_3")
+                          .append("svg")
+                            .attr("width", width + margin.left + margin.right)
+                            .attr("height", height + margin.top + margin.bottom)
+                          .append("g")
+                            .attr("transform",
+                                  "translate(" + margin.left + "," + margin.top + ")");
+
+                        // Parse the Data
+                        d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_stacked.csv", function(data) {
+
+                          // List of subgroups = header of the csv files = soil condition here
+                          var subgroups = data.columns.slice(1)
+
+                          // List of groups = species here = value of the first column called group -> I show them on the X axis
+                          var groups = d3.map(data, function(d){return(d.group)}).keys()
+
+                          // Add X axis
+                          var x = d3.scaleBand()
+                              .domain(groups)
+                              .range([0, width])
+                              .padding([0.2])
+                          svg_3.append("g")
+                            .attr("transform", "translate(0," + height + ")")
+                            .call(d3.axisBottom(x).tickSizeOuter(0));
+
+                          // Add Y axis
+                          var y = d3.scaleLinear()
+                            .domain([0, 60])
+                            .range([ height, 0 ]);
+                          svg_3.append("g")
+                            .call(d3.axisLeft(y));
+
+                          // color palette = one color per subgroup
+                          var color = d3.scaleOrdinal()
+                            .domain(subgroups)
+                            .range(['#e41a1c','#377eb8','#4daf4a'])
+
+                          //stack the data? --> stack per subgroup
+                          var stackedData = d3.stack()
+                            .keys(subgroups)
+                            (data)
+
+                          // Show the bars
+                          svg_3.append("g")
+                            .selectAll("g")
+                            // Enter in the stack data = loop key per key = group per group
+                            .data(stackedData)
+                            .enter().append("g")
+                              .attr("fill", function(d) { return color(d.key); })
+                              .selectAll("rect")
+                              // enter a second time = loop subgroup per subgroup to add all rectangles
+                              .data(function(d) { return d; })
+                              .enter().append("rect")
+                                .attr("x", function(d) { return x(d.data.group); })
+                                .attr("y", function(d) { return y(d[1]); })
+                                .attr("height", function(d) { return y(d[0]) - y(d[1]); })
+                                .attr("width",x.bandwidth())
+                        })
+
+                        </script>
+
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="my-3">Filters and some Analysis</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <span class="fa-stack fa-4x" style="margin-top: 10%;"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-lock fa-stack-1x fa-inverse"></i></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="static/template_assets/img/team/1.jpg" alt="" />
+                            <h4>Mariam Hakobyan</h4>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="static/template_assets/img/team/2.jpg" alt="" />
+                            <h4>Tianchi Yu</h4>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="static/template_assets/img/team/2.jpg" alt="" />
+                            <h4>Wenuka Gunarathna</h4>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="static/template_assets/img/logos/envato.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="static/template_assets/img/logos/designmodo.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="static/template_assets/img/logos/themeforest.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="static/template_assets/img/logos/creative-market.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-right">All Rights Reserved</div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <!-- <script src="static/template_assets/mail/jqBootstrapValidation.js"></script>
+        <script src="static/template_assets/mail/contact_me.js"></script> -->
+        <!-- Core theme JS-->
+        <script src="static/template_assets/js/scripts.js"></script>
     </body>
 </html>
