@@ -17,9 +17,11 @@ Please find the full report on Milestone1.ipynb
 ## Milestone 2 (Friday 1st May, 5pm)
 
 **10% of the final grade**
-
+Please find the full report on Milestone 2.md
 
 ## Milestone 3 (Thursday 28th May, 5pm)
 
 **80% of the final grade**
 
+## Web Skeleton
+You can find the work in progress website skeleton on [threestorytellers.github.io](https://threestorytellers.github.io/)

@@ -90,4 +90,9 @@ Please consider all the parts mentioned as **extra** above and also we think to 
 ## Initial website
 You can find the website skeleton on [threestorytellers.github.io](https://threestorytellers.github.io/)
 
+Here are some screenshots from the website,
+
+| ![Interactive Swiss Transport Map](https://raw.githubusercontent.com/com-480-data-visualization/com-480-project-story-tellers/master/pic/webmap.png) | ![Travel Routine Graph](https://raw.githubusercontent.com/com-480-data-visualization/com-480-project-story-tellers/master/pic/webroutine.png)  |
+| -------------- | ------ |
+| ![Transport Connctivity Grapgh](https://raw.githubusercontent.com/com-480-data-visualization/com-480-project-story-tellers/master/pic/webconnectivity.png) | ![Transport Resources Graph](https://raw.githubusercontent.com/com-480-data-visualization/com-480-project-story-tellers/master/pic/webresources.png)  |
 
