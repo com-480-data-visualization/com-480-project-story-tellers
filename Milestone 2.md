@@ -88,6 +88,6 @@ Once we have the minimum functions of the map, we will start to work on data pre
 Please consider all the parts mentioned as **extra** above and also we think to show the hierarchy of stations by the Radial Tree taking the capacity and connecticity as the judgement criteria, if time allows.
 
 ## Initial website
-You can find the website skeleton on https://threestorytellers.github.io/(https://threestorytellers.github.io/)
+You can find the website skeleton on [threestorytellers.github.io](https://threestorytellers.github.io/)
 
 
