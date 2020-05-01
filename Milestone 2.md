@@ -74,7 +74,7 @@ We will also introduce our team members in the end of the website.
 
 Tools we will use
 * [Bootstrap template](https://blackrockdigital.github.io/startbootstrap-agency/) for frontend HTML/CSS content,
-* [Google API](https://github.com/com-480-data-visualization/com-480-project-story-tellers/tree/master/githubio_web/api) - this is a map API incorportated by Google which gives the deailed informations of stations and railways in Switzerland.
+* [Google API](https://github.com/com-480-data-visualization/com-480-project-story-tellers/tree/master/githubio_web/api) - this is a map API incorportated by Google which gives the deailed informations of stations and railways in Switzerland,
 * [Trafimage API](https://github.com/geops/trafimage-maps) - this is a map API incorportated by SBB, and we are in contact with Trafimage team to get access to the detailed routes for all types of transportations in Switzerland, which could replace the Google API once we have it,
 * [D3.js histogram](https://www.d3-graph-gallery.com/graph/histogram_binSize.html) for travel routine graph,
 * [D3-force](https://observablehq.com/@d3/force-directed-graph) for connectivity graph,
