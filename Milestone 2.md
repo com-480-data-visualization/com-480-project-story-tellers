@@ -26,9 +26,9 @@ The frontend of the website will contain
 
 * Interactive map
 * Travel routine histogram figure
-* Connectivity
-* Transport resources
-* Team
+* Force graph for station connectivities
+* Chart for transport resources
+* Our Team
 
 ### Interactive Map
 
