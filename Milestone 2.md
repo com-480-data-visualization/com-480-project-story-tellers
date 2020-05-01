@@ -1,27 +1,28 @@
 # Content
 
-In this file we develop the following steps for Milestone 2. 
+In this file we develop the following steps for Milestone 2.
 
-* Review of Milestone 1, 
-* Sketches of website/visualization we want to achieve, 
-* Tools and past lectures to develop the visualization, 
-* Independent pieces of how to achieve into the final visualization,
-* Extra ideas to develop after successfully meeting the plan,
-* Initial website running with minimal viable product.
+* Review of Milestone 1
+* Sketches of website/visualization we want to achieve
+* Tools and past lectures to develop the visualization
+* Independent pieces of how to achieve into the final visualization
+* Extra ideas to develop after successfully meeting the plan
+* Initial website running with minimal viable product
 
 Students: Mariam Hakobyan (298698), Tianchi Yu (319877), Wenuka Gunarathna (309398)
 
 ## Review of Milestone 1
 
-According to our project goal in Milestone 1, our aim is to visualize the 
-* Part 1. Flow of public transportation in Switzerland in an interactive map, 
-* Part 2. Figures to describe the features of transportation system.
+According to our project goal in Milestone 1, our aim is to visualize the
+
+* Part 1. Flow of public transportation in Switzerland in an interactive map
+* Part 2. Figures to describe the features of transportation system
 
 We are going to describe the frontend and backend plan accordingly.
 
 ## Sketches of website/visualization
 
-The frontend of the website will contain 
+The frontend of the website will contain
 
 * Interactive map
 * Travel routine histogram figure
@@ -29,7 +30,8 @@ The frontend of the website will contain
 * Transport resources
 * Team
 
-### Interactive Map 
+### Interactive Map
+
 The very initial page of the website will be the map of Switzerland bounderies and moving points as transportation. The illustration is intended to be for one work day from morning to night to see the flow of the transportation points. 
 
 1. The user will have opportunity to see different modes of the map by adjusting the **{Show, Colors, Filter}** sections in **Options** bar (ref n8 in sketch)
