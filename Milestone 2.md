@@ -38,7 +38,7 @@ The very initial page of the website will be the map of Switzerland bounderies a
 2. There will be a **time bar** in the bottom of the map which will indicate the time of the day the flow is running (ref n13 in the sketch). According to the time of the day the background of the map will change from **night mode to day mode**.
 3. **Extra**: We are also thinking of ways to inform user about the map options in an user-friendly way, that is why a voice-over may be added to the map (ref n11 in the sketch), and by the user choice can be played to tell some narrative and interesting facts about the map.
 
-![Map](https://raw.githubusercontent.com/com-480-data-visualization/com-480-project-story-tellers/master/pic/map2.jpg | width=100)
+![Map](https://raw.githubusercontent.com/com-480-data-visualization/com-480-project-story-tellers/master/pic/map2.jpg)
 
 ### Travel routine
 
