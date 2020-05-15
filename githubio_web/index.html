@@ -8,6 +8,7 @@
         <title>Swiss Transport Map- Stroy Tellers</title>
         <link rel="icon" type="image/x-icon" href="static/template_assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
@@ -24,6 +25,21 @@
             }
             }
         </style>
+         <style>
+          .links line {
+              stroke: #999;
+              stroke-opacity: 0.6;
+            }
+
+            .nodes circle {
+              stroke: #fff;
+              stroke-width: 1.5px;
+            }
+            .axis .domain {
+              display: none;
+            }
+
+          </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -48,7 +64,7 @@
                     <h3>Map Filters and Info</h3>
                 </div>
                 <div class="section">
-                    <b>Time:</b> <span id="day_time"></span> 
+                    <b>Time:</b> <span id="day_time"></span>
                     <select id="time_multiply">
                         <option value="1" selected="selected">1x</option>
                         <option value="5">5x</option>
@@ -115,7 +131,7 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyzNxxrLPxkfe2Jz1Iue1rKbNY5iw5JCQ&amp;v=3.20&amp;sensor=false&amp;libraries=geometry,places"></script>
             <script type="text/javascript" src="static/js/stamen.js"></script>
-            
+
             <script src="static/js/infobox_packed.js"></script>
             <script src="static/js/map.js"></script>
             <!-- <div class="container">
@@ -133,98 +149,149 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-8">
-                        <script src="https://d3js.org/d3.v4.js"></script>
-                        <!-- Create a div where the graph will take place -->
-                        <div id="my_dataviz"></div>
-                        
-                        <script>
+                      <div id="my_dataviz_1"></div>
+                      <svg width="960" height="800" font-family="sans-serif" font-size="10" id = "svg1"></svg>
+                      <script src="https://d3js.org/d3.v4.min.js"></script>
 
-                        // set the dimensions and margins of the graph
-                        var margin = {top: 10, right: 30, bottom: 30, left: 40},
-                            width = 460 - margin.left - margin.right,
-                            height = 400 - margin.top - margin.bottom;
+                      <script>
 
-                        // append the svg object to the body of the page
-                        var svg = d3.select("#my_dataviz")
-                          .append("svg")
-                            .attr("width", width + margin.left + margin.right)
-                            .attr("height", height + margin.top + margin.bottom)
-                          .append("g")
-                            .attr("transform",
-                                  "translate(" + margin.left + "," + margin.top + ")");
-
-                        // get the data
-                        d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/1_OneNum.csv", function(data) {
-
-                          // X axis: scale and draw:
-                          var x = d3.scaleLinear()
-                              .domain([0, 1000])     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
-                              .range([0, width]);
-                          svg.append("g")
-                              .attr("transform", "translate(0," + height + ")")
-                              .call(d3.axisBottom(x));
-
-                          // Y axis: initialization
-                          var y = d3.scaleLinear()
-                              .range([height, 0]);
-                          var yAxis = svg.append("g")
-
-                          // A function that builds the graph for a specific value of bin
-                          function update(nBin) {
-
-                            // set the parameters for the histogram
-                            var histogram = d3.histogram()
-                                .value(function(d) { return d.price; })   // I need to give the vector of value
-                                .domain(x.domain())  // then the domain of the graphic
-                                .thresholds(x.ticks(nBin)); // then the numbers of bins
-
-                            // And apply this function to data to get the bins
-                            var bins = histogram(data);
-
-                            // Y axis: update now that we know the domain
-                            y.domain([0, d3.max(bins, function(d) { return d.length; })]);   // d3.hist has to be called before the Y axis obviously
-                            yAxis
-                                .transition()
-                                .duration(1000)
-                                .call(d3.axisLeft(y));
-
-                            // Join the rect with the bins data
-                            var u = svg.selectAll("rect")
-                                .data(bins)
-
-                            // Manage the existing bars and eventually the new ones:
-                            u
-                                .enter()
-                                .append("rect") // Add a new rect for each new elements
-                                .merge(u) // get the already existing elements as well
-                                .transition() // and apply changes to all of them
-                                .duration(1000)
-                                  .attr("x", 1)
-                                  .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; })
-                                  .attr("width", function(d) { return x(d.x1) - x(d.x0) -1 ; })
-                                  .attr("height", function(d) { return height - y(d.length); })
-                                  .style("fill", "#69b3a2")
+                            var svg1 = d3.select("#svg1"),
+                                width = +svg1.attr("width"),
+                                height = +svg1.attr("height"),
+                                innerRadius = 180,
+                                outerRadius = Math.min(width, height) / 2.5,
+                                g_1 = svg1.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 
-                            // If less bar in the new histogram, I delete the ones not in use anymore
-                            u
-                                .exit()
-                                .remove()
+                            var xScaleOffset = Math.PI * 75/180;
+                            var x = d3.scaleBand()
+                                .range([xScaleOffset, 2 * Math.PI + xScaleOffset])
+                                .align(0);
 
-                            }
+                            var y = d3.scaleLinear()
+                                .range([innerRadius, outerRadius]);
+
+                            var z = d3.scaleOrdinal()
+                                .range(["#98abc5", "#8a89a6"]);
+
+                            var zClasses = ['Number of Starting transportation', 'Number of Finishing transportation'];
+
+                            d3.csv("data/time_routine.csv", function(d, i, columns) {
+                              d.start = (+d.start);
+                              d.end =  (+d.end);
+                              return d;
+                            }, function(error, data) {
+                              if (error) throw error;
+
+                              var keys = data.columns.slice(1);
+                              var meanAccidents = d3.mean(data, function(d) { return d3.sum(keys, function(key) { return d[key]; }); })
+
+                              x.domain(data.map(function(d) { return d.time; }));
+                              y.domain([0, d3.max(data, function(d) { return (d.start + d.end); })]);
+                              z.domain(data.columns.slice(1));
+
+                              g_1.append('g')
+                                  .selectAll("g")
+                                .data(d3.stack().keys(data.columns.slice(1))(data))
+                                .enter().append("g")
+                                  .attr("fill", function(d) { return z(d.key); })
+                                .selectAll("path")
+                                .data(function(d) { return d; })
+                                .enter().append("path")
+                                  .attr("d", d3.arc()
+                                      .innerRadius(function(d) { return y(d[0]); })
+                                      .outerRadius(function(d) { return y(d[1]); })
+                                      .startAngle(function(d) { return x(d.data.time); })
+                                      .endAngle(function(d) { return x(d.data.time) + x.bandwidth(); })
+                                      .padAngle(0.01)
+                                      .padRadius(innerRadius));
+
+                              //yAxis and Mean
+
+                              var yAxis = g_1.append("g")
+                                  .attr("text-anchor", "middle");
+
+                              var yTicksValues = d3.ticks(0, 40, 4);
 
 
-                          // Initialize with 20 bins
-                          update(80)
+                              // Mean value line
+                              var yMeanTick = yAxis
+                                .append("g")
+                                .datum([meanAccidents]);
 
+                              yMeanTick.append("circle")
+                                  .attr("fill", "none")
+                                  .attr("stroke", "#C0625E")
+                                  .attr("stroke-dasharray", "5 3")
+                                  .attr("r", y);
 
-                          // Listen to the button -> update if user change it
-                          d3.select("#nBin").on("input", function() {
-                            update(+this.value);
-                          });
+                              var yTick = yAxis
+                                .selectAll("g")
+                                .data(yTicksValues)
+                                .enter().append("g");
 
-                        });
-                        </script>
+                              yTick.append("circle")
+                                  .attr("fill", "none")
+                                  .attr("stroke", "#ccdcea")
+                                  .attr("r", y);
+
+                              yTick.append("text")
+                                  .attr("y", function(d) { return -y(d); })
+                                  .attr("dy", "0.35em")
+                                  .attr("fill", "none")
+                                  .attr("stroke", "#fff")
+                                  .attr("stroke-width", 5)
+                                  .text(y.tickFormat(5, "s"));
+
+                              yTick.append("text")
+                                  .attr("y", function(d) { return -y(d); })
+                                  .attr("dy", "0.35em")
+                                  .text(y.tickFormat(5, "s"));
+
+                              yAxis.append("text")
+                                  .attr("y", function(d) { return -y(yTicksValues.pop()); })
+                                  .attr("dy", "-2em")
+                                  .text("Number");
+
+                              // Labels for xAxis
+
+                              var label_1 = g_1.append("g")
+                                .selectAll("g")
+                                .data(data)
+                                .enter().append("g")
+                                  .attr("text-anchor", "middle")
+                                  .attr("transform", function(d) { return "rotate(" + ((x(d.time) + x.bandwidth() / 2) * 180 / Math.PI - 165) + ")translate(" + innerRadius + ",0)"; });
+
+                              label_1.append("line")
+                                  .attr("x2", function(d) { return (((d.time % 5) == 0) | (d.time == '1')) ? -7 : -4 })
+                                  .attr("stroke", "#000");
+
+                              label_1.append("text")
+                                  .attr("transform", function(d) { return (x(d.time) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)"; })
+                                  .text(function(d) {
+                                    var xlabel = (((d.time % 5) == 0) | (d.time == '1')) ? d.time : '';
+                                    return xlabel; });
+
+                            // Legend
+                             var legend_1 = g_1.append("g")
+                                .selectAll("g")
+                                .data(zClasses)
+                                .enter().append("g")
+                                  .attr("transform", function(d, i) { return "translate(-50," + (i - (zClasses.length - 1) / 2) * 25+ ")"; });
+
+                              legend_1.append("circle")
+                                  .attr("r", 8)
+                                  .attr("fill", z);
+
+                              legend_1.append("text")
+                                  .attr("x", 15)
+                                  .attr("y", 0)
+                                  .attr("dy", "0.35em")
+                                  .text(function(d) { return d; });
+
+                            });
+                          </script>
+
                     </div>
                     <div class="col-md-4">
                         <h4 class="my-3">Filters and some Analysis</h4>
@@ -240,6 +307,95 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Connectivity</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+
+                    <svg width="1000" height="1000" id = 'svg2'></svg>
+                    <script>
+
+                    var svg2 = d3.select("#svg2"),
+                        width = +svg2.attr("width"),
+                        height = +svg2.attr("height");
+
+                    var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+                    var simulation = d3.forceSimulation()
+                        .force("link", d3.forceLink().id(function(d) { return d.id; }))
+                        .force("charge", d3.forceManyBody())
+                        .force("center", d3.forceCenter(width / 2, height / 2));
+
+                    d3.json("data/force.json", function(error, graph) {
+                      if (error) throw error;
+
+                      var link = svg2.append("g")
+                          .attr("class", "links")
+                        .selectAll("line")
+                        .data(graph.links)
+                        .enter().append("line")
+                          .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+
+                      var node = svg2.append("g")
+                          .attr("class", "nodes")
+                        .selectAll("g")
+                        .data(graph.nodes)
+                        .enter().append("g")
+
+                      var circles = node.append("circle")
+                          .attr("r", 5)
+                          .attr("fill", function(d) { return color(d.group); })
+                          .call(d3.drag()
+                              .on("start", dragstarted)
+                              .on("drag", dragged)
+                              .on("end", dragended));
+
+                      var lables = node.append("text")
+                          .text(function(d) {
+                            return d.id;
+                          })
+                          .attr('x', 6)
+                          .attr('y', 3);
+
+                      node.append("title")
+                          .text(function(d) { return d.id; });
+
+                      simulation
+                          .nodes(graph.nodes)
+                          .on("tick", ticked);
+
+                      simulation.force("link")
+                          .links(graph.links);
+
+                      function ticked() {
+                        link
+                            .attr("x1", function(d) { return d.source.x; })
+                            .attr("y1", function(d) { return d.source.y; })
+                            .attr("x2", function(d) { return d.target.x; })
+                            .attr("y2", function(d) { return d.target.y; });
+
+                        node
+                            .attr("transform", function(d) {
+                              return "translate(" + d.x + "," + d.y + ")";
+                            })
+                      }
+                    });
+
+                    function dragstarted(d) {
+                      if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+                      d.fx = d.x;
+                      d.fy = d.y;
+                    }
+
+                    function dragged(d) {
+                      d.fx = d3.event.x;
+                      d.fy = d3.event.y;
+                    }
+
+                    function dragended(d) {
+                      if (!d3.event.active) simulation.alphaTarget(0);
+                      d.fx = null;
+                      d.fy = null;
+                    }
+
+                  </script>
+
                 </div>
 
 
@@ -248,9 +404,6 @@
                         <h4 class="my-3">Filters and some Analysis</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         <span class="fa-stack fa-4x" style="margin-top: 10%;"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-lock fa-stack-1x fa-inverse"></i></span>
-                    </div>
-                    <div class="col-md-8">
-                        <img class="img-fluid" src="static/template_assets/img/forcechart.png" alt=""/>
                     </div>
                 </div>
 
@@ -263,93 +416,217 @@
         <section class="page-section" id="resources">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Transport Resources</h2>
+                    <h2 class="section-heading text-uppercase">Number of Stations by type in each Canton</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
 
                 <div class="row text-center">
                     <div class="col-md-8">
-                        <div id="my_dataviz_3"></div>
+                    <div id="my_dataviz_3"></div>
+                    <svg width="960" height="500" id = "svg3"></svg>
+                    <script src="https://d3js.org/d3.v4.min.js" ></script>
+
+                     <script>
+
+                    var svg3 = d3.select("#svg3"),
+                        margin = {top: 20, right: 20, bottom: 30, left: 40},
+                        width = +svg3.attr("width") - margin.left - margin.right,
+                        height = +svg3.attr("height") - margin.top - margin.bottom,
+                        g_3 = svg3.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                    // The scale spacing the groups:
+                    var x0_3 = d3.scaleBand()
+                        .rangeRound([0, width])
+                        .paddingInner(0.1);
+
+                    // The scale for spacing each group's bar:
+                    var x1_3 = d3.scaleBand()
+                        .padding(0.05);
+
+                    var y_3 = d3.scaleLinear()
+                        .rangeRound([height, 0]);
+
+                    var z_3 = d3.scaleOrdinal()
+                        .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#9b056b"]);
+
+                    d3.csv("data/canton_tt.csv", function(d, i, columns) {
+                      for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+                      return d;
+                    }, function(error, data) {
+                      if (error) throw error;
+
+                      var key_3s = data.columns.slice(1);
+
+                      x0_3.domain(data.map(function(d) { return d.State; }));
+                      x1_3.domain(key_3s).rangeRound([0, x0_3.bandwidth()]);
+                      y_3.domain([0, d3.max(data, function(d) { return d3.max(key_3s, function(key_3) { return d[key_3]; }); })]).nice();
+
+                     g_3.append("g")
+                        .selectAll("g")
+                        .data(data)
+                        .enter().append("g")
+                        .attr("class","bar")
+                        .attr("transform", function(d) { return "translate(" + x0_3(d.State) + ",0)"; })
+                        .selectAll("rect")
+                        .data(function(d) { return key_3s.map(function(key_3) { return {key_3: key_3, value: d[key_3]}; }); })
+                        .enter().append("rect")
+                          .attr("x", function(d) { return x1_3(d.key_3); })
+                          .attr("y_3", function(d) { return y_3(d.value); })
+                          .attr("width", x1_3.bandwidth())
+                          .attr("height", function(d) { return height - y_3(d.value); })
+                          .attr("fill", function(d) { return z_3(d.key_3); });
+
+                      g_3.append("g")
+                          .attr("class", "axis")
+                          .attr("transform", "translate(0," + height + ")")
+                          .call(d3.axisBottom(x0_3));
+
+                      g_3.append("g")
+                          .attr("class", "y_3 axis")
+                          .call(d3.axisLeft(y_3).ticks(null, "s"))
+                        .append("text")
+                          .attr("x", 2)
+                          .attr("y_3", y_3(y_3.ticks().pop()) + 0.5)
+                          .attr("dy_3", "0.32em")
+                          .attr("fill", "#000")
+                          .attr("font-weight", "bold")
+                          .attr("text-anchor", "start")
+                          .text("Number of stations");
 
 
-                        <script>
 
-                        // set the dimensions and margins of the graph
-                        var margin = {top: 10, right: 30, bottom: 20, left: 50},
-                            width = 460 - margin.left - margin.right,
-                            height = 400 - margin.top - margin.bottom;
+                      var legend_3 = g_3.append("g")
+                          .attr("font-family_3", "sans-serif")
+                          .attr("font-siz_3e", 10)
+                          .attr("text-anchor", "end")
+                        .selectAll("g")
+                        .data(key_3s.slice().reverse())
+                        .enter().append("g")
+                          .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
-                        // append the svg object to the body of the page
-                        var svg_3 = d3.select("#my_dataviz_3")
-                          .append("svg")
-                            .attr("width", width + margin.left + margin.right)
-                            .attr("height", height + margin.top + margin.bottom)
-                          .append("g")
-                            .attr("transform",
-                                  "translate(" + margin.left + "," + margin.top + ")");
+                      legend_3.append("rect")
+                          .attr("x", width - 17)
+                          .attr("width", 15)
+                          .attr("height", 15)
+                          .attr("fill", z_3)
+                          .attr("stroke", z_3)
+                          .attr("stroke-width",2)
+                          .on("click",function(d) { update(d) });
 
-                        // Parse the Data
-                        d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_stacked.csv", function(data) {
+                      legend_3.append("text")
+                          .attr("x", width - 24)
+                          .attr("y_3", 9.5)
+                          .attr("dy_3", "0.32em")
+                          .text(function(d) { return d; });
 
-                          // List of subgroups = header of the csv files = soil condition here
-                          var subgroups = data.columns.slice(1)
+                      var filtered = [];
 
-                          // List of groups = species here = value of the first column called group -> I show them on the X axis
-                          var groups = d3.map(data, function(d){return(d.group)}).keys()
+                      ////
+                      //// Update and transition on click:
+                      ////
 
-                          // Add X axis
-                          var x = d3.scaleBand()
-                              .domain(groups)
-                              .range([0, width])
-                              .padding([0.2])
-                          svg_3.append("g")
-                            .attr("transform", "translate(0," + height + ")")
-                            .call(d3.axisBottom(x).tickSizeOuter(0));
+                      function update(d) {
 
-                          // Add Y axis
-                          var y = d3.scaleLinear()
-                            .domain([0, 60])
-                            .range([ height, 0 ]);
-                          svg_3.append("g")
-                            .call(d3.axisLeft(y));
+                        //
+                        // Update the array_3 to filter the chart by_3:
+                        //
 
-                          // color palette = one color per subgroup
-                          var color = d3.scaleOrdinal()
-                            .domain(subgroups)
-                            .range(['#e41a1c','#377eb8','#4daf4a'])
+                        // add the clicked key_3 if not included:
+                        if (filtered.indexOf(d) == -1) {
+                         filtered.push(d);
+                          // if all bars_3 are un-checked, reset:
+                          if(filtered.length == key_3s.length) filtered = [];
+                        }
+                        // otherwise remove it:
+                        else {
+                          filtered.splice(filtered.indexOf(d), 1);
+                        }
 
-                          //stack the data? --> stack per subgroup
-                          var stackedData = d3.stack()
-                            .keys(subgroups)
-                            (data)
-
-                          // Show the bars
-                          svg_3.append("g")
-                            .selectAll("g")
-                            // Enter in the stack data = loop key per key = group per group
-                            .data(stackedData)
-                            .enter().append("g")
-                              .attr("fill", function(d) { return color(d.key); })
-                              .selectAll("rect")
-                              // enter a second time = loop subgroup per subgroup to add all rectangles
-                              .data(function(d) { return d; })
-                              .enter().append("rect")
-                                .attr("x", function(d) { return x(d.data.group); })
-                                .attr("y", function(d) { return y(d[1]); })
-                                .attr("height", function(d) { return y(d[0]) - y(d[1]); })
-                                .attr("width",x.bandwidth())
+                        //
+                        // Update the scales for each group(/states)'s items:
+                        //
+                        var newKey_3s = [];
+                        key_3s.forEach(function(d) {
+                          if (filtered.indexOf(d) == -1 ) {
+                            newKey_3s.push(d);
+                          }
                         })
+                        x1_3.domain(newKey_3s).rangeRound([0, x0_3.bandwidth()]);
+                        y_3.domain([0, d3.max(data, function(d) { return d3.max(key_3s, function(key_3) { if (filtered.indexOf(key_3) == -1) return d[key_3]; }); })]).nice();
 
-                        </script>
+                        // update the y_3 axis:
+                                svg3.select(".y_3")
+                                .transition()
+                                .call(d3.axisLeft(y_3).ticks(null, "s"))
+                                .duration(500);
+
+
+                        //
+                        // Filter out the bands that need to be hidden:
+                        //
+                        var bars_3 = svg3.selectAll(".bar").selectAll("rect")
+                          .data(function(d) { return key_3s.map(function(key_3) { return {key_3: key_3, value: d[key_3]}; }); })
+
+                       bars_3.filter(function(d) {
+                             return filtered.indexOf(d.key_3) > -1;
+                          })
+                          .transition()
+                          .attr("x", function(d) {
+                            return (+d3.select(this).attr("x")) + (+d3.select(this).attr("width"))/2;
+                          })
+                          .attr("height",0)
+                          .attr("width",0)
+                          .attr("y_3", function(d) { return height; })
+                          .duration(500);
+
+                        //
+                        // Adjust the remaining bars_3:
+                        //
+                        bars_3.filter(function(d) {
+                            return filtered.indexOf(d.key_3) == -1;
+                          })
+                          .transition()
+                          .attr("x", function(d) { return x1_3(d.key_3); })
+                          .attr("y_3", function(d) { return y_3(d.value); })
+                          .attr("height", function(d) { return height - y_3(d.value); })
+                          .attr("width", x1_3.bandwidth())
+                          .attr("fill", function(d) { return z_3(d.key_3); })
+                          .duration(500);
+
+
+                        // update legend_3:
+                        legend_3.selectAll("rect")
+                          .transition()
+                          .attr("fill",function(d) {
+                            if (filtered.length) {
+                              if (filtered.indexOf(d) == -1) {
+                                return z_3(d);
+                              }
+                               else {
+                                return "white";
+                              }
+                            }
+                            else {
+                             return z_3(d);
+                            }
+                          })
+                          .duration(100);
+
+
+                      }
+
+                    });
+                  </script>
+
 
 
 
                     </div>
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <h4 class="my-3">Filters and some Analysis</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         <span class="fa-stack fa-4x" style="margin-top: 10%;"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-lock fa-stack-1x fa-inverse"></i></span>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
