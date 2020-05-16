@@ -1,7 +1,9 @@
 var svg = d3.select("#svg3"),
     margin = 20,
-    diameter = +svg.attr("width"),
-    g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+    diameter = +svg.attr("width");
+
+const g = svg.select("g#bubble")
+g.attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
 var color = d3.scaleLinear()
     .domain([-1, 5])
@@ -12,7 +14,7 @@ var pack = d3.pack()
     .size([diameter - margin, diameter - margin])
     .padding(2);
 
-d3.json("bubble.json", function(error, root) {
+d3.json("data/bubble.json", function(error, root) {
   if (error) throw error;
 
   root = d3.hierarchy(root)
@@ -40,9 +42,7 @@ d3.json("bubble.json", function(error, root) {
 
   var node = g.selectAll("circle,text");
 
-  svg
-      .style("background", color(-1))
-      .on("click", function() { zoom(root); });
+  svg.on("click", function() { zoom(root); });
 
   zoomTo([root.x, root.y, root.r * 2 + margin]);
 

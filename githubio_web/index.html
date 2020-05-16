@@ -25,11 +25,11 @@
             }
             }
         </style>
-         <style>
-          .links line {
-              stroke: #999;
-              stroke-opacity: 0.6;
-            }
+        <style>
+            .links line {
+                stroke: #999;
+                stroke-opacity: 0.6;
+              }
 
             .nodes circle {
               stroke: #fff;
@@ -39,7 +39,8 @@
               display: none;
             }
 
-          </style>
+
+</style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -148,152 +149,15 @@
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-8">
+                    <div class="col-md-10">
                       <div id="my_dataviz_1"></div>
                       <svg width="960" height="800" font-family="sans-serif" font-size="10" id = "svg1"></svg>
                       <script src="https://d3js.org/d3.v4.min.js"></script>
 
-                      <script>
-
-                            var svg1 = d3.select("#svg1"),
-                                width = +svg1.attr("width"),
-                                height = +svg1.attr("height"),
-                                innerRadius = 180,
-                                outerRadius = Math.min(width, height) / 2.5,
-                                g_1 = svg1.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-
-                            var xScaleOffset = Math.PI * 75/180;
-                            var x = d3.scaleBand()
-                                .range([xScaleOffset, 2 * Math.PI + xScaleOffset])
-                                .align(0);
-
-                            var y = d3.scaleLinear()
-                                .range([innerRadius, outerRadius]);
-
-                            var z = d3.scaleOrdinal()
-                                .range(["#98abc5", "#8a89a6"]);
-
-                            var zClasses = ['Number of Starting transportation', 'Number of Finishing transportation'];
-
-                            d3.csv("data/time_routine.csv", function(d, i, columns) {
-                              d.start = (+d.start);
-                              d.end =  (+d.end);
-                              return d;
-                            }, function(error, data) {
-                              if (error) throw error;
-
-                              var keys = data.columns.slice(1);
-                              var meanAccidents = d3.mean(data, function(d) { return d3.sum(keys, function(key) { return d[key]; }); })
-
-                              x.domain(data.map(function(d) { return d.time; }));
-                              y.domain([0, d3.max(data, function(d) { return (d.start + d.end); })]);
-                              z.domain(data.columns.slice(1));
-
-                              g_1.append('g')
-                                  .selectAll("g")
-                                .data(d3.stack().keys(data.columns.slice(1))(data))
-                                .enter().append("g")
-                                  .attr("fill", function(d) { return z(d.key); })
-                                .selectAll("path")
-                                .data(function(d) { return d; })
-                                .enter().append("path")
-                                  .attr("d", d3.arc()
-                                      .innerRadius(function(d) { return y(d[0]); })
-                                      .outerRadius(function(d) { return y(d[1]); })
-                                      .startAngle(function(d) { return x(d.data.time); })
-                                      .endAngle(function(d) { return x(d.data.time) + x.bandwidth(); })
-                                      .padAngle(0.01)
-                                      .padRadius(innerRadius));
-
-                              //yAxis and Mean
-
-                              var yAxis = g_1.append("g")
-                                  .attr("text-anchor", "middle");
-
-                              var yTicksValues = d3.ticks(0, 40, 4);
-
-
-                              // Mean value line
-                              var yMeanTick = yAxis
-                                .append("g")
-                                .datum([meanAccidents]);
-
-                              yMeanTick.append("circle")
-                                  .attr("fill", "none")
-                                  .attr("stroke", "#C0625E")
-                                  .attr("stroke-dasharray", "5 3")
-                                  .attr("r", y);
-
-                              var yTick = yAxis
-                                .selectAll("g")
-                                .data(yTicksValues)
-                                .enter().append("g");
-
-                              yTick.append("circle")
-                                  .attr("fill", "none")
-                                  .attr("stroke", "#ccdcea")
-                                  .attr("r", y);
-
-                              yTick.append("text")
-                                  .attr("y", function(d) { return -y(d); })
-                                  .attr("dy", "0.35em")
-                                  .attr("fill", "none")
-                                  .attr("stroke", "#fff")
-                                  .attr("stroke-width", 5)
-                                  .text(y.tickFormat(5, "s"));
-
-                              yTick.append("text")
-                                  .attr("y", function(d) { return -y(d); })
-                                  .attr("dy", "0.35em")
-                                  .text(y.tickFormat(5, "s"));
-
-                              yAxis.append("text")
-                                  .attr("y", function(d) { return -y(yTicksValues.pop()); })
-                                  .attr("dy", "-2em")
-                                  .text("Number");
-
-                              // Labels for xAxis
-
-                              var label_1 = g_1.append("g")
-                                .selectAll("g")
-                                .data(data)
-                                .enter().append("g")
-                                  .attr("text-anchor", "middle")
-                                  .attr("transform", function(d) { return "rotate(" + ((x(d.time) + x.bandwidth() / 2) * 180 / Math.PI - 165) + ")translate(" + innerRadius + ",0)"; });
-
-                              label_1.append("line")
-                                  .attr("x2", function(d) { return (((d.time % 5) == 0) | (d.time == '1')) ? -7 : -4 })
-                                  .attr("stroke", "#000");
-
-                              label_1.append("text")
-                                  .attr("transform", function(d) { return (x(d.time) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)"; })
-                                  .text(function(d) {
-                                    var xlabel = (((d.time % 5) == 0) | (d.time == '1')) ? d.time : '';
-                                    return xlabel; });
-
-                            // Legend
-                             var legend_1 = g_1.append("g")
-                                .selectAll("g")
-                                .data(zClasses)
-                                .enter().append("g")
-                                  .attr("transform", function(d, i) { return "translate(-50," + (i - (zClasses.length - 1) / 2) * 25+ ")"; });
-
-                              legend_1.append("circle")
-                                  .attr("r", 8)
-                                  .attr("fill", z);
-
-                              legend_1.append("text")
-                                  .attr("x", 15)
-                                  .attr("y", 0)
-                                  .attr("dy", "0.35em")
-                                  .text(function(d) { return d; });
-
-                            });
-                          </script>
+                  <!--  <script type="text/javascript" src="static/js/routine.js">  </script> -->
 
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                         <h4 class="my-3">Filters and some Analysis</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         <span class="fa-stack fa-4x" style="margin-top: 10%;"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-lock fa-stack-1x fa-inverse"></i></span>
@@ -308,93 +172,25 @@
                     <h2 class="section-heading text-uppercase">Connectivity</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
 
-                    <svg width="1000" height="1000" id = 'svg2'></svg>
-                    <script>
+                    <div class="map_bundling">
+                      <script src="https://d3js.org/d3.v5.min.js"></script>
+                      <script src="https://unpkg.com/topojson@3"></script>
+                      <script src="https://unpkg.com/d3-delaunay@4"></script>
+                      <script src="https://unpkg.com/d3-geo-voronoi@1"></script>
+                      <link href="static/css/connectivity_style.css" rel="stylesheet">
+                    <!-- must be 960x600 to match topojson us atlas files -->
+                    <svg width="960" height="600" id = "svg2">
+                      <!-- must be in this order for drawing -->
+                      <g id="basemap"></g>
+                      <g id="trips"></g>
+                      <g id="stations"></g>
+                      <g id="voronoi"></g>
+                      <text id="tooltip" style="display: none;"></text>
+                    </svg>
 
-                    var svg2 = d3.select("#svg2"),
-                        width = +svg2.attr("width"),
-                        height = +svg2.attr("height");
+                    <script src="static/js/connectivity.js"></script>
 
-                    var color = d3.scaleOrdinal(d3.schemeCategory20);
-
-                    var simulation = d3.forceSimulation()
-                        .force("link", d3.forceLink().id(function(d) { return d.id; }))
-                        .force("charge", d3.forceManyBody())
-                        .force("center", d3.forceCenter(width / 2, height / 2));
-
-                    d3.json("data/force.json", function(error, graph) {
-                      if (error) throw error;
-
-                      var link = svg2.append("g")
-                          .attr("class", "links")
-                        .selectAll("line")
-                        .data(graph.links)
-                        .enter().append("line")
-                          .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
-
-                      var node = svg2.append("g")
-                          .attr("class", "nodes")
-                        .selectAll("g")
-                        .data(graph.nodes)
-                        .enter().append("g")
-
-                      var circles = node.append("circle")
-                          .attr("r", 5)
-                          .attr("fill", function(d) { return color(d.group); })
-                          .call(d3.drag()
-                              .on("start", dragstarted)
-                              .on("drag", dragged)
-                              .on("end", dragended));
-
-                      var lables = node.append("text")
-                          .text(function(d) {
-                            return d.id;
-                          })
-                          .attr('x', 6)
-                          .attr('y', 3);
-
-                      node.append("title")
-                          .text(function(d) { return d.id; });
-
-                      simulation
-                          .nodes(graph.nodes)
-                          .on("tick", ticked);
-
-                      simulation.force("link")
-                          .links(graph.links);
-
-                      function ticked() {
-                        link
-                            .attr("x1", function(d) { return d.source.x; })
-                            .attr("y1", function(d) { return d.source.y; })
-                            .attr("x2", function(d) { return d.target.x; })
-                            .attr("y2", function(d) { return d.target.y; });
-
-                        node
-                            .attr("transform", function(d) {
-                              return "translate(" + d.x + "," + d.y + ")";
-                            })
-                      }
-                    });
-
-                    function dragstarted(d) {
-                      if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-                      d.fx = d.x;
-                      d.fy = d.y;
-                    }
-
-                    function dragged(d) {
-                      d.fx = d3.event.x;
-                      d.fy = d3.event.y;
-                    }
-
-                    function dragended(d) {
-                      if (!d3.event.active) simulation.alphaTarget(0);
-                      d.fx = null;
-                      d.fy = null;
-                    }
-
-                  </script>
+                    </div>
 
                 </div>
 
@@ -407,9 +203,6 @@
                     </div>
                 </div>
 
-
-
-
             </div>
         </section>
         <!-- Transport Resources-->
@@ -421,212 +214,23 @@
                 </div>
 
                 <div class="row text-center">
-                    <div class="col-md-8">
-                    <div id="my_dataviz_3"></div>
-                    <svg width="960" height="500" id = "svg3"></svg>
-                    <script src="https://d3js.org/d3.v4.min.js" ></script>
+                   <link href="static/css/bubble_style.css" rel="stylesheet">
+                   <div class="col-md-8">
+                   <div id="my_dataviz_3"></div>
+                   <script src="https://d3js.org/d3.v4.min.js"></script>
+                   <svg width="960" height="960" id = "svg3">
+                   <g id="bubble">
+                   </g>
+                   </svg>
 
-                     <script>
-
-                    var svg3 = d3.select("#svg3"),
-                        margin = {top: 20, right: 20, bottom: 30, left: 40},
-                        width = +svg3.attr("width") - margin.left - margin.right,
-                        height = +svg3.attr("height") - margin.top - margin.bottom,
-                        g_3 = svg3.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-                    // The scale spacing the groups:
-                    var x0_3 = d3.scaleBand()
-                        .rangeRound([0, width])
-                        .paddingInner(0.1);
-
-                    // The scale for spacing each group's bar:
-                    var x1_3 = d3.scaleBand()
-                        .padding(0.05);
-
-                    var y_3 = d3.scaleLinear()
-                        .rangeRound([height, 0]);
-
-                    var z_3 = d3.scaleOrdinal()
-                        .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#9b056b"]);
-
-                    d3.csv("data/canton_tt.csv", function(d, i, columns) {
-                      for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
-                      return d;
-                    }, function(error, data) {
-                      if (error) throw error;
-
-                      var key_3s = data.columns.slice(1);
-
-                      x0_3.domain(data.map(function(d) { return d.State; }));
-                      x1_3.domain(key_3s).rangeRound([0, x0_3.bandwidth()]);
-                      y_3.domain([0, d3.max(data, function(d) { return d3.max(key_3s, function(key_3) { return d[key_3]; }); })]).nice();
-
-                     g_3.append("g")
-                        .selectAll("g")
-                        .data(data)
-                        .enter().append("g")
-                        .attr("class","bar")
-                        .attr("transform", function(d) { return "translate(" + x0_3(d.State) + ",0)"; })
-                        .selectAll("rect")
-                        .data(function(d) { return key_3s.map(function(key_3) { return {key_3: key_3, value: d[key_3]}; }); })
-                        .enter().append("rect")
-                          .attr("x", function(d) { return x1_3(d.key_3); })
-                          .attr("y_3", function(d) { return y_3(d.value); })
-                          .attr("width", x1_3.bandwidth())
-                          .attr("height", function(d) { return height - y_3(d.value); })
-                          .attr("fill", function(d) { return z_3(d.key_3); });
-
-                      g_3.append("g")
-                          .attr("class", "axis")
-                          .attr("transform", "translate(0," + height + ")")
-                          .call(d3.axisBottom(x0_3));
-
-                      g_3.append("g")
-                          .attr("class", "y_3 axis")
-                          .call(d3.axisLeft(y_3).ticks(null, "s"))
-                        .append("text")
-                          .attr("x", 2)
-                          .attr("y_3", y_3(y_3.ticks().pop()) + 0.5)
-                          .attr("dy_3", "0.32em")
-                          .attr("fill", "#000")
-                          .attr("font-weight", "bold")
-                          .attr("text-anchor", "start")
-                          .text("Number of stations");
-
-
-
-                      var legend_3 = g_3.append("g")
-                          .attr("font-family_3", "sans-serif")
-                          .attr("font-siz_3e", 10)
-                          .attr("text-anchor", "end")
-                        .selectAll("g")
-                        .data(key_3s.slice().reverse())
-                        .enter().append("g")
-                          .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-                      legend_3.append("rect")
-                          .attr("x", width - 17)
-                          .attr("width", 15)
-                          .attr("height", 15)
-                          .attr("fill", z_3)
-                          .attr("stroke", z_3)
-                          .attr("stroke-width",2)
-                          .on("click",function(d) { update(d) });
-
-                      legend_3.append("text")
-                          .attr("x", width - 24)
-                          .attr("y_3", 9.5)
-                          .attr("dy_3", "0.32em")
-                          .text(function(d) { return d; });
-
-                      var filtered = [];
-
-                      ////
-                      //// Update and transition on click:
-                      ////
-
-                      function update(d) {
-
-                        //
-                        // Update the array_3 to filter the chart by_3:
-                        //
-
-                        // add the clicked key_3 if not included:
-                        if (filtered.indexOf(d) == -1) {
-                         filtered.push(d);
-                          // if all bars_3 are un-checked, reset:
-                          if(filtered.length == key_3s.length) filtered = [];
-                        }
-                        // otherwise remove it:
-                        else {
-                          filtered.splice(filtered.indexOf(d), 1);
-                        }
-
-                        //
-                        // Update the scales for each group(/states)'s items:
-                        //
-                        var newKey_3s = [];
-                        key_3s.forEach(function(d) {
-                          if (filtered.indexOf(d) == -1 ) {
-                            newKey_3s.push(d);
-                          }
-                        })
-                        x1_3.domain(newKey_3s).rangeRound([0, x0_3.bandwidth()]);
-                        y_3.domain([0, d3.max(data, function(d) { return d3.max(key_3s, function(key_3) { if (filtered.indexOf(key_3) == -1) return d[key_3]; }); })]).nice();
-
-                        // update the y_3 axis:
-                                svg3.select(".y_3")
-                                .transition()
-                                .call(d3.axisLeft(y_3).ticks(null, "s"))
-                                .duration(500);
-
-
-                        //
-                        // Filter out the bands that need to be hidden:
-                        //
-                        var bars_3 = svg3.selectAll(".bar").selectAll("rect")
-                          .data(function(d) { return key_3s.map(function(key_3) { return {key_3: key_3, value: d[key_3]}; }); })
-
-                       bars_3.filter(function(d) {
-                             return filtered.indexOf(d.key_3) > -1;
-                          })
-                          .transition()
-                          .attr("x", function(d) {
-                            return (+d3.select(this).attr("x")) + (+d3.select(this).attr("width"))/2;
-                          })
-                          .attr("height",0)
-                          .attr("width",0)
-                          .attr("y_3", function(d) { return height; })
-                          .duration(500);
-
-                        //
-                        // Adjust the remaining bars_3:
-                        //
-                        bars_3.filter(function(d) {
-                            return filtered.indexOf(d.key_3) == -1;
-                          })
-                          .transition()
-                          .attr("x", function(d) { return x1_3(d.key_3); })
-                          .attr("y_3", function(d) { return y_3(d.value); })
-                          .attr("height", function(d) { return height - y_3(d.value); })
-                          .attr("width", x1_3.bandwidth())
-                          .attr("fill", function(d) { return z_3(d.key_3); })
-                          .duration(500);
-
-
-                        // update legend_3:
-                        legend_3.selectAll("rect")
-                          .transition()
-                          .attr("fill",function(d) {
-                            if (filtered.length) {
-                              if (filtered.indexOf(d) == -1) {
-                                return z_3(d);
-                              }
-                               else {
-                                return "white";
-                              }
-                            }
-                            else {
-                             return z_3(d);
-                            }
-                          })
-                          .duration(100);
-
-
-                      }
-
-                    });
-                  </script>
-
-
-
+                   <script type="text/javascript" src="static/js/bubble.js"></script>
 
                     </div>
-                    <!-- <div class="col-md-4">
+                     <div class="col-md-4">
                         <h4 class="my-3">Filters and some Analysis</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         <span class="fa-stack fa-4x" style="margin-top: 10%;"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-lock fa-stack-1x fa-inverse"></i></span>
-                    </div> -->
+                    </div>
                 </div>
 
             </div>
@@ -666,25 +270,7 @@
                 </div>
             </div>
         </section>
-        <!-- Clients-->
-        <section class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid d-block mx-auto" src="static/template_assets/img/logos/envato.jpg" alt="" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid d-block mx-auto" src="static/template_assets/img/logos/designmodo.jpg" alt="" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid d-block mx-auto" src="static/template_assets/img/logos/themeforest.jpg" alt="" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid d-block mx-auto" src="static/template_assets/img/logos/creative-market.jpg" alt="" /></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
