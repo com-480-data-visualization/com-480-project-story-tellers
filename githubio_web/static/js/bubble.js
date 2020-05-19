@@ -1,9 +1,9 @@
-var svg = d3.select("#svg3"),
+var svg3 = d3.select("#svg3"),
     margin = 20,
-    diameter = +svg.attr("width");
+    diameter = +svg3.attr("width");
 
-const g = svg.select("g#bubble")
-g.attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+const g3 = svg3.select("g#bubble")
+g3.attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
 var color = d3.scaleLinear()
     .domain([-1, 5])
@@ -25,14 +25,14 @@ d3.json("data/bubble.json", function(error, root) {
       nodes = pack(root).descendants(),
       view;
 
-  var circle = g.selectAll("circle")
+  var circle = g3.selectAll("circle")
     .data(nodes)
     .enter().append("circle")
       .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
       .style("fill", function(d) { return d.children ? color(d.depth) : null; })
       .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
 
-  var text = g.selectAll("text")
+  var text = g3.selectAll("text")
     .data(nodes)
     .enter().append("text")
       .attr("class", "label")
@@ -40,9 +40,9 @@ d3.json("data/bubble.json", function(error, root) {
       .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
       .text(function(d) { return d.data.name; });
 
-  var node = g.selectAll("circle,text");
+  var node = g3.selectAll("circle,text");
 
-  svg.on("click", function() { zoom(root); });
+  svg3.on("click", function() { zoom(root); });
 
   zoomTo([root.x, root.y, root.r * 2 + margin]);
 

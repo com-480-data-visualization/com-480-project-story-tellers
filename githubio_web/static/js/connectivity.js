@@ -9,17 +9,17 @@ const urls = {
     "data/trips.csv"
 };
 
-const svg  = d3.select("#svg2");
+const svg2  = d3.select("#svg2");
 
-const width  = parseInt(svg.attr("width"));
-const height = parseInt(svg.attr("height"));
-const hypotenuse = Math.sqrt(width * width + height * height);
+const width2  = parseInt(svg2.attr("width"));
+const height2 = parseInt(svg2.attr("height"));
+const hypotenuse = Math.sqrt(width2 * width2 + height2 * height2);
 
 const projection = d3.geoAlbers()
                       .rotate([0, 0])
                       .center([8.3, 46.8])
                       .scale(16000)
-                      .translate([width / 2, height / 2])
+                      .translate([width2 / 2, height2 / 2])
                       .precision(.1);
 
 const path = d3.geoPath().projection(projection);
@@ -36,10 +36,10 @@ const scales = {
 
 // have these already created for easier drawing
 const g = {
-  basemap:  svg.select("g#basemap"),
-  trips:  svg.select("g#trips"),
-  stations: svg.select("g#stations"),
-  voronoi:  svg.select("g#voronoi")
+  basemap:  svg2.select("g#basemap"),
+  trips:  svg2.select("g#trips"),
+  stations: svg2.select("g#stations"),
+  voronoi:  svg2.select("g#voronoi")
 };
 
 console.assert(g.basemap.size()  === 1);
@@ -184,7 +184,7 @@ function drawPolygons(stations) {
       if (bbox.x <= 0) {
         tooltip.attr("text-anchor", "start");
       }
-      else if (bbox.x + bbox.width >= width) {
+      else if (bbox.x + bbox.width >= width2) {
         tooltip.attr("text-anchor", "end");
       }
 
