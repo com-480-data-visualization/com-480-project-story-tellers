@@ -1,8 +1,8 @@
 {
-  "center.x": 8.55,
-  "center.y": 47.26,
+  "center.x": 8.53,
+  "center.y": 47.37,
   "map_type_id": "roadmap",
-  "zoom.start": 10,
+  "zoom.start": 14,
   "zoom.min": 7,
   "zoom.max": 20,
   "zoom.to_stops": 17,
@@ -17,110 +17,98 @@
   "zoom.satellite.shapes_max": 18,
   "zoom.vehicle_follow": 17,
   "zoom.vehicle_mouseover_min": 7,
-  "ft_layer_ids.mask": "1tDHsjdz7uhhAmWlmmwjR1P2Huf2LKMMiICPVdw",
-  "ft_layer_ids.gtfs_shapes": null,
-  "ft_layer_ids.gtfs_stops": null,
-  "ft_layer_ids.topology_edges": "1-1B2tYIO2JSnaacEHO8sfWVjm1S387lMEkHkjc4",
-  "ft_layer_ids.topology_stations": "1YppDCNud7566oK_VwHsuUhGJqnm_CLDStMS3IuM",
-  "api_paths.trips": "api/demo/trips.json",
+  "ft_layer_ids.mask": null,
+  "ft_layer_ids.gtfs_shapes": true,
+  "ft_layer_ids.gtfs_stops": true,
+  "ft_layer_ids.swswitzerland":true,
+  "ft_layer_ids.topology_edges": null,
+  "ft_layer_ids.topology_stations": null,
+  "api_paths.trips": "https://storytellers.amigaze.com/api/inc/controllers/trips.php?hhmm=[hhmm]&ymd=[ymd]&vtype=[vtype]",
   "api_paths.departures": null,
-  "geojson.gtfs_shapes": null,
-  "geojson.gtfs_stops": null,
-  "geojson.topology_edges": "api/geojson/edges.geojson",
-  "geojson.topology_stations": "api/geojson/stations.geojson",
+  "geojson.gtfs_shapes": "api/gtfs-data/gtfs_shapes.geojson",
+  "geojson.gtfs_stops": "api/gtfs-data/gtfs_stops.geojson",
+  "geojson.gtfs_stops_train": "api/gtfs-data/stations_trains.geojson",
+  "geojson.gtfs_stops_tram": "api/gtfs-data/stations_trams.geojson",
+  "geojson.gtfs_stops_ferry": "api/gtfs-data/stations_ferry.geojson",
+  "geojson.gtfs_stops_gondola": "api/gtfs-data/stations_gondola.geojson",
+  "geojson.gtfs_switzerland":"api/switzerland-geojson-master/country/switzerland.geojson" ,
+  "geojson.topology_edges": null,
+  "geojson.topology_stations": null,
   "routes": {
-    "cnl": {
-      "icon": "static/images/route_icons/demo/cnl.png",
+    "general": {
+      "icon": "static/images/route_icons/demo/cir.png",
+          "route_short_name": "",
+          "route_color": "0178BC",
+          "route_text_color": "FFFFFF"
+    },
+    "Eurocity": {
+      "icon": "static/images/route_icons/demo/0.png",
+          "route_short_name": "",
+          "route_color": "0178BC",
+          "route_text_color": "FFFFFF"
+    },
+    "Extrazug": {
+      "icon": "static/images/route_icons/demo/1.png",
       "route_short_name": "",
       "route_color": "0178BC",
       "route_text_color": "FFFFFF"
     },
-    "d": {
-      "icon": "static/images/route_icons/demo/d.png",
+    "ICE": {
+      "icon": "static/images/route_icons/demo/5.png",
       "route_short_name": "",
       "route_color": "0178BC",
       "route_text_color": "FFFFFF"
     },
-    "ec": {
-      "icon": "static/images/route_icons/demo/ec.png",
+    "InterRegio": {
+      "icon": "static/images/route_icons/demo/g0.png",
       "route_short_name": "",
       "route_color": "0178BC",
       "route_text_color": "FFFFFF"
     },
-    "en": {
-      "icon": "static/images/route_icons/demo/en.png",
+    "Intercity": {
+      "icon": "static/images/route_icons/demo/g2.png",
       "route_short_name": "",
       "route_color": "0178BC",
       "route_text_color": "FFFFFF"
     },
-    "ext": {
-      "icon": "static/images/route_icons/demo/ext.png",
+    "RegioExpress": {
+      "icon": "static/images/route_icons/demo/g3.png",
       "route_short_name": "",
       "route_color": "0178BC",
       "route_text_color": "FFFFFF"
     },
-    "ic": {
-      "icon": "static/images/route_icons/demo/ic.png",
+    "Regionalzug": {
+      "icon": "static/images/route_icons/demo/g4.png",
       "route_short_name": "",
       "route_color": "0178BC",
       "route_text_color": "FFFFFF"
     },
-    "ice": {
-      "icon": "static/images/route_icons/demo/ice.png",
+    "Standseilbahn": {
+      "icon": "static/images/route_icons/demo/g1.png",
       "route_short_name": "",
       "route_color": "0178BC",
       "route_text_color": "FFFFFF"
     },
-    "icn": {
-      "icon": "static/images/route_icons/demo/icn.png",
+    "S-N": {
+      "icon": "static/images/route_icons/demo/g5.png",
       "route_short_name": "",
       "route_color": "0178BC",
       "route_text_color": "FFFFFF"
     },
-    "ir": {
-      "icon": "static/images/route_icons/demo/ir.png",
+    "TER200": {
+      "icon": "static/images/route_icons/demo/2.png",
       "route_short_name": "",
       "route_color": "0178BC",
       "route_text_color": "FFFFFF"
     },
-    "ire": {
-      "icon": "static/images/route_icons/demo/ire.png",
+    "TGV": {
+      "icon": "static/images/route_icons/demo/4.png",
       "route_short_name": "",
       "route_color": "0178BC",
       "route_text_color": "FFFFFF"
     },
-    "r": {
-      "icon": "static/images/route_icons/demo/r.png",
-      "route_short_name": "",
-      "route_color": "0178BC",
-      "route_text_color": "FFFFFF"
-    },
-    "re": {
-      "icon": "static/images/route_icons/demo/re.png",
-      "route_short_name": "",
-      "route_color": "0178BC",
-      "route_text_color": "FFFFFF"
-    },
-    "rj": {
-      "icon": "static/images/route_icons/demo/rj.png",
-      "route_short_name": "",
-      "route_color": "0178BC",
-      "route_text_color": "FFFFFF"
-    },
-    "s": {
-      "icon": "static/images/route_icons/demo/s.png",
-      "route_short_name": "",
-      "route_color": "0178BC",
-      "route_text_color": "FFFFFF"
-    },
-    "tgv": {
-      "icon": "static/images/route_icons/demo/tgv.png",
-      "route_short_name": "",
-      "route_color": "0178BC",
-      "route_text_color": "FFFFFF"
-    },
-    "zug": {
-      "icon": "static/images/route_icons/demo/zug.png",
+    "Zahnradbahn": {
+      "icon": "static/images/route_icons/demo/6.png",
       "route_short_name": "",
       "route_color": "0178BC",
       "route_text_color": "FFFFFF"

@@ -1,0 +1,5669 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.731367,47.484461 ]
+    },
+    "properties": {
+    "station_id":8500023,
+    "station_name":"Liestal",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.589179,47.49286 ]
+    },
+    "properties": {
+    "station_id":8500051,
+    "station_name":"Reinach BL, Dorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.575159,47.53732 ]
+    },
+    "properties": {
+    "station_id":8500060,
+    "station_name":"Binningen, Schloss",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.573439,47.532432 ]
+    },
+    "properties": {
+    "station_id":8500061,
+    "station_name":"Binningen, Bottmingermühle",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.571609,47.52428 ]
+    },
+    "properties": {
+    "station_id":8500062,
+    "station_name":"Bottmingen, Schloss",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.559309,47.51476 ]
+    },
+    "properties": {
+    "station_id":8500063,
+    "station_name":"Oberwil BL, Zentrum",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.557179,47.49933 ]
+    },
+    "properties": {
+    "station_id":8500064,
+    "station_name":"Therwil, Zentrum",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.546009,47.48378 ]
+    },
+    "properties": {
+    "station_id":8500065,
+    "station_name":"Ettingen, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.522219,47.4874 ]
+    },
+    "properties": {
+    "station_id":8500066,
+    "station_name":"Witterswil, Station",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.509969,47.48915 ]
+    },
+    "properties": {
+    "station_id":8500067,
+    "station_name":"Bättwil, Dorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.499169,47.48905 ]
+    },
+    "properties": {
+    "station_id":8500068,
+    "station_name":"Flüh, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.459069,47.481 ]
+    },
+    "properties": {
+    "station_id":8500070,
+    "station_name":"Rodersdorf, Station",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.578037,47.543723 ]
+    },
+    "properties": {
+    "station_id":8500071,
+    "station_name":"Binningen, Dorenbach",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.555269,47.50654 ]
+    },
+    "properties": {
+    "station_id":8500072,
+    "station_name":"Oberwil BL, Hüslimatt",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.594849,47.5513 ]
+    },
+    "properties": {
+    "station_id":8500073,
+    "station_name":"Basel, Aeschenplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.619499,47.51211 ]
+    },
+    "properties": {
+    "station_id":8500076,
+    "station_name":"Münchenstein, Dorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.618869,47.49446 ]
+    },
+    "properties": {
+    "station_id":8500077,
+    "station_name":"Arlesheim, Dorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.588049,47.55127 ]
+    },
+    "properties": {
+    "station_id":8500079,
+    "station_name":"Basel, Heuwaage",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.749769,47.45144 ]
+    },
+    "properties": {
+    "station_id":8500080,
+    "station_name":"Talhaus",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.744719,47.47641 ]
+    },
+    "properties": {
+    "station_id":8500081,
+    "station_name":"Altmarkt",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.741539,47.45959 ]
+    },
+    "properties": {
+    "station_id":8500082,
+    "station_name":"Bubendorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.761209,47.44251 ]
+    },
+    "properties": {
+    "station_id":8500083,
+    "station_name":"Lampenberg-Ramlinsburg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.771139,47.42742 ]
+    },
+    "properties": {
+    "station_id":8500084,
+    "station_name":"Hölstein",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.751859,47.40439 ]
+    },
+    "properties": {
+    "station_id":8500085,
+    "station_name":"Niederdorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.748909,47.39212 ]
+    },
+    "properties": {
+    "station_id":8500086,
+    "station_name":"Oberdorf BL",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.748849,47.38628 ]
+    },
+    "properties": {
+    "station_id":8500087,
+    "station_name":"Waldenburg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.748829,47.39714 ]
+    },
+    "properties": {
+    "station_id":8500088,
+    "station_name":"Oberdorf BL Winkelweg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.767809,47.42297 ]
+    },
+    "properties": {
+    "station_id":8500092,
+    "station_name":"Hölstein Süd",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.763479,47.41883 ]
+    },
+    "properties": {
+    "station_id":8500093,
+    "station_name":"Hölstein Weidbächli",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.755189,47.41013 ]
+    },
+    "properties": {
+    "station_id":8500094,
+    "station_name":"Hirschlang",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.618149,47.51962 ]
+    },
+    "properties": {
+    "station_id":8500095,
+    "station_name":"Münchenstein, Hofmatt",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.608819,47.53717 ]
+    },
+    "properties": {
+    "station_id":8500096,
+    "station_name":"Basel, Dreispitz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.572949,47.57595 ]
+    },
+    "properties": {
+    "station_id":8500138,
+    "station_name":"Basel, St-Louis Grenze",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.58746,47.545537 ]
+    },
+    "properties": {
+    "station_id":8500146,
+    "station_name":"Basel, Bhfeingang Gundeldingen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.597996,47.541916 ]
+    },
+    "properties": {
+    "station_id":8500147,
+    "station_name":"Basel, Heiliggeistkirche",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.584368,47.546674 ]
+    },
+    "properties": {
+    "station_id":8500160,
+    "station_name":"Basel, IWB",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.594186,47.542857 ]
+    },
+    "properties": {
+    "station_id":8500161,
+    "station_name":"Basel, Tellplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.590962,47.544174 ]
+    },
+    "properties": {
+    "station_id":8500189,
+    "station_name":"Basel, Solothurnerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.585994,47.548875 ]
+    },
+    "properties": {
+    "station_id":8500193,
+    "station_name":"Basel, Markthalle",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.591659,47.485911 ]
+    },
+    "properties": {
+    "station_id":8500233,
+    "station_name":"Reinach BL, Süd",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.602097,47.506331 ]
+    },
+    "properties": {
+    "station_id":8500234,
+    "station_name":"Reinach BL, Surbaum",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.611445,47.532031 ]
+    },
+    "properties": {
+    "station_id":8500235,
+    "station_name":"Münchenstein, Freilager",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.598028,47.548167 ]
+    },
+    "properties": {
+    "station_id":8500236,
+    "station_name":"Basel, Denkmal",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.592249,47.55361 ]
+    },
+    "properties": {
+    "station_id":8500237,
+    "station_name":"Basel, Bankverein",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.591708,47.577288 ]
+    },
+    "properties": {
+    "station_id":8500254,
+    "station_name":"Basel, Wiesenplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.596899,47.46957 ]
+    },
+    "properties": {
+    "station_id":8500255,
+    "station_name":"Aesch BL, Dorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.647266,47.526423 ]
+    },
+    "properties": {
+    "station_id":8500256,
+    "station_name":"Muttenz, Dorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.610869,47.489122 ]
+    },
+    "properties": {
+    "station_id":8500692,
+    "station_name":"Dornach, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.589053,47.554591 ]
+    },
+    "properties": {
+    "station_id":8500897,
+    "station_name":"Basel, Barfüsserplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.593577,47.561771 ]
+    },
+    "properties": {
+    "station_id":8500898,
+    "station_name":"Basel, Claraplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.599615,47.563454 ]
+    },
+    "properties": {
+    "station_id":8500899,
+    "station_name":"Basel, Messeplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.589779,47.553124 ]
+    },
+    "properties": {
+    "station_id":8500994,
+    "station_name":"Basel, Theater",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.513917,47.370293 ]
+    },
+    "properties": {
+    "station_id":8502572,
+    "station_name":"Zürich, Goldbrunnenplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.548129,47.36635 ]
+    },
+    "properties": {
+    "station_id":8503059,
+    "station_name":"Zürich Stadelhofen FB",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.56028,47.368089 ]
+    },
+    "properties": {
+    "station_id":8503083,
+    "station_name":"Zürich, Römerhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.495378,47.368152 ]
+    },
+    "properties": {
+    "station_id":8503610,
+    "station_name":"Zürich, Triemli",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.476799,46.93676 ]
+    },
+    "properties": {
+    "station_id":8507050,
+    "station_name":"Bern, Egghölzli",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.498009,46.93492 ]
+    },
+    "properties": {
+    "station_id":8507052,
+    "station_name":"Gümligen, Melchenbühl (Tram)",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.516729,46.93261 ]
+    },
+    "properties": {
+    "station_id":8507053,
+    "station_name":"Gümligen, Siloah",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.531009,46.92982 ]
+    },
+    "properties": {
+    "station_id":8507054,
+    "station_name":"Rüfenacht",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.544229,46.9273 ]
+    },
+    "properties": {
+    "station_id":8507055,
+    "station_name":"Langenloh",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.449209,46.9439 ]
+    },
+    "properties": {
+    "station_id":8507060,
+    "station_name":"Bern, Helvetiaplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.463719,46.94118 ]
+    },
+    "properties": {
+    "station_id":8507061,
+    "station_name":"Bern, Brunnadernstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.486409,46.93141 ]
+    },
+    "properties": {
+    "station_id":8507062,
+    "station_name":"Muri bei Bern",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.562469,46.92998 ]
+    },
+    "properties": {
+    "station_id":8507063,
+    "station_name":"Worb Dorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.447499,46.94784 ]
+    },
+    "properties": {
+    "station_id":8507110,
+    "station_name":"Bern, Zytglogge",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.526209,46.93083 ]
+    },
+    "properties": {
+    "station_id":8507250,
+    "station_name":"Scheyenholz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.492529,46.93302 ]
+    },
+    "properties": {
+    "station_id":8507251,
+    "station_name":"Gümligen, Seidenberg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.395089,46.947395 ]
+    },
+    "properties": {
+    "station_id":8507993,
+    "station_name":"Bethlehem b. Bern, Säge",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.45491,46.958872 ]
+    },
+    "properties": {
+    "station_id":8508075,
+    "station_name":"Bern, Breitenrain",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.626451,47.535596 ]
+    },
+    "properties": {
+    "station_id":8517409,
+    "station_name":"Muttenz, Freidorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.629656,47.533136 ]
+    },
+    "properties": {
+    "station_id":8517410,
+    "station_name":"Muttenz, Käppeli",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.656143,47.524905 ]
+    },
+    "properties": {
+    "station_id":8517411,
+    "station_name":"Muttenz, Rothausstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.641127,47.528754 ]
+    },
+    "properties": {
+    "station_id":8517412,
+    "station_name":"Muttenz, Schützenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.637668,47.530703 ]
+    },
+    "properties": {
+    "station_id":8517413,
+    "station_name":"Muttenz, Zum Park",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.691803,47.52119 ]
+    },
+    "properties": {
+    "station_id":8517414,
+    "station_name":"Pratteln, Bahnhofstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.686228,47.521445 ]
+    },
+    "properties": {
+    "station_id":8517415,
+    "station_name":"Pratteln, Gempenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.679271,47.521396 ]
+    },
+    "properties": {
+    "station_id":8517416,
+    "station_name":"Pratteln, Kästeli",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.670877,47.520892 ]
+    },
+    "properties": {
+    "station_id":8517417,
+    "station_name":"Pratteln, Lachmatt",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.565423,47.55676 ]
+    },
+    "properties": {
+    "station_id":8519559,
+    "station_name":"Basel, Depot Allschwilerstr.",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.607137,47.538773 ]
+    },
+    "properties": {
+    "station_id":8519560,
+    "station_name":"Basel, Depot Dreispitz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.592454,47.577665 ]
+    },
+    "properties": {
+    "station_id":8519562,
+    "station_name":"Basel, Depot Wiesenplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.510899,46.93277 ]
+    },
+    "properties": {
+    "station_id":8530259,
+    "station_name":"Gümligen, Hofgut",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.610109,47.52218 ]
+    },
+    "properties": {
+    "station_id":8530777,
+    "station_name":"Münchenstein, Loogstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.57502,47.354578 ]
+    },
+    "properties": {
+    "station_id":8530811,
+    "station_name":"Zürich Balgrist",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.560622,47.36169 ]
+    },
+    "properties": {
+    "station_id":8530812,
+    "station_name":"Zürich Hegibachplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.554082,47.364875 ]
+    },
+    "properties": {
+    "station_id":8530813,
+    "station_name":"Zürich Kreuzplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.393432,46.949193 ]
+    },
+    "properties": {
+    "station_id":8571344,
+    "station_name":"Bethlehem b. Bern, Kirche",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.430988,46.941143 ]
+    },
+    "properties": {
+    "station_id":8571393,
+    "station_name":"Bern, Eigerplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.452642,46.928027 ]
+    },
+    "properties": {
+    "station_id":8571395,
+    "station_name":"Wabern, Tram-Endstation",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.382464,46.948658 ]
+    },
+    "properties": {
+    "station_id":8571435,
+    "station_name":"Bethlehem b. Bern, Holenacker",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.390419,46.940098 ]
+    },
+    "properties": {
+    "station_id":8571436,
+    "station_name":"Bümpliz, Bachmätteli",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.563746,47.450161 ]
+    },
+    "properties": {
+    "station_id":8573205,
+    "station_name":"Zürich Flughafen, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.561824,47.437632 ]
+    },
+    "properties": {
+    "station_id":8573244,
+    "station_name":"Glattbrugg, Unterriet",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.524189,47.371429 ]
+    },
+    "properties": {
+    "station_id":8573710,
+    "station_name":"Zürich Wiedikon, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.560994,47.350416 ]
+    },
+    "properties": {
+    "station_id":8576182,
+    "station_name":"Zürich Tiefenbrunnen, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.545112,47.367093 ]
+    },
+    "properties": {
+    "station_id":8576193,
+    "station_name":"Zürich, Bellevue",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.547646,47.365414 ]
+    },
+    "properties": {
+    "station_id":8576195,
+    "station_name":"Zürich, Opernhaus",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.549796,47.363188 ]
+    },
+    "properties": {
+    "station_id":8576196,
+    "station_name":"Zürich, Kreuzstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.552058,47.360514 ]
+    },
+    "properties": {
+    "station_id":8576197,
+    "station_name":"Zürich, Feldeggstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.554203,47.357992 ]
+    },
+    "properties": {
+    "station_id":8576198,
+    "station_name":"Zürich, Höschgasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.556897,47.355169 ]
+    },
+    "properties": {
+    "station_id":8576199,
+    "station_name":"Zürich, Fröhlichstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.558866,47.353187 ]
+    },
+    "properties": {
+    "station_id":8576200,
+    "station_name":"Zürich, Wildbachstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.499375,47.402009 ]
+    },
+    "properties": {
+    "station_id":8576240,
+    "station_name":"Zürich, Meierhofplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.440208,46.948105 ]
+    },
+    "properties": {
+    "station_id":8576646,
+    "station_name":"Bern, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.464054,46.959599 ]
+    },
+    "properties": {
+    "station_id":8576990,
+    "station_name":"Bern, Guisanplatz Expo",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.468143,46.964905 ]
+    },
+    "properties": {
+    "station_id":8576996,
+    "station_name":"Bern, Wankdorfplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.590297,47.548285 ]
+    },
+    "properties": {
+    "station_id":8578143,
+    "station_name":"Basel, Bahnhof SBB",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.573297,47.565727 ]
+    },
+    "properties": {
+    "station_id":8578144,
+    "station_name":"Basel, Kannenfeldplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.5717,47.538046 ]
+    },
+    "properties": {
+    "station_id":8578152,
+    "station_name":"Binningen, Kronenplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.556842,47.545572 ]
+    },
+    "properties": {
+    "station_id":8578157,
+    "station_name":"Basel, Neuweilerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.539759,47.552117 ]
+    },
+    "properties": {
+    "station_id":8578160,
+    "station_name":"Allschwil, Binningerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.56498,47.566267 ]
+    },
+    "properties": {
+    "station_id":8578168,
+    "station_name":"Basel, Felix Platter-Spital",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.544263,47.552536 ]
+    },
+    "properties": {
+    "station_id":8578174,
+    "station_name":"Allschwil, Gartenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.573348,47.527719 ]
+    },
+    "properties": {
+    "station_id":8578176,
+    "station_name":"Bottmingen, Batteriestrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.616283,47.525359 ]
+    },
+    "properties": {
+    "station_id":8578186,
+    "station_name":"Münchenstein, Birseckstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.593432,47.493436 ]
+    },
+    "properties": {
+    "station_id":8578218,
+    "station_name":"Reinach BL, Landererstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.61475,47.555491 ]
+    },
+    "properties": {
+    "station_id":8578306,
+    "station_name":"Basel, Breite",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.622924,47.55278 ]
+    },
+    "properties": {
+    "station_id":8578340,
+    "station_name":"Birsfelden, Schulstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.694206,47.521059 ]
+    },
+    "properties": {
+    "station_id":8578352,
+    "station_name":"Pratteln, Schlossstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.437778,46.946063 ]
+    },
+    "properties": {
+    "station_id":8579896,
+    "station_name":"Bern, Hirschengraben",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.434048,46.945883 ]
+    },
+    "properties": {
+    "station_id":8579897,
+    "station_name":"Bern, Kocherpark",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.400701,46.942189 ]
+    },
+    "properties": {
+    "station_id":8579898,
+    "station_name":"Bümpliz, Unterführung",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.39705,46.942278 ]
+    },
+    "properties": {
+    "station_id":8579899,
+    "station_name":"Bümpliz, Höhe",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.392953,46.941511 ]
+    },
+    "properties": {
+    "station_id":8579900,
+    "station_name":"Bümpliz, Post",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.38602,46.939475 ]
+    },
+    "properties": {
+    "station_id":8579901,
+    "station_name":"Bümpliz, Statthalterstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.58121,47.557974 ]
+    },
+    "properties": {
+    "station_id":8580373,
+    "station_name":"Basel, Spalentor",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.544789,47.411496 ]
+    },
+    "properties": {
+    "station_id":8580449,
+    "station_name":"Zürich Oerlikon, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.522398,47.390795 ]
+    },
+    "properties": {
+    "station_id":8580522,
+    "station_name":"Zürich, Escher-Wyss-Platz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.451645,46.928666 ]
+    },
+    "properties": {
+    "station_id":8580567,
+    "station_name":"Wabern, Eichholz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.501841,47.368903 ]
+    },
+    "properties": {
+    "station_id":8580912,
+    "station_name":"Zürich, Schaufelbergerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.406309,46.943252 ]
+    },
+    "properties": {
+    "station_id":8580939,
+    "station_name":"Bern Europaplatz, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.575862,47.555534 ]
+    },
+    "properties": {
+    "station_id":8581062,
+    "station_name":"Basel, Brausebad",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.374982,46.944417 ]
+    },
+    "properties": {
+    "station_id":8582262,
+    "station_name":"Bern Brünnen Westside, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.536555,47.551122 ]
+    },
+    "properties": {
+    "station_id":8587001,
+    "station_name":"Allschwil, Dorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.539337,47.377241 ]
+    },
+    "properties": {
+    "station_id":8587348,
+    "station_name":"Zürich, Bahnhofplatz/HB",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.541741,47.37756 ]
+    },
+    "properties": {
+    "station_id":8587349,
+    "station_name":"Zürich, Bahnhofquai/HB",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.471469,46.945124 ]
+    },
+    "properties": {
+    "station_id":8587480,
+    "station_name":"Bern, Ostring",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.467185,46.94212 ]
+    },
+    "properties": {
+    "station_id":8587481,
+    "station_name":"Bern, Burgernziel",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.452308,46.956749 ]
+    },
+    "properties": {
+    "station_id":8587482,
+    "station_name":"Bern, Spitalacker",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.591001,47.405629 ]
+    },
+    "properties": {
+    "station_id":8587652,
+    "station_name":"Zürich, Altried",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.592533,47.41272 ]
+    },
+    "properties": {
+    "station_id":8587655,
+    "station_name":"Wallisellen, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.568604,47.441615 ]
+    },
+    "properties": {
+    "station_id":8587799,
+    "station_name":"Kloten Balsberg, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.601447,47.532414 ]
+    },
+    "properties": {
+    "station_id":8588063,
+    "station_name":"Basel, Jakobsberg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.59616,47.545327 ]
+    },
+    "properties": {
+    "station_id":8588071,
+    "station_name":"Basel, Peter-Merian",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.614319,47.52865 ]
+    },
+    "properties": {
+    "station_id":8588072,
+    "station_name":"Münchenstein, Neuewelt",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.611619,47.52775 ]
+    },
+    "properties": {
+    "station_id":8588073,
+    "station_name":"Münchenstein, Schaulager",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.543938,47.376846 ]
+    },
+    "properties": {
+    "station_id":8588078,
+    "station_name":"Zürich, Central",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.472056,46.938818 ]
+    },
+    "properties": {
+    "station_id":8588174,
+    "station_name":"Bern, Weltpostverein",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.584104,47.557071 ]
+    },
+    "properties": {
+    "station_id":8588489,
+    "station_name":"Basel, Universität",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.571732,47.452161 ]
+    },
+    "properties": {
+    "station_id":8588553,
+    "station_name":"Zürich Flughafen, Fracht",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.448415,46.93007 ]
+    },
+    "properties": {
+    "station_id":8588562,
+    "station_name":"Wabern, Gurtenbahn",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.465894,46.961649 ]
+    },
+    "properties": {
+    "station_id":8588699,
+    "station_name":"Bern, Wankdorf Center",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.594956,47.478918 ]
+    },
+    "properties": {
+    "station_id":8588758,
+    "station_name":"Aesch BL, Arlesheimerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.618979,47.50171 ]
+    },
+    "properties": {
+    "station_id":8588759,
+    "station_name":"Arlesheim, Baselstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.596917,47.473753 ]
+    },
+    "properties": {
+    "station_id":8588760,
+    "station_name":"Aesch BL, Herrenweg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.619323,47.497473 ]
+    },
+    "properties": {
+    "station_id":8588764,
+    "station_name":"Arlesheim, Im Lee",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.611372,47.493033 ]
+    },
+    "properties": {
+    "station_id":8588765,
+    "station_name":"Arlesheim, Stollenrain",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.590408,47.568611 ]
+    },
+    "properties": {
+    "station_id":8588766,
+    "station_name":"Basel, Bläsiring",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.590249,47.573414 ]
+    },
+    "properties": {
+    "station_id":8588767,
+    "station_name":"Basel, Ciba",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.589816,47.570734 ]
+    },
+    "properties": {
+    "station_id":8588768,
+    "station_name":"Basel, Dreirosenbrücke",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.591198,47.566307 ]
+    },
+    "properties": {
+    "station_id":8588769,
+    "station_name":"Basel, Feldbergstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.598565,47.545873 ]
+    },
+    "properties": {
+    "station_id":8588770,
+    "station_name":"Basel, Grosspeterstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.576027,47.572865 ]
+    },
+    "properties": {
+    "station_id":8588771,
+    "station_name":"Basel, Hüningerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.583897,47.564248 ]
+    },
+    "properties": {
+    "station_id":8588772,
+    "station_name":"Basel, Johanniterbrücke",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.58587,47.561557 ]
+    },
+    "properties": {
+    "station_id":8588773,
+    "station_name":"Basel, Universitätsspital",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.591576,47.563699 ]
+    },
+    "properties": {
+    "station_id":8588774,
+    "station_name":"Basel, Kaserne",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.587601,47.55811 ]
+    },
+    "properties": {
+    "station_id":8588775,
+    "station_name":"Basel, Marktplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.60658,47.538792 ]
+    },
+    "properties": {
+    "station_id":8588776,
+    "station_name":"Basel, MParc",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.580042,47.568435 ]
+    },
+    "properties": {
+    "station_id":8588777,
+    "station_name":"Basel, Mülhauserstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.5995,47.54311 ]
+    },
+    "properties": {
+    "station_id":8588778,
+    "station_name":"Basel, Münchensteinerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.591528,47.560929 ]
+    },
+    "properties": {
+    "station_id":8588779,
+    "station_name":"Basel, Rheingasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.587152,47.559199 ]
+    },
+    "properties": {
+    "station_id":8588780,
+    "station_name":"Basel, Schifflände",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.581578,47.566598 ]
+    },
+    "properties": {
+    "station_id":8588781,
+    "station_name":"Basel, St. Johanns-Tor",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.578147,47.570533 ]
+    },
+    "properties": {
+    "station_id":8588782,
+    "station_name":"Basel, Voltaplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.583178,47.548726 ]
+    },
+    "properties": {
+    "station_id":8588783,
+    "station_name":"Basel, Zoo",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.576089,47.540289 ]
+    },
+    "properties": {
+    "station_id":8588784,
+    "station_name":"Binningen, Oberdorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.619198,47.515578 ]
+    },
+    "properties": {
+    "station_id":8588785,
+    "station_name":"Münchenstein, Elektra Birseck",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.607386,47.520669 ]
+    },
+    "properties": {
+    "station_id":8588786,
+    "station_name":"Münchenstein, Gartenstadt",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.603695,47.51651 ]
+    },
+    "properties": {
+    "station_id":8588787,
+    "station_name":"Münchenstein, Heiligholz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.611889,47.525429 ]
+    },
+    "properties": {
+    "station_id":8588788,
+    "station_name":"Münchenstein, Spengler",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.617152,47.523127 ]
+    },
+    "properties": {
+    "station_id":8588789,
+    "station_name":"Münchenstein, Zollweiden",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.563687,47.518988 ]
+    },
+    "properties": {
+    "station_id":8588790,
+    "station_name":"Oberwil BL, Stallen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.599666,47.501334 ]
+    },
+    "properties": {
+    "station_id":8588791,
+    "station_name":"Reinach BL, Landhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.596073,47.497894 ]
+    },
+    "properties": {
+    "station_id":8588792,
+    "station_name":"Reinach BL, Lochacker",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.602351,47.511322 ]
+    },
+    "properties": {
+    "station_id":8588793,
+    "station_name":"Reinach BL, Reinacherhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.590247,47.488728 ]
+    },
+    "properties": {
+    "station_id":8588794,
+    "station_name":"Reinach BL, Vogesenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.554687,47.495082 ]
+    },
+    "properties": {
+    "station_id":8588795,
+    "station_name":"Therwil, Känelmatt",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.528663,47.486903 ]
+    },
+    "properties": {
+    "station_id":8588796,
+    "station_name":"Witterswil, Sonnenrain",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.618434,47.540987 ]
+    },
+    "properties": {
+    "station_id":8588943,
+    "station_name":"Basel, St. Jakob",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.604024,47.536925 ]
+    },
+    "properties": {
+    "station_id":8588946,
+    "station_name":"Basel, Leimgrubenweg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.609318,47.548016 ]
+    },
+    "properties": {
+    "station_id":8588952,
+    "station_name":"Basel, Karl Barth-Platz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.442862,46.948123 ]
+    },
+    "properties": {
+    "station_id":8588989,
+    "station_name":"Bern, Bärenplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.45847,46.959474 ]
+    },
+    "properties": {
+    "station_id":8589000,
+    "station_name":"Bern, Parkstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.485582,46.937743 ]
+    },
+    "properties": {
+    "station_id":8589002,
+    "station_name":"Bern, Saali",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.458503,46.940422 ]
+    },
+    "properties": {
+    "station_id":8589003,
+    "station_name":"Bern, Thunplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.481419,46.937798 ]
+    },
+    "properties": {
+    "station_id":8589006,
+    "station_name":"Bern, Wittigkofen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.617261,47.507847 ]
+    },
+    "properties": {
+    "station_id":8589236,
+    "station_name":"Arlesheim, Brown Boveri",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.553977,47.553975 ]
+    },
+    "properties": {
+    "station_id":8589286,
+    "station_name":"Allschwil, Kirche",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.560403,47.557665 ]
+    },
+    "properties": {
+    "station_id":8589287,
+    "station_name":"Allschwil, Lindenplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.557263,47.555806 ]
+    },
+    "properties": {
+    "station_id":8589288,
+    "station_name":"Allschwil, Merkurstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.54822,47.551633 ]
+    },
+    "properties": {
+    "station_id":8589290,
+    "station_name":"Allschwil, Ziegelei",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.590265,47.532375 ]
+    },
+    "properties": {
+    "station_id":8589291,
+    "station_name":"Basel, Airolostrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.570579,47.55724 ]
+    },
+    "properties": {
+    "station_id":8589293,
+    "station_name":"Basel, Allschwilerplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.569868,47.549047 ]
+    },
+    "properties": {
+    "station_id":8589295,
+    "station_name":"Basel, Bernerring",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.575216,47.557324 ]
+    },
+    "properties": {
+    "station_id":8589296,
+    "station_name":"Basel, Birmannsgasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.594427,47.570809 ]
+    },
+    "properties": {
+    "station_id":8589298,
+    "station_name":"Basel, Brombacherstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.593731,47.532424 ]
+    },
+    "properties": {
+    "station_id":8589299,
+    "station_name":"Basel, Bruderholz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.592936,47.542103 ]
+    },
+    "properties": {
+    "station_id":8589300,
+    "station_name":"Basel, Bruderholzstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.575294,47.551442 ]
+    },
+    "properties": {
+    "station_id":8589301,
+    "station_name":"Basel, Bundesplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.561291,47.568528 ]
+    },
+    "properties": {
+    "station_id":8589302,
+    "station_name":"Basel, Waldighoferstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.573925,47.561796 ]
+    },
+    "properties": {
+    "station_id":8589303,
+    "station_name":"Basel, Burgfelderplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.596809,47.562684 ]
+    },
+    "properties": {
+    "station_id":8589305,
+    "station_name":"Basel, Clarastrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.616206,47.57004 ]
+    },
+    "properties": {
+    "station_id":8589307,
+    "station_name":"Basel, Eglisee",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.567621,47.56496 ]
+    },
+    "properties": {
+    "station_id":8589311,
+    "station_name":"Basel, Im Westfeld",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.603299,47.564663 ]
+    },
+    "properties": {
+    "station_id":8589316,
+    "station_name":"Basel, Gewerbeschule",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.606414,47.549513 ]
+    },
+    "properties": {
+    "station_id":8589317,
+    "station_name":"Basel, Grellingerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.600338,47.552328 ]
+    },
+    "properties": {
+    "station_id":8589320,
+    "station_name":"Basel, Hardstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.597001,47.5334 ]
+    },
+    "properties": {
+    "station_id":8589321,
+    "station_name":"Basel, Hauensteinstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.601719,47.534653 ]
+    },
+    "properties": {
+    "station_id":8589322,
+    "station_name":"Basel, Hechtliacker",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.574386,47.560248 ]
+    },
+    "properties": {
+    "station_id":8589323,
+    "station_name":"Basel, Hegenheimerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.61164,47.567475 ]
+    },
+    "properties": {
+    "station_id":8589324,
+    "station_name":"Basel, Hirzbrunnen/Claraspital",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.584065,47.552628 ]
+    },
+    "properties": {
+    "station_id":8589327,
+    "station_name":"Basel, Holbeinstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.559726,47.54618 ]
+    },
+    "properties": {
+    "station_id":8589330,
+    "station_name":"Basel, Im langen Loh",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.589649,47.577488 ]
+    },
+    "properties": {
+    "station_id":8589331,
+    "station_name":"Basel, Inselstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.591037,47.551567 ]
+    },
+    "properties": {
+    "station_id":8589333,
+    "station_name":"Basel, Kirschgarten",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.59245,47.581055 ]
+    },
+    "properties": {
+    "station_id":8589334,
+    "station_name":"Basel, Kleinhüningen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.594074,47.554459 ]
+    },
+    "properties": {
+    "station_id":8589336,
+    "station_name":"Basel, Kunstmuseum",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.567833,47.548105 ]
+    },
+    "properties": {
+    "station_id":8589338,
+    "station_name":"Basel, Laupenring",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.58779,47.535508 ]
+    },
+    "properties": {
+    "station_id":8589339,
+    "station_name":"Basel, Lerchenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.581718,47.544141 ]
+    },
+    "properties": {
+    "station_id":8589340,
+    "station_name":"Basel, Margarethen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.599631,47.5382 ]
+    },
+    "properties": {
+    "station_id":8589343,
+    "station_name":"Basel, Mönchsbergerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.597572,47.569069 ]
+    },
+    "properties": {
+    "station_id":8589344,
+    "station_name":"Basel, Musical Theater",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.586929,47.555538 ]
+    },
+    "properties": {
+    "station_id":8589345,
+    "station_name":"Basel, Musik-Akademie",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.564935,47.546939 ]
+    },
+    "properties": {
+    "station_id":8589347,
+    "station_name":"Basel, Neubad",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.58135,47.570763 ]
+    },
+    "properties": {
+    "station_id":8589348,
+    "station_name":"Basel, Novartis Campus",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.57719,47.560074 ]
+    },
+    "properties": {
+    "station_id":8589351,
+    "station_name":"Basel, Pilgerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.597739,47.567333 ]
+    },
+    "properties": {
+    "station_id":8589352,
+    "station_name":"Basel, Riehenring",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.577092,47.553203 ]
+    },
+    "properties": {
+    "station_id":8589360,
+    "station_name":"Basel, Schützenhaus",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.579447,47.554657 ]
+    },
+    "properties": {
+    "station_id":8589361,
+    "station_name":"Basel, Schützenmattstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.604119,47.550641 ]
+    },
+    "properties": {
+    "station_id":8589362,
+    "station_name":"Basel, Sevogelplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.604458,47.5527 ]
+    },
+    "properties": {
+    "station_id":8589364,
+    "station_name":"Basel, St. Alban-Tor",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.57086,47.563382 ]
+    },
+    "properties": {
+    "station_id":8589366,
+    "station_name":"Basel, Strassburgerallee",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.58744,47.533674 ]
+    },
+    "properties": {
+    "station_id":8589367,
+    "station_name":"Basel, Studio Basel",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.609883,47.554122 ]
+    },
+    "properties": {
+    "station_id":8589372,
+    "station_name":"Basel, Waldenburgerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.593814,47.583707 ]
+    },
+    "properties": {
+    "station_id":8589374,
+    "station_name":"Basel, Kleinhüningeranlage",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.598326,47.559121 ]
+    },
+    "properties": {
+    "station_id":8589376,
+    "station_name":"Basel, Wettsteinplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.590452,47.537375 ]
+    },
+    "properties": {
+    "station_id":8589379,
+    "station_name":"Basel, Wolfschlucht",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.610556,47.544489 ]
+    },
+    "properties": {
+    "station_id":8589380,
+    "station_name":"Basel, Zeughaus",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.580447,47.550879 ]
+    },
+    "properties": {
+    "station_id":8589381,
+    "station_name":"Basel, Zoo Bachletten",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.575568,47.544382 ]
+    },
+    "properties": {
+    "station_id":8589382,
+    "station_name":"Basel, Zoo Dorenbach",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.5965,47.539139 ]
+    },
+    "properties": {
+    "station_id":8589383,
+    "station_name":"Basel, Zwinglihaus",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.574047,47.541605 ]
+    },
+    "properties": {
+    "station_id":8589392,
+    "station_name":"Binningen, Hohle Gasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.619277,47.554485 ]
+    },
+    "properties": {
+    "station_id":8589395,
+    "station_name":"Birsfelden, Bären",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.630175,47.548352 ]
+    },
+    "properties": {
+    "station_id":8589396,
+    "station_name":"Birsfelden, Hard",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.627016,47.548969 ]
+    },
+    "properties": {
+    "station_id":8589397,
+    "station_name":"Birsfelden, Salinenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.647193,47.582517 ]
+    },
+    "properties": {
+    "station_id":8589444,
+    "station_name":"Riehen, Bettingerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.638893,47.577639 ]
+    },
+    "properties": {
+    "station_id":8589446,
+    "station_name":"Riehen, Burgstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.64954,47.584411 ]
+    },
+    "properties": {
+    "station_id":8589450,
+    "station_name":"Riehen, Dorf",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.650812,47.586765 ]
+    },
+    "properties": {
+    "station_id":8589451,
+    "station_name":"Riehen, Fondation Beyeler",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.655297,47.594473 ]
+    },
+    "properties": {
+    "station_id":8589455,
+    "station_name":"Riehen, Grenze",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.629732,47.572789 ]
+    },
+    "properties": {
+    "station_id":8589456,
+    "station_name":"Riehen, Habermatten",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.653453,47.592363 ]
+    },
+    "properties": {
+    "station_id":8589467,
+    "station_name":"Riehen, Lörracherstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.634966,47.575892 ]
+    },
+    "properties": {
+    "station_id":8589472,
+    "station_name":"Riehen, Niederholzboden",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.640945,47.578985 ]
+    },
+    "properties": {
+    "station_id":8589475,
+    "station_name":"Riehen, Pfaffenloh",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.651779,47.58929 ]
+    },
+    "properties": {
+    "station_id":8589485,
+    "station_name":"Riehen, Weilstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.436018,46.943761 ]
+    },
+    "properties": {
+    "station_id":8589991,
+    "station_name":"Bern, Monbijou",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.4359,46.939974 ]
+    },
+    "properties": {
+    "station_id":8589992,
+    "station_name":"Bern, Sulgenau",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.436334,46.936924 ]
+    },
+    "properties": {
+    "station_id":8589993,
+    "station_name":"Bern, Wander",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.411667,46.943937 ]
+    },
+    "properties": {
+    "station_id":8590005,
+    "station_name":"Bern, Steigerhubel",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.45325,46.942375 ]
+    },
+    "properties": {
+    "station_id":8590006,
+    "station_name":"Bern, Luisenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.427467,46.945685 ]
+    },
+    "properties": {
+    "station_id":8590009,
+    "station_name":"Bern, Kaufmännischer Verband",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.427205,46.944498 ]
+    },
+    "properties": {
+    "station_id":8590010,
+    "station_name":"Bern, Brunnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.425616,46.941628 ]
+    },
+    "properties": {
+    "station_id":8590011,
+    "station_name":"Bern, Cäcilienstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.423778,46.940287 ]
+    },
+    "properties": {
+    "station_id":8590012,
+    "station_name":"Bern, Pestalozzi",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.421913,46.940188 ]
+    },
+    "properties": {
+    "station_id":8590013,
+    "station_name":"Bern, Munzinger",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.418603,46.940736 ]
+    },
+    "properties": {
+    "station_id":8590014,
+    "station_name":"Bern, Fischermätteli",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.432524,46.944273 ]
+    },
+    "properties": {
+    "station_id":8590015,
+    "station_name":"Bern, Hasler",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.43221,46.937509 ]
+    },
+    "properties": {
+    "station_id":8590016,
+    "station_name":"Bern, Beaumont",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.469642,46.943352 ]
+    },
+    "properties": {
+    "station_id":8590019,
+    "station_name":"Bern, Sonnenhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.449614,46.95289 ]
+    },
+    "properties": {
+    "station_id":8590020,
+    "station_name":"Bern, Kursaal",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.451007,46.954734 ]
+    },
+    "properties": {
+    "station_id":8590021,
+    "station_name":"Bern, Viktoriaplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.439945,46.933992 ]
+    },
+    "properties": {
+    "station_id":8590022,
+    "station_name":"Bern, Schönegg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.445145,46.931662 ]
+    },
+    "properties": {
+    "station_id":8590023,
+    "station_name":"Bern, Sandrain",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.421294,46.944443 ]
+    },
+    "properties": {
+    "station_id":8590041,
+    "station_name":"Bern, Loryplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.41499,46.944172 ]
+    },
+    "properties": {
+    "station_id":8590042,
+    "station_name":"Bern, Schlossmatte",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.399005,46.944671 ]
+    },
+    "properties": {
+    "station_id":8590043,
+    "station_name":"Bern, Stöckacker (Tram)",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.380848,46.937575 ]
+    },
+    "properties": {
+    "station_id":8590044,
+    "station_name":"Bern, Bümpliz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.377553,46.94781 ]
+    },
+    "properties": {
+    "station_id":8590045,
+    "station_name":"Bern, Gäbelbach",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.388309,46.948903 ]
+    },
+    "properties": {
+    "station_id":8590046,
+    "station_name":"Bern, Tscharnergut",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.375111,46.946234 ]
+    },
+    "properties": {
+    "station_id":8590077,
+    "station_name":"Bern, Ramuzstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.464386,46.966597 ]
+    },
+    "properties": {
+    "station_id":8590129,
+    "station_name":"Bern Wankdorf, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.47917,47.391129 ]
+    },
+    "properties": {
+    "station_id":8590318,
+    "station_name":"Zürich, Farbhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.60766,47.402152 ]
+    },
+    "properties": {
+    "station_id":8590561,
+    "station_name":"Dübendorf, Giessen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.604273,47.404831 ]
+    },
+    "properties": {
+    "station_id":8590578,
+    "station_name":"Wallisellen, Neugut",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.60422,47.397536 ]
+    },
+    "properties": {
+    "station_id":8590583,
+    "station_name":"Dübendorf, Ringwiesen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.559356,47.430569 ]
+    },
+    "properties": {
+    "station_id":8590620,
+    "station_name":"Glattbrugg, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.561067,47.425604 ]
+    },
+    "properties": {
+    "station_id":8590626,
+    "station_name":"Glattbrugg, Lindberghplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.557909,47.435547 ]
+    },
+    "properties": {
+    "station_id":8590762,
+    "station_name":"Rümlang, Bäuler",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.460604,47.397609 ]
+    },
+    "properties": {
+    "station_id":8590791,
+    "station_name":"Schlieren, Gasometerbrücke",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.467282,47.395642 ]
+    },
+    "properties": {
+    "station_id":8590795,
+    "station_name":"Schlieren, Mülligen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.454183,47.398511 ]
+    },
+    "properties": {
+    "station_id":8590803,
+    "station_name":"Schlieren, Wagonsfabrik",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.448433,47.397823 ]
+    },
+    "properties": {
+    "station_id":8590805,
+    "station_name":"Schlieren, Zentrum/Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.585231,47.413952 ]
+    },
+    "properties": {
+    "station_id":8590881,
+    "station_name":"Wallisellen, Belair",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.579071,47.416497 ]
+    },
+    "properties": {
+    "station_id":8590889,
+    "station_name":"Wallisellen, Herti",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.502489,47.392175 ]
+    },
+    "properties": {
+    "station_id":8591033,
+    "station_name":"Zürich, Aargauerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.507711,47.351992 ]
+    },
+    "properties": {
+    "station_id":8591034,
+    "station_name":"Zürich, Albisgütli",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.484789,47.374383 ]
+    },
+    "properties": {
+    "station_id":8591036,
+    "station_name":"Zürich, Albisrieden",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.510396,47.378214 ]
+    },
+    "properties": {
+    "station_id":8591038,
+    "station_name":"Zürich, Albisriederplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.507658,47.397596 ]
+    },
+    "properties": {
+    "station_id":8591039,
+    "station_name":"Zürich, Alte Trotte",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.568839,47.417091 ]
+    },
+    "properties": {
+    "station_id":8591049,
+    "station_name":"Zürich, Auzelg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.483048,47.388926 ]
+    },
+    "properties": {
+    "station_id":8591051,
+    "station_name":"Zürich, Bachmattstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.523103,47.37867 ]
+    },
+    "properties": {
+    "station_id":8591052,
+    "station_name":"Zürich, Bäckeranlage",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.537783,47.405896 ]
+    },
+    "properties": {
+    "station_id":8591053,
+    "station_name":"Zürich, Bad Allenmoos",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.489904,47.392066 ]
+    },
+    "properties": {
+    "station_id":8591057,
+    "station_name":"Zürich Altstetten, Bahnhof N",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.531573,47.364128 ]
+    },
+    "properties": {
+    "station_id":8591058,
+    "station_name":"Zürich Enge, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.530457,47.364552 ]
+    },
+    "properties": {
+    "station_id":8591059,
+    "station_name":"Zürich Enge, Bahnhof/Bederstr.",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.517104,47.385203 ]
+    },
+    "properties": {
+    "station_id":8591060,
+    "station_name":"Zürich Hardbrücke, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.545848,47.413339 ]
+    },
+    "properties": {
+    "station_id":8591063,
+    "station_name":"Zürich Oerlikon, Bahnhof Ost",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.532012,47.370672 ]
+    },
+    "properties": {
+    "station_id":8591064,
+    "station_name":"Zürich Selnau, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.596133,47.397276 ]
+    },
+    "properties": {
+    "station_id":8591065,
+    "station_name":"Stettbach, Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.539461,47.376222 ]
+    },
+    "properties": {
+    "station_id":8591067,
+    "station_name":"Zürich, Bahnhofstrasse/HB",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.485008,47.396356 ]
+    },
+    "properties": {
+    "station_id":8591068,
+    "station_name":"Zürich, Bändliweg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.540446,47.384084 ]
+    },
+    "properties": {
+    "station_id":8591071,
+    "station_name":"Zürich, Beckenhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.547912,47.40364 ]
+    },
+    "properties": {
+    "station_id":8591073,
+    "station_name":"Zürich, Berninaplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.508708,47.393765 ]
+    },
+    "properties": {
+    "station_id":8591074,
+    "station_name":"Zürich, Bernoulli-Häuser",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.525556,47.374169 ]
+    },
+    "properties": {
+    "station_id":8591079,
+    "station_name":"Zürich, Bezirksgebäude",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.532917,47.347033 ]
+    },
+    "properties": {
+    "station_id":8591081,
+    "station_name":"Zürich Wollishofen,Bhf/Staubst",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.531976,47.351468 ]
+    },
+    "properties": {
+    "station_id":8591082,
+    "station_name":"Zürich, Billoweg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.539746,47.36817 ]
+    },
+    "properties": {
+    "station_id":8591093,
+    "station_name":"Zürich, Kantonalbank",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.532217,47.356134 ]
+    },
+    "properties": {
+    "station_id":8591100,
+    "station_name":"Zürich, Brunaustrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.533283,47.39841 ]
+    },
+    "properties": {
+    "station_id":8591101,
+    "station_name":"Zürich, Bucheggplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.571863,47.358018 ]
+    },
+    "properties": {
+    "station_id":8591104,
+    "station_name":"Zürich, Burgwies",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.540783,47.366539 ]
+    },
+    "properties": {
+    "station_id":8591105,
+    "station_name":"Zürich, Bürkliplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.530314,47.341409 ]
+    },
+    "properties": {
+    "station_id":8591106,
+    "station_name":"Zürich, Butzenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.526071,47.388403 ]
+    },
+    "properties": {
+    "station_id":8591110,
+    "station_name":"Zürich, Löwenbräu",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.558173,47.366733 ]
+    },
+    "properties": {
+    "station_id":8591119,
+    "station_name":"Zürich, Englischviertelstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.512044,47.39627 ]
+    },
+    "properties": {
+    "station_id":8591121,
+    "station_name":"Zürich, Eschergutweg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.548236,47.377289 ]
+    },
+    "properties": {
+    "station_id":8591123,
+    "station_name":"Zürich, ETH/Universitätsspital",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.488417,47.375718 ]
+    },
+    "properties": {
+    "station_id":8591126,
+    "station_name":"Zürich, Fellenbergstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.545297,47.416789 ]
+    },
+    "properties": {
+    "station_id":8591127,
+    "station_name":"Zürich, Felsenrainstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.561746,47.418178 ]
+    },
+    "properties": {
+    "station_id":8591128,
+    "station_name":"Zürich, Fernsehstudio",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.512122,47.393571 ]
+    },
+    "properties": {
+    "station_id":8591131,
+    "station_name":"Zürich, Fischerweg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.517155,47.392211 ]
+    },
+    "properties": {
+    "station_id":8591135,
+    "station_name":"Zürich, Förrlibuckstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.481635,47.405471 ]
+    },
+    "properties": {
+    "station_id":8591136,
+    "station_name":"Zürich, Frankental",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.499372,47.383228 ]
+    },
+    "properties": {
+    "station_id":8591138,
+    "station_name":"Zürich, Freihofstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.580277,47.350973 ]
+    },
+    "properties": {
+    "station_id":8591142,
+    "station_name":"Zürich, Friedhof Enzenbühl",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.581759,47.401601 ]
+    },
+    "properties": {
+    "station_id":8591159,
+    "station_name":"Zürich, Glattwiesen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.490082,47.386964 ]
+    },
+    "properties": {
+    "station_id":8591165,
+    "station_name":"Zürich, Grimselstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.489212,47.39523 ]
+    },
+    "properties": {
+    "station_id":8591167,
+    "station_name":"Zürich, Grünaustrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.540143,47.395709 ]
+    },
+    "properties": {
+    "station_id":8591168,
+    "station_name":"Zürich, Guggachstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.519973,47.380311 ]
+    },
+    "properties": {
+    "station_id":8591169,
+    "station_name":"Zürich, Güterbahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.548379,47.380294 ]
+    },
+    "properties": {
+    "station_id":8591173,
+    "station_name":"Zürich, Haldenbach",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.544512,47.379647 ]
+    },
+    "properties": {
+    "station_id":8591174,
+    "station_name":"Zürich, Haldenegg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.497474,47.396351 ]
+    },
+    "properties": {
+    "station_id":8591176,
+    "station_name":"Zürich, Hardhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.514531,47.382341 ]
+    },
+    "properties": {
+    "station_id":8591177,
+    "station_name":"Zürich, Hardplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.504504,47.394163 ]
+    },
+    "properties": {
+    "station_id":8591178,
+    "station_name":"Zürich, Hardturm",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.56503,47.360424 ]
+    },
+    "properties": {
+    "station_id":8591180,
+    "station_name":"Zürich, Hedwigsteig",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.576328,47.404713 ]
+    },
+    "properties": {
+    "station_id":8591181,
+    "station_name":"Zürich, Heerenwiesen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.543294,47.37007 ]
+    },
+    "properties": {
+    "station_id":8591183,
+    "station_name":"Zürich, Helmhaus",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.525362,47.376357 ]
+    },
+    "properties": {
+    "station_id":8591184,
+    "station_name":"Zürich, Helvetiaplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.506352,47.36941 ]
+    },
+    "properties": {
+    "station_id":8591190,
+    "station_name":"Zürich, Heuried",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.543508,47.400272 ]
+    },
+    "properties": {
+    "station_id":8591193,
+    "station_name":"Zürich, Hirschwiesenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.591162,47.403253 ]
+    },
+    "properties": {
+    "station_id":8591194,
+    "station_name":"Zürich, Hirzenbach",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.562395,47.366115 ]
+    },
+    "properties": {
+    "station_id":8591199,
+    "station_name":"Zürich, Hölderlinstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.554404,47.369468 ]
+    },
+    "properties": {
+    "station_id":8591202,
+    "station_name":"Zürich, Hottingerplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.499148,47.377382 ]
+    },
+    "properties": {
+    "station_id":8591203,
+    "station_name":"Zürich, Hubertus",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.521335,47.374423 ]
+    },
+    "properties": {
+    "station_id":8591218,
+    "station_name":"Zürich,Kalkbreite/Bhf.Wiedikon",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.550526,47.372717 ]
+    },
+    "properties": {
+    "station_id":8591220,
+    "station_name":"Zürich, Kantonsschule",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.494924,47.385355 ]
+    },
+    "properties": {
+    "station_id":8591222,
+    "station_name":"Zürich, Kappeli",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.546333,47.388886 ]
+    },
+    "properties": {
+    "station_id":8591229,
+    "station_name":"Zürich, Kinkelstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.559394,47.376399 ]
+    },
+    "properties": {
+    "station_id":8591230,
+    "station_name":"Zürich, Kirche Fluntern",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.566497,47.364035 ]
+    },
+    "properties": {
+    "station_id":8591233,
+    "station_name":"Zürich, Klusplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.507871,47.377806 ]
+    },
+    "properties": {
+    "station_id":8591236,
+    "station_name":"Zürich, Altes Krematorium",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.539122,47.387956 ]
+    },
+    "properties": {
+    "station_id":8591237,
+    "station_name":"Zürich, Kronenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.549141,47.370437 ]
+    },
+    "properties": {
+    "station_id":8591239,
+    "station_name":"Zürich, Kunsthaus",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.544787,47.393542 ]
+    },
+    "properties": {
+    "station_id":8591244,
+    "station_name":"Zürich, Langmauerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.517086,47.358732 ]
+    },
+    "properties": {
+    "station_id":8591245,
+    "station_name":"Zürich, Laubegg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.536339,47.39499 ]
+    },
+    "properties": {
+    "station_id":8591246,
+    "station_name":"Zürich, Laubiweg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.503729,47.381236 ]
+    },
+    "properties": {
+    "station_id":8591252,
+    "station_name":"Zürich, Letzigrund",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.545496,47.390684 ]
+    },
+    "properties": {
+    "station_id":8591255,
+    "station_name":"Zürich, Letzistrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.551308,47.414645 ]
+    },
+    "properties": {
+    "station_id":8591256,
+    "station_name":"Zürich, Leutschenbach",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.531622,47.3846 ]
+    },
+    "properties": {
+    "station_id":8591257,
+    "station_name":"Zürich, Limmatplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.486112,47.387819 ]
+    },
+    "properties": {
+    "station_id":8591258,
+    "station_name":"Zürich, Lindenplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.517515,47.375412 ]
+    },
+    "properties": {
+    "station_id":8591259,
+    "station_name":"Zürich, Lochergut",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.537416,47.375892 ]
+    },
+    "properties": {
+    "station_id":8591262,
+    "station_name":"Zürich, Löwenplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.585874,47.406877 ]
+    },
+    "properties": {
+    "station_id":8591263,
+    "station_name":"Zürich, Luchswiesen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.58139,47.406013 ]
+    },
+    "properties": {
+    "station_id":8591264,
+    "station_name":"Zürich, Luegisland",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.590917,47.398641 ]
+    },
+    "properties": {
+    "station_id":8591271,
+    "station_name":"Zürich, Mattenhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.550091,47.410958 ]
+    },
+    "properties": {
+    "station_id":8591273,
+    "station_name":"Zürich, Messe/Hallenstadion",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.474517,47.393032 ]
+    },
+    "properties": {
+    "station_id":8591274,
+    "station_name":"Zürich, Micafil",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.541774,47.397788 ]
+    },
+    "properties": {
+    "station_id":8591276,
+    "station_name":"Zürich, Milchbuck",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.530141,47.343947 ]
+    },
+    "properties": {
+    "station_id":8591279,
+    "station_name":"Zürich, Morgental",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.534935,47.382122 ]
+    },
+    "properties": {
+    "station_id":8591282,
+    "station_name":"Zürich, Museum für Gestaltung",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.531556,47.360719 ]
+    },
+    "properties": {
+    "station_id":8591283,
+    "station_name":"Zürich, Museum Rietberg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.547349,47.372774 ]
+    },
+    "properties": {
+    "station_id":8591287,
+    "station_name":"Zürich, Neumarkt",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.554206,47.417585 ]
+    },
+    "properties": {
+    "station_id":8591294,
+    "station_name":"Zürich, Oerlikerhus",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.542415,47.38519 ]
+    },
+    "properties": {
+    "station_id":8591298,
+    "station_name":"Zürich, Ottikerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.538916,47.369732 ]
+    },
+    "properties": {
+    "station_id":8591299,
+    "station_name":"Zürich, Paradeplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.552639,47.375008 ]
+    },
+    "properties": {
+    "station_id":8591303,
+    "station_name":"Zürich, Platte",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.532957,47.344469 ]
+    },
+    "properties": {
+    "station_id":8591304,
+    "station_name":"Zürich, Post Wollishofen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.586592,47.400222 ]
+    },
+    "properties": {
+    "station_id":8591305,
+    "station_name":"Zürich, Probstei",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.528752,47.386741 ]
+    },
+    "properties": {
+    "station_id":8591306,
+    "station_name":"Zürich, Quellenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.535185,47.401981 ]
+    },
+    "properties": {
+    "station_id":8591307,
+    "station_name":"Zürich, Radiostudio",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.542878,47.371738 ]
+    },
+    "properties": {
+    "station_id":8591309,
+    "station_name":"Zürich, Rathaus",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.539275,47.408823 ]
+    },
+    "properties": {
+    "station_id":8591314,
+    "station_name":"Zürich, Regensbergbrücke",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.582978,47.351027 ]
+    },
+    "properties": {
+    "station_id":8591315,
+    "station_name":"Zürich, Rehalp",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.538457,47.373066 ]
+    },
+    "properties": {
+    "station_id":8591316,
+    "station_name":"Zürich, Rennweg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.53504,47.363384 ]
+    },
+    "properties": {
+    "station_id":8591317,
+    "station_name":"Zürich, Rentenanstalt",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.540501,47.388662 ]
+    },
+    "properties": {
+    "station_id":8591324,
+    "station_name":"Zürich, Röslistrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.576979,47.402953 ]
+    },
+    "properties": {
+    "station_id":8591325,
+    "station_name":"Zürich, Roswiesen",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.542936,47.373949 ]
+    },
+    "properties": {
+    "station_id":8591327,
+    "station_name":"Zürich, Rudolf-Brun-Brücke",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.520405,47.357864 ]
+    },
+    "properties": {
+    "station_id":8591329,
+    "station_name":"Zürich, Saalsporthalle",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.548479,47.406082 ]
+    },
+    "properties": {
+    "station_id":8591332,
+    "station_name":"Zürich, Salersteig",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.538707,47.39163 ]
+    },
+    "properties": {
+    "station_id":8591335,
+    "station_name":"Zürich, Schaffhauserplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.519264,47.370153 ]
+    },
+    "properties": {
+    "station_id":8591341,
+    "station_name":"Zürich, Schmiede Wiedikon",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.563873,47.405942 ]
+    },
+    "properties": {
+    "station_id":8591343,
+    "station_name":"Zürich, Schörlistrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.571899,47.404593 ]
+    },
+    "properties": {
+    "station_id":8591349,
+    "station_name":"Zürich, Schwamendingerplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.504615,47.39973 ]
+    },
+    "properties": {
+    "station_id":8591353,
+    "station_name":"Zürich, Schwert",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.549776,47.421864 ]
+    },
+    "properties": {
+    "station_id":8591354,
+    "station_name":"Zürich, Seebach",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.548369,47.419863 ]
+    },
+    "properties": {
+    "station_id":8591355,
+    "station_name":"Zürich, Seebacherplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.548364,47.385916 ]
+    },
+    "properties": {
+    "station_id":8591362,
+    "station_name":"Zürich, Seilbahn Rigiblick",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.494018,47.378463 ]
+    },
+    "properties": {
+    "station_id":8591363,
+    "station_name":"Zürich, Siemens",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.557623,47.36323 ]
+    },
+    "properties": {
+    "station_id":8591364,
+    "station_name":"Zürich, Signaustrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.523031,47.360061 ]
+    },
+    "properties": {
+    "station_id":8591366,
+    "station_name":"Zürich, Sihlcity Nord",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.534202,47.376093 ]
+    },
+    "properties": {
+    "station_id":8591367,
+    "station_name":"Zürich, Sihlpost/HB",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.537604,47.379875 ]
+    },
+    "properties": {
+    "station_id":8591368,
+    "station_name":"Zürich, Sihlquai/HB",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.534574,47.372267 ]
+    },
+    "properties": {
+    "station_id":8591369,
+    "station_name":"Zürich, Sihlstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.543691,47.382839 ]
+    },
+    "properties": {
+    "station_id":8591373,
+    "station_name":"Zürich, Sonneggstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.505856,47.391622 ]
+    },
+    "properties": {
+    "station_id":8591374,
+    "station_name":"Zürich, Sportweg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.542776,47.380292 ]
+    },
+    "properties": {
+    "station_id":8591379,
+    "station_name":"Zürich, Stampfenbachplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.529248,47.373424 ]
+    },
+    "properties": {
+    "station_id":8591381,
+    "station_name":"Zürich, Stauffacher",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.54623,47.41007 ]
+    },
+    "properties": {
+    "station_id":8591382,
+    "station_name":"Zürich, Sternen Oerlikon",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.535422,47.367868 ]
+    },
+    "properties": {
+    "station_id":8591384,
+    "station_name":"Zürich, Stockerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.51132,47.353153 ]
+    },
+    "properties": {
+    "station_id":8591385,
+    "station_name":"Zürich, Strassenverkehrsamt",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.568009,47.378538 ]
+    },
+    "properties": {
+    "station_id":8591389,
+    "station_name":"Zürich, Susenbergstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.509647,47.369946 ]
+    },
+    "properties": {
+    "station_id":8591390,
+    "station_name":"Zürich, Talwiesenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.515355,47.38906 ]
+    },
+    "properties": {
+    "station_id":8591391,
+    "station_name":"Zürich, Technopark",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.551797,47.401903 ]
+    },
+    "properties": {
+    "station_id":8591393,
+    "station_name":"Zürich, Tierspital",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.559346,47.37909 ]
+    },
+    "properties": {
+    "station_id":8591397,
+    "station_name":"Zürich, Toblerplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.510581,47.390041 ]
+    },
+    "properties": {
+    "station_id":8591398,
+    "station_name":"Zürich, Toni-Areal",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.494722,47.397922 ]
+    },
+    "properties": {
+    "station_id":8591402,
+    "station_name":"Zürich, Tüffenwies",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.532528,47.366142 ]
+    },
+    "properties": {
+    "station_id":8591404,
+    "station_name":"Zürich, Tunnelstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.513962,47.356737 ]
+    },
+    "properties": {
+    "station_id":8591405,
+    "station_name":"Zürich, Uetlihof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.544828,47.396159 ]
+    },
+    "properties": {
+    "station_id":8591406,
+    "station_name":"Zürich, Universität Irchel",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.554519,47.37687 ]
+    },
+    "properties": {
+    "station_id":8591412,
+    "station_name":"Zürich, Voltastrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.525747,47.361484 ]
+    },
+    "properties": {
+    "station_id":8591415,
+    "station_name":"Zürich, Waffenplatzstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.5184,47.3955 ]
+    },
+    "properties": {
+    "station_id":8591417,
+    "station_name":"Zürich, Waidfussweg",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.5572,47.40372 ]
+    },
+    "properties": {
+    "station_id":8591420,
+    "station_name":"Zürich, Waldgarten",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.491626,47.402773 ]
+    },
+    "properties": {
+    "station_id":8591423,
+    "station_name":"Zürich, Wartau",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.526842,47.372322 ]
+    },
+    "properties": {
+    "station_id":8591427,
+    "station_name":"Zürich, Werd",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.482017,47.397832 ]
+    },
+    "properties": {
+    "station_id":8591428,
+    "station_name":"Zürich, Werdhölzli",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.568625,47.360155 ]
+    },
+    "properties": {
+    "station_id":8591429,
+    "station_name":"Zürich, Wetlistrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.548215,47.383192 ]
+    },
+    "properties": {
+    "station_id":8591433,
+    "station_name":"Zürich, Winkelriedstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.486373,47.403765 ]
+    },
+    "properties": {
+    "station_id":8591435,
+    "station_name":"Zürich, Winzerstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.523574,47.392592 ]
+    },
+    "properties": {
+    "station_id":8591437,
+    "station_name":"Zürich, Wipkingerplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.53016,47.338442 ]
+    },
+    "properties": {
+    "station_id":8591439,
+    "station_name":"Zürich, Wollishoferplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.571556,47.381571 ]
+    },
+    "properties": {
+    "station_id":8591442,
+    "station_name":"Zürich, Zoo",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.564106,47.378729 ]
+    },
+    "properties": {
+    "station_id":8591444,
+    "station_name":"Zürich, Zürichbergstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.496808,47.402186 ]
+    },
+    "properties": {
+    "station_id":8591446,
+    "station_name":"Zürich, Zwielplatz",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.513768,47.37669 ]
+    },
+    "properties": {
+    "station_id":8591448,
+    "station_name":"Zürich, Zypressenstrasse",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.556768,47.420383 ]
+    },
+    "properties": {
+    "station_id":8591830,
+    "station_name":"Glattpark, Glattpark",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.494858,47.392092 ]
+    },
+    "properties": {
+    "station_id":8591896,
+    "station_name":"Zürich, Würzgraben",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.607092,47.566636 ]
+    },
+    "properties": {
+    "station_id":8592321,
+    "station_name":"Basel, Badischer Bahnhof",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.572924,47.570404 ]
+    },
+    "properties": {
+    "station_id":8592322,
+    "station_name":"Basel, Bahnhof St. Johann",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.565384,47.557147 ]
+    },
+    "properties": {
+    "station_id":8592442,
+    "station_name":"Basel, Morgartenring",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.598064,47.409292 ]
+    },
+    "properties": {
+    "station_id":8594198,
+    "station_name":"Wallisellen, Glatt (Tram)",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.519864,47.388029 ]
+    },
+    "properties": {
+    "station_id":8594239,
+    "station_name":"Zürich, Schiffbau",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.43334,46.935611 ]
+    },
+    "properties": {
+    "station_id":8595142,
+    "station_name":"Bern, Weissenbühl (Tram)",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.5055,46.934315 ]
+    },
+    "properties": {
+    "station_id":8595488,
+    "station_name":"Gümligen, Bahnhof (Tram)",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.444234,47.397815 ]
+    },
+    "properties": {
+    "station_id":8596007,
+    "station_name":"Schlieren, Geissweid",
+    "route_type":"tram"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.557259,47.571959 ]
+    },
+    "properties": {
+    "station_id":8596011,
+    "station_name":"Basel, Burgfelderhof",
+    "route_type":"tram"
+    }
+  }
+]
+}

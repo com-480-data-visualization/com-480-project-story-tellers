@@ -6,7 +6,7 @@ var simulation_manager = (function(){
 
     var config = (function(){
         var params = {};
-        
+
         return {
             init: function() {
                 $.ajax({
@@ -36,7 +36,7 @@ var simulation_manager = (function(){
                                         key = 'center.y';
                                         break;
                                 }
-                                
+
                                 var param_value = decodeURIComponent(qs_parts[1]);
 
                                 params[key] = param_value;
@@ -53,19 +53,19 @@ var simulation_manager = (function(){
             }
         };
     })();
-    
+
     var map = null;
-    
+
     var simulation_vehicles = {};
-    
+
     var listener_helpers = (function(){
         var listeners = {};
-        
+
         function notify(type) {
             if (typeof listeners[type] === 'undefined') {
                 return;
             }
-            
+
             $.each(listeners[type], function(i, fn){
                 fn();
             });
@@ -75,23 +75,23 @@ var simulation_manager = (function(){
             if (typeof listeners[type] === 'undefined') {
                 listeners[type] = [];
             }
-            
+
             listeners[type].push(fn);
         }
-        
+
         return {
             notify: notify,
             subscribe: subscribe
         };
     })();
-    
+
     var stationsPool = (function(){
         var stations = {};
-        
+
         function get(id) {
             return (typeof stations[id]) === 'undefined' ? '' : stations[id].get('name');
         }
-        
+
         function location_get(id) {
             return (typeof stations[id]) === 'undefined' ? '' : stations[id].get('location');
         }
@@ -119,7 +119,7 @@ var simulation_manager = (function(){
                 stations[station_id] = station;
             });
         }
-        
+
         return {
             get: get,
             addFeatures: addFeatures,
@@ -153,7 +153,7 @@ var simulation_manager = (function(){
             timer: null
         });
 
-        
+
         // TODO - that can be a nice feature request for google.maps.geometry lib
         function positionOnRouteAtPercentGet(ab_edges, percent) {
             function routeIsDetailedAtPercent() {
@@ -165,25 +165,25 @@ var simulation_manager = (function(){
 
                 return false;
             }
-            
+
             var route = routes[ab_edges];
 
             var dAC = route.length*percent;
-            
+
             var is_detailed = map_helpers.isDetailView() ? routeIsDetailedAtPercent() : false;
             var position_data = positionDataGet(route, dAC, is_detailed);
             if (position_data !== null) {
                 position_data.is_detailed = is_detailed;
             }
-            
+
             return position_data;
         }
-        
+
         function routeAdd(ab_edges) {
             if (typeof routes[ab_edges] !== 'undefined') {
                 return;
             }
-            
+
             var edges = ab_edges.split(',');
             var routePoints = [];
             var dAB = 0;
@@ -197,7 +197,7 @@ var simulation_manager = (function(){
                 routePoints = routePoints.concat(points);
                 dAB += network_lines[edgeID].length;
             });
-            
+
             var routeDetailedParts = [];
             var routeDetailedParts_i = 0;
             var is_detailed_prev = false;
@@ -206,7 +206,7 @@ var simulation_manager = (function(){
                 if (edgeID.substr(0, 1) === '-') {
                     edgeID = edgeID.substr(1);
                 }
-                
+
                 var is_detailed = network_lines[edgeID].is_detailed;
                 if (is_detailed) {
                     if (is_detailed_prev === false) {
@@ -214,32 +214,32 @@ var simulation_manager = (function(){
                             start: dAC / dAB,
                             end: 1
                         };
-                    }                    
+                    }
                 } else {
                     if (is_detailed_prev) {
                         routeDetailedParts[routeDetailedParts_i].end = dAC / dAB;
                         routeDetailedParts_i += 1;
                     }
                 }
-                
+
                 is_detailed_prev = is_detailed;
-                
+
                 dAC += network_lines[edgeID].length;
             });
-            
+
             var route = {
                 points: routePoints,
                 length: dAB,
                 detailed_parts: routeDetailedParts
             };
-            
+
             routes[ab_edges] = route;
         }
 
         function lengthGet(ab_edges) {
             return routes[ab_edges].length;
         }
-        
+
         function routeHighlight(vehicle) {
             var points = [];
             if (vehicle.source === 'gtfs') {
@@ -250,7 +250,7 @@ var simulation_manager = (function(){
                     points = points.concat(routes[ab_edges].points);
                 });
             }
-            
+
             route_highlight.setPath(points);
             route_highlight.setMap(map);
 
@@ -267,12 +267,12 @@ var simulation_manager = (function(){
                 route_highlight.set('icons', icons);
             }, 20));
         }
-        
+
         function routeHighlightRemove() {
             route_highlight.setMap(null);
             clearInterval(route_highlight.get('timer'));
         }
-        
+
         function loadEncodedEdges(edges) {
             $.each(edges, function(edge_id, encoded_edge) {
                 network_lines[edge_id] = {
@@ -281,7 +281,7 @@ var simulation_manager = (function(){
                 };
             });
         }
-        
+
         function loadGeoJSONEdges(features) {
             $.each(features, function(index, feature) {
                 var edge_coords = [];
@@ -322,7 +322,7 @@ var simulation_manager = (function(){
 
         function positionDataGet(route, dAC, is_detailed) {
             var dC = 0;
-            
+
             for (var i=1; i<route.points.length; i++) {
                 var pA = route.points[i-1];
                 var pB = route.points[i];
@@ -334,12 +334,12 @@ var simulation_manager = (function(){
                     if (is_detailed) {
                         data.heading = google.maps.geometry.spherical.computeHeading(pA, pB);
                     }
-                    
+
                     return data;
                 }
                 dC += d12;
             }
-            
+
             return null;
         }
 
@@ -347,7 +347,7 @@ var simulation_manager = (function(){
             var route = routes[ab_edges];
             return positionDataGet(route, dAC, true);
         }
-        
+
         return {
             positionGet: positionOnRouteAtPercentGet,
             routeAdd: routeAdd,
@@ -360,7 +360,7 @@ var simulation_manager = (function(){
             projectDistanceAlongRoute: projectDistanceAlongRoute
         };
     })();
-    
+
     // Time manager
     // Roles:
     // - manages the current number of seconds that passed since midnight
@@ -371,27 +371,93 @@ var simulation_manager = (function(){
         var ts_minute = null;
 
         var seconds_multiply = null;
-        
+
         function init() {
+
+          var HOURS = [
+          { name: "00:00", minutes: 6 },
+          { name: "01:00", minutes: 6 },
+          { name: "02:00", minutes: 6 },
+          { name: "03:00", minutes: 6 },
+          { name: "04:00", minutes: 6 },
+          { name: "05:00", minutes: 6 },
+          { name: "06:00", minutes: 6 },
+          { name: "07:00", minutes: 6 },
+          { name: "08:00", minutes: 6 },
+          { name: "09:00", minutes: 6 },
+          { name: "10:00", minutes: 6 },
+          { name: "11:00", minutes: 6 },
+          { name: "12:00", minutes: 6 },
+          { name: "13:00", minutes: 6 },
+          { name: "14:00", minutes: 6 },
+          { name: "15:00", minutes: 6 },
+          { name: "16:00", minutes: 6 },
+          { name: "17:00", minutes: 6 },
+          { name: "18:00", minutes: 6 },
+          { name: "19:00", minutes: 6 },
+          { name: "20:00", minutes: 6 },
+          { name: "21:00", minutes: 6 },
+          { name: "22:00", minutes: 6 },
+          { name: "23:00", minutes: 6 }
+
+        ];
+
+
+        function initScrubber() {
+          var $scrubber_inner = $("<div />").attr("id", "scrubber-inner").appendTo("#scrubber");
+
+          var minute_number = 0,
+              minute_width = Math.floor(window.innerWidth/(24*6 + 24)),
+              scrolling = minute_width < 2;
+          if (scrolling) minute_width = 2;
+          var calendar_width = minute_width*(24*6),
+              margin = scrolling ? 0 : (window.innerWidth - calendar_width)/2;
+          for (var i = 0; i < HOURS.length; i++) {
+            var $hour = $("<div />")
+                .attr("class", "hour " + HOURS[i].name)
+                .css("left" , margin + minute_number * minute_width + (i * 1) - 105 + "px")
+                // here the calculation could be optimized , because 105 here is a not a fixed Number
+                .css("width" ,minute_width * HOURS[i].minutes + 1 + "px")
+                .appendTo($scrubber_inner);
+            $("<div />").attr("class", "label").text(HOURS[i].name).appendTo($hour);
+            for (var j = 0; j < HOURS[i].minutes; j++) {
+              var $minute = $("<div />").attr("class", "minute").attr("id", "minute-" + minute_number)
+                .css("position", "absolute")
+                .css("top", 0)
+                .css( "left" , j * minute_width + "px")
+                .css( "width", minute_width + "px")
+                .appendTo($hour)
+                .on("click", clickminute);
+              //$("<div />").attr("class", "label").text(j).appendTo($minute);
+              //$("<div />").attr("class", "label").appendTo($minute);
+              $("<div />").attr("class", "load-progress")
+              .css( "width", minute_width + "px")
+              .css("height","0px")
+              .appendTo($minute);
+              minute_number++;
+            }
+          }
+
+        }
+        function clickminute(){
+            var minute_number = this.id.substring("minute-".length);
+            var hour_id = parseInt(minute_number/6);
+            var minute_id = (minute_number % 6 )*10;
+            var d_new = new Date(ts_now * 1000);
+            d_new.setHours(hour_id);
+            d_new.setMinutes(minute_id);
+            d_new.setSeconds(0);
+            d_new.setMilliseconds(0);
+            ts_now = d_new.getTime()/1000;
+          }
+
+
             (function(){
                 var d = new Date();
-                
+                // var d = new Date('2020-05-14T10:00:00Z');
+
                 var hms = config.getParam('hms');
 
-                // Demo data is set for 9 AM
-                if (config.getParam('api_paths.trips') === 'api/demo/trips.json') {
-                    hms = '09:00:00';
-                }
-
-                if (hms !== null) {
-                    var hms_matches = hms.match(/^([0-9]{2}):([0-9]{2}):([0-9]{2})$/);
-                    if (hms_matches) {
-                        d.setHours(parseInt(hms_matches[1], 10));
-                        d.setMinutes(parseInt(hms_matches[2], 10));
-                        d.setSeconds(parseInt(hms_matches[3], 10));
-                    }
-                }
-                
                 ts_now = d.getTime() / 1000;
 
                 d.setHours(0);
@@ -400,17 +466,67 @@ var simulation_manager = (function(){
                 d.setMilliseconds(0);
                 ts_midnight = d.getTime() / 1000;
             })();
-            
+
+            if($('#one-time').hasClass('checked')){
+              seconds_multiply = 1;
+            }else if ($('#five-times').hasClass('checked')) {
+              seconds_multiply = 5;
+            }else if ($('#ten-times').hasClass('checked')) {
+              seconds_multiply = 10;
+            }else {
+              seconds_multiply = 1;
+            }
+
+            /* FLAG : SPEED*/
+
+            $('#one-time').on('click',onetime);
+            $('#five-times').on('click',fivetimes);
+            $('#ten-times').on('click',tentimes);
+
+            function onetime() {
+              if(seconds_multiply == 1) return;
+              $('#one-time').addClass('checked');
+              seconds_multiply = 1;
+              if($('#five-times').hasClass('checked')){
+                $('#five-times').removeClass('checked');
+              }else if ($('#ten-times').hasClass('checked')) {
+                $('#ten-times').removeClass('checked');
+              }
+            }
+
+            function fivetimes(){
+              if(seconds_multiply == 5) return;
+              $('#five-times').addClass('checked');
+              seconds_multiply = 5;
+              if($('#one-time').hasClass('checked')){
+                $('#one-time').removeClass('checked');
+              }else if ($('#ten-times').hasClass('checked')) {
+                $('#ten-times').removeClass('checked');
+              }
+            }
+
+            function tentimes(){
+              if(seconds_multiply == 10) return;
+              $('#ten-times').addClass('checked');
+              seconds_multiply = 10;
+              if($('#one-time').hasClass('checked')){
+                $('#one-time').removeClass('checked');
+              }else if ($('#five-times').hasClass('checked')) {
+                $('#five-times').removeClass('checked');
+              }
+            }
+/*
             seconds_multiply = parseFloat($('#time_multiply').val());
             $('#time_multiply').change(function(){
                 seconds_multiply = parseInt($(this).val(), 10);
             });
-            
+*/
+
             var timeContainer = $('#day_time');
-            
+
             function timeIncrement() {
                 var d_now = new Date(ts_now * 1000);
-                
+
                 var ts_minute_new = d_now.getMinutes();
                 if (ts_minute !== ts_minute_new) {
                     if (ts_minute !== null) {
@@ -418,31 +534,43 @@ var simulation_manager = (function(){
                     }
                     ts_minute = ts_minute_new;
                 }
-                
+
                 timeContainer.text(getHMS());
-                
+
                 ts_now += (timer_refresh / 1000) * seconds_multiply;
                 setTimeout(timeIncrement, timer_refresh);
             }
+            initScrubber();
             timeIncrement();
         }
-        
+
         function pad2Dec(what) {
             return (what < 10 ? '0' + what : what);
         }
-        
+
         function getHMS(ts) {
             ts = ts || ts_now;
 
             var d = new Date(ts * 1000);
-            
+
             var hours = pad2Dec(d.getHours());
             var minutes = pad2Dec(d.getMinutes());
             var seconds = pad2Dec(d.getSeconds());
-            
+
             return hours + ':' + minutes + ':' + seconds;
         }
-        
+        function getYMD(ts) {
+            ts = ts || ts_now;
+
+            var d = new Date(ts * 1000);
+            const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d)
+            const mo = new Intl.DateTimeFormat('en', { month: '2-digit' }).format(d)
+            const da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d)
+            var ymd = ye+mo+da
+            // console.log(ymd);
+            return ymd;
+        }
+
         return {
             init: init,
             getTS: function(ts) {
@@ -451,6 +579,11 @@ var simulation_manager = (function(){
             getHM: function(ts) {
                 var hms = getHMS(ts);
                 return hms.substring(0, 2) + ':' + hms.substring(3, 5);
+            },
+            getYMD: function(ts) {
+                var ymd = getYMD(ts);
+                return ymd;
+                // return hms.substring(0, 2) + ':' + hms.substring(3, 5);
             },
             getTSMidnight: function() {
                 return ts_midnight;
@@ -464,19 +597,19 @@ var simulation_manager = (function(){
                 var hours = parseInt(hms_parts[0], 10);
                 var minutes = parseInt(hms_parts[1], 10);
                 var seconds = parseInt(hms_parts[2], 10);
-                
+
                 return ts_midnight + hours * 3600 + minutes * 60 + seconds;
             }
         };
     })();
-    
+
     var simulation_panel = (function(){
         var selected_vehicle = null;
 
         function Toggler(el_id) {
             var el = $(el_id);
             el.attr('data-value-original', el.val());
-            
+
             var subscriber_types = {
                 'enable': [function(){
                     el.addClass('toggled');
@@ -488,7 +621,7 @@ var simulation_manager = (function(){
                 }]
             };
             this.subscriber_types = subscriber_types;
-            
+
             el.click(function(){
                 var subscribers = el.hasClass('toggled') ? subscriber_types.disable : subscriber_types.enable;
                 $.each(subscribers, function(index, fn){
@@ -504,7 +637,7 @@ var simulation_manager = (function(){
                 fn();
             });
         };
-        
+
         var vehicle_follow = (function(){
             listener_helpers.subscribe('map_init', function(){
                 function stop_following() {
@@ -533,26 +666,26 @@ var simulation_manager = (function(){
                     map.unbind('center');
                 });
             }
-            
+
             function start(vehicle) {
                 selected_vehicle = vehicle;
                 toggler.trigger('enable');
             }
-            
+
             function stop() {
                 toggler.trigger('disable');
             }
-            
+
             return {
                 init: init,
                 start: start,
                 stop: stop
             };
         })();
-        
+
         var vehicle_route = (function(){
             var toggler;
-            
+
             function init() {
                 toggler = new Toggler('#route_show_trigger');
                 toggler.subscribe('enable', function(){
@@ -562,21 +695,21 @@ var simulation_manager = (function(){
                     linesPool.routeHighlightRemove();
                 });
             }
-            
+
             function hide() {
                 toggler.trigger('disable');
             }
-            
+
             return {
                 init: init,
                 hide: hide
             };
         })();
-        
+
         function station_info_hide() {
             $('#station_info').addClass('hidden');
         }
-        
+
         function vehicle_info_display(vehicle) {
             if ((selected_vehicle !== null) && (selected_vehicle.id === vehicle.id)) {
                 if (selected_vehicle.marker.get('follow') === 'no') {
@@ -588,33 +721,38 @@ var simulation_manager = (function(){
                 return;
             }
             selected_vehicle = vehicle;
-            
+
             vehicle_follow.stop();
             station_info_hide();
             vehicle_route.hide();
 
             $('.vehicle_name', $('#vehicle_info')).text(vehicle.name + ' (' + vehicle.id + ')');
-            
+
             var route_config = config.getParam('routes')[vehicle.route_icon];
             if (route_config) {
                 $('.vehicle_name', $('#vehicle_info')).css('background-color', route_config.route_color);
                 $('.vehicle_name', $('#vehicle_info')).css('color', route_config.route_text_color);
             }
-            
+            // else {
+            //     route_config = config.getParam('routes')["re"]
+            //     $('.vehicle_name', $('#vehicle_info')).css('background-color', route_config.route_color);
+            //     $('.vehicle_name', $('#vehicle_info')).css('color', route_config.route_text_color);
+            // }
+
             var ts = timer.getTS();
-            
+
             var html_rows = [];
             $.each(vehicle.stations, function(index, stop_id) {
                 var s_dep = (typeof vehicle.depS[index] === 'undefined') ? "n/a" : vehicle.depS[index];
                 var html_row = '<tr data-dep-sec="' + s_dep + '"><td>' + (index + 1) + '.</td>';
-                
+
                 var station_location = stationsPool.location_get(stop_id);
-                if (station_location === null) { 
+                if (station_location === null) {
                     html_row += '<td>' + stationsPool.get(stop_id) + '</td>';
                 } else {
                     html_row += '<td><a href="#station_id=' + stop_id + '" data-station-id="' + stop_id + '">' + stationsPool.get(stop_id) + '</a></td>';
                 }
-                
+
                 var hm_arr = (typeof vehicle.arrS[index - 1] === 'undefined') ? '' : timer.getHM(vehicle.arrS[index - 1]);
                 html_row += '<td>' + hm_arr + '</td>';
 
@@ -623,7 +761,7 @@ var simulation_manager = (function(){
 
                 html_rows.push(html_row);
             });
-            
+
             $('#vehicle_timetable > tbody').html(html_rows.join(''));
             $('#vehicle_timetable tbody tr').each(function(){
                 var row_dep_sec = $(this).attr('data-dep-sec');
@@ -634,20 +772,22 @@ var simulation_manager = (function(){
                     $(this).addClass('passed');
                 }
             });
-            
             $('#vehicle_info').removeClass('hidden');
+            $('#options-info').addClass('hidden');
         }
-        
+
         function vehicle_info_hide() {
             vehicle_follow.stop();
             vehicle_route.hide();
             selected_vehicle = null;
             $('#vehicle_info').addClass('hidden');
+            $('#options-info').removeClass('hidden');
+
         }
-        
+
         function station_info_display(station_id) {
             var hm = timer.getHM();
-            
+
             var url = config.getParam('api_paths.departures');
             if (url === null) {
                 return;
@@ -670,7 +810,7 @@ var simulation_manager = (function(){
                         } else {
                             html_row += '<td><a href="#vehicle_id=' + vehicle.id + '" data-vehicle-id="' + vehicle.id + '">' + vehicle.name + '</a></td>';
                         }
-                        
+
                         html_row += '<td>' + stationsPool.get(vehicle.st_b) + '</td>';
                         html_row += '<td>' + timer.getHM(vehicle.dep) + '</td>';
                         html_rows.push(html_row);
@@ -678,15 +818,17 @@ var simulation_manager = (function(){
                     $('#station_departures > tbody').html(html_rows.join(''));
 
                     $('#station_info').removeClass('hidden');
+                    $('#options_info').addClass('hidden');
+                    $('#options_info').removeClass('expanded');
                     $('.station_name', $('#station_info')).text(stationsPool.get(station_id));
                 }
             });
         }
-        
+
         function init() {
             vehicle_follow.init();
             vehicle_route.init();
-            
+
             $(document).on("click", '#station_departures tbody tr a', function(){
                 var vehicle_id = $(this).attr('data-vehicle-id');
                 var vehicle = simulation_vehicles[vehicle_id];
@@ -695,28 +837,28 @@ var simulation_manager = (function(){
 
                 return false;
             });
-            
+
             $(document).on("click", '#vehicle_timetable tbody tr a', function(){
                 var station_id = $(this).attr('data-station-id');
                 var station_location = stationsPool.location_get(station_id);
-                if (station_location === null) { 
-                    return false; 
+                if (station_location === null) {
+                    return false;
                 }
-                
+
                 map.setCenter(station_location);
                 if (map.getZoom() < config.getParam('zoom.to_stops')) {
-                    map.setZoom(config.getParam('zoom.to_stops'));    
+                    map.setZoom(config.getParam('zoom.to_stops'));
                 }
-                
+
                 vehicle_info_hide();
                 station_info_display(station_id);
-                
+
                 return false;
             });
-            
+
             (function(){
                 var location_el = $('#user_location');
-                
+
                 var geolocation_marker = new google.maps.Marker({
                     icon: {
                         url: 'static/images/geolocation-bluedot.png',
@@ -727,9 +869,9 @@ var simulation_manager = (function(){
                     map: null,
                     position: new google.maps.LatLng(0, 0)
                 });
-                
+
                 var geocoder = new google.maps.Geocoder();
-                
+
                 function zoom_to_geometry(geometry) {
                     if (geometry.viewport) {
                         map.fitBounds(geometry.viewport);
@@ -745,12 +887,12 @@ var simulation_manager = (function(){
                         navigator.geolocation.getCurrentPosition(function (position) {
                             var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
                             zoom_to_geometry({location: latlng});
-                            
+
                             geolocation_marker.setPosition(latlng);
                             if (geolocation_marker.getMap() === null) {
                                 geolocation_marker.setMap(map);
                             }
-                            
+
                             geocoder.geocode({latLng: latlng}, function(results, status) {
                                 if (status === google.maps.GeocoderStatus.OK) {
                                     location_el.val(results[0].formatted_address);
@@ -759,7 +901,7 @@ var simulation_manager = (function(){
                         });
                     }
                 });
-                
+
                 var autocomplete = new google.maps.places.Autocomplete($('#user_location')[0], {
                     types: ['geocode']
                 });
@@ -778,7 +920,7 @@ var simulation_manager = (function(){
                     }
                 });
             })();
-            
+
             $('input.panel_collapsible').click(function() {
                 var panel_content = $(this).closest('div[data-type="panel"]').children('div.panel_content');
 
@@ -791,7 +933,7 @@ var simulation_manager = (function(){
                 }
             });
         }
-        
+
         return {
             init: init,
             displayVehicle: vehicle_info_display,
@@ -799,54 +941,257 @@ var simulation_manager = (function(){
             displayStation: station_info_display
         };
     })();
-    
+
     var map_helpers = (function(){
         var has_detail_view = false;
         var extended_bounds = null;
-        
+
         function init(){
+
+          // create the basic map,  with the map_options
+
             var mapStyles = [
               {
-                featureType: "poi.business",
-                stylers: [
-                  { visibility: "off" }
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#f5f5f5"
+                  }
                 ]
-              },{
-                featureType: "road",
-                elementType: "labels",
-                stylers: [
-                  { visibility: "off" }
+              },
+              {
+                "elementType": "labels.icon",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
                 ]
-              },{
-                featureType: "road",
-                elementType: "labels",
-                stylers: [
-                  { visibility: "off" }
+              },
+              {
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#616161"
+                  }
                 ]
-              },{
-                featureType: "road",
-                elementType: "geometry",
-                stylers: [
-                  { visibility: "simplified" },
-                  { lightness: 70 }
+              },
+              {
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                  {
+                    "color": "#f5f5f5"
+                  }
                 ]
-              },{
-                featureType: "transit.line",
-                stylers: [
-                  { visibility: "off" }
+              },
+              {
+                "featureType": "administrative",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
                 ]
-              },{
-                featureType: "transit.station.bus",
-                stylers: [
-                  { visibility: "off" }
+              },
+              {
+                "featureType": "administrative.land_parcel",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "administrative.land_parcel",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#bdbdbd"
+                  }
+                ]
+              },
+              {
+                "featureType": "administrative.neighborhood",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#eeeeee"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi",
+                "elementType": "labels.text",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#757575"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#e5e5e5"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.park",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#9e9e9e"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "labels",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "labels.icon",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.arterial",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#757575"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#dadada"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#616161"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.local",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#9e9e9e"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit.line",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#e5e5e5"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit.station",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#eeeeee"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#c9c9c9"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "labels.text",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#9e9e9e"
+                  }
                 ]
               }
             ];
-            
+
             var map_inited = false;
             var map_options = {
-                zoom: parseInt(config.getParam('zoom.start'), 10),
-                center: new google.maps.LatLng(parseFloat(config.getParam('center.y')), parseFloat(config.getParam('center.x'))),
+                zoom: parseInt(config.getParam('zoom.start'), 5),
+                center: new google.maps.LatLng(46.8,8.3),
                 mapTypeId: config.getParam('map_type_id'),
                 styles: mapStyles,
                 disableDefaultUI: true,
@@ -874,155 +1219,342 @@ var simulation_manager = (function(){
                 map_options.maxZoom = parseInt(config.getParam('zoom.max'), 10);
             }
 
+            // create the basic map,  with the map_options
             map = new google.maps.Map(document.getElementById("map_canvas"), map_options);
-            
-            var stamen_map = new google.maps.StamenMapType('watercolor');
-            stamen_map.set('name', 'Stamen watercolor');
-            map.mapTypes.set('stamen', stamen_map);
+/*
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(parseFloat(config.getParam('center.y')), parseFloat(config.getParam('center.x'))),
+              map: map
+            });*/
+
+            google.maps.event.addDomListener(map, 'idle', function() {
+              var recenterButton = document.querySelector("#recenter");
+              recenterButton.addEventListener("click", function() {
+                map.setZoom(parseInt(config.getParam('zoom.start'), 5));
+                map.setCenter(new google.maps.LatLng(46.8,8.3));
+              });
+            });
+
+            var stations_showing = false,
+                trains_showing = false,
+                map_showing = true,
+                routes_showing = false,
+                shade_type = "uniform";
+                //speed = "1x";
+
+            var type_filter = [ 1.0, 1.0, 1.0, 1.0, 1.0];
 
             function map_layers_add(){
                 var edges_layer;
                 var stations_layer;
                 var ft_id;
-
-                // Graph topology layers - EDGES
-                ft_id = config.getParam('ft_layer_ids.topology_edges');
-                if (ft_id !== null) {
-                    edges_layer = new google.maps.FusionTablesLayer({
-                        query: {
-                            select: 'geometry',
-                            from: ft_id
-                        },
-                        clickable: false,
-                        map: map,
-                        styles: [
-                            {
-                                polylineOptions: {
-                                    strokeColor: "#FF0000",
-                                    strokeWeight: 2
-                                }
-                            },{
-                                where: "type = 'tunnel'",
-                                polylineOptions: {
-                                    strokeColor: "#FAAFBE",
-                                    strokeWeight: 1.5
-                                }
-                            }
-                        ]
-                    });
-                }
-
-                // Graph topology layers - STATIONS
-                ft_id = config.getParam('ft_layer_ids.topology_stations');
-                if (ft_id !== null) {
-                    stations_layer = new google.maps.FusionTablesLayer({
-                        query: {
-                            select: 'geometry',
-                            from: ft_id
-                        },
-                        suppressInfoWindows: true,
-                        map: map
-                    });
-
-                    google.maps.event.addListener(stations_layer, 'click', function(ev){
-                        var station_id = ev.row.id.value;
-                        simulation_panel.displayStation(station_id);
-                    });
-                }
+                var switzerland_layer;
+                var stations_train_layer;
+                var stations_tram_layer;
+                var stations_ferry_layer;
+                var stations_gondola_layer;
 
                 // GTFS layers - shapes.txt
                 ft_id = config.getParam('ft_layer_ids.gtfs_shapes');
                 if (ft_id !== null) {
-                    edges_layer = new google.maps.FusionTablesLayer({
-                        query: {
-                            select: 'geometry',
-                            from: ft_id
-                        },
-                        clickable: false,
-                        map: map
+
+                    edges_layer = new google.maps.Data();
+                    edges_layer.loadGeoJson(config.getParam('geojson.gtfs_shapes'));
+                    edges_layer.setStyle({
+                      strokeWeight: 1,
+                      strokeColor: 'green'
                     });
                 }
 
                 // GTFS layers - stops.txt
+                // GTFS layers - stops.txt
                 ft_id = config.getParam('ft_layer_ids.gtfs_stops');
                 if (ft_id !== null) {
-                    stations_layer = new google.maps.FusionTablesLayer({
-                        query: {
-                            select: 'geometry',
-                            from: ft_id
-                        },
-                        suppressInfoWindows: true,
-                        map: map
+
+                    stations_layer = new google.maps.Data();
+                    stations_layer.loadGeoJson(config.getParam('geojson.gtfs_stops'));
+                    stations_layer.setStyle({
+                      icon: 'static/images/stations_icons/stationsicon.png'
+                      //fillColor: 'green'
+                      //strokeWeight: 1
                     });
 
-                    google.maps.event.addListener(stations_layer, 'click', function(ev){
-                        var station_id = ev.row.stop_id.value;
-                        simulation_panel.displayStation(station_id);
+                    stations_train_layer = new google.maps.Data();
+                    stations_train_layer.loadGeoJson(config.getParam('geojson.gtfs_stops_train'));
+                    stations_train_layer.setStyle({
+                      icon: 'static/images/stations_icons/stationsicon-train.png'
+                      //fillColor: 'green'
+                      //strokeWeight: 1
+                    });
+
+                    stations_tram_layer = new google.maps.Data();
+                    stations_tram_layer.loadGeoJson(config.getParam('geojson.gtfs_stops_tram'));
+                    stations_tram_layer.setStyle({
+                      icon: 'static/images/stations_icons/stationsicon-tram.png'
+                      //fillColor: 'green'
+                      //strokeWeight: 1
+                    });
+
+                    stations_ferry_layer = new google.maps.Data();
+                    stations_ferry_layer.loadGeoJson(config.getParam('geojson.gtfs_stops_ferry'));
+                    stations_ferry_layer.setStyle({
+                      icon: 'static/images/stations_icons/stationsicon-ferry.png'
+                      //fillColor: 'green'
+                      //strokeWeight: 1
+                    });
+
+                    stations_gondola_layer = new google.maps.Data();
+                    stations_gondola_layer.loadGeoJson(config.getParam('geojson.gtfs_stops_gondola'));
+                    stations_gondola_layer.setStyle({
+                      icon: 'static/images/stations_icons/stationsicon-gondola.png'
+                      //fillColor: 'green'
+                      //strokeWeight: 1
                     });
                 }
 
-                // Area mask
-                ft_id = config.getParam('ft_layer_ids.mask');
+                ft_id = config.getParam('ft_layer_ids.swswitzerland');
                 if (ft_id !== null) {
-                    var layer = new google.maps.FusionTablesLayer({
-                      query: {
-                        select: 'geometry',
-                        from: ft_id
-                      },
-                      clickable: false,
-                      map: map
-                    });                    
+
+                    switzerland_layer = new google.maps.Data();
+                    switzerland_layer.loadGeoJson(config.getParam('geojson.gtfs_switzerland'));
+                    switzerland_layer.setStyle({
+                      //fillColor: 1,
+                      strokeColor: 'white',
+                      strokeWeight: 3,
+                    });
+                }
+
+                /* FLAG: SHOW */
+                $("#station-toggler").on("click", toggleStations);
+                $("#route-toggler").on("click", toggleRoutes);
+                $("#map-toggler").on("click",toggleMap);
+                //$("#ship-toggler").on("click", toggleShips);
+                //$("#train-toggler").on("click", toggleTrains);
+                $(".radio").on("click", function() {
+              		var clicked = this;
+              			shade_type = this.getAttribute("data-value").substr("shade-".length);
+              			if (shade_type == "type") shadeByType();
+              			else shadeUniform();
+              	});
+                $(".filter.color")
+              		.each(function() {
+              			var station_type = this.getAttribute("data-traffic-type");
+              			if(stations_showing) {
+                      $(this).removeClass("disabled");
+                      $(".notice").addClass("transparent");
+                      $(this).on("click", function() {
+                        toggleTrafficType(station_type);
+                      });
+                    }
+                    else {
+                      $(this).off("click");
+                      $(this).on("click",function(){$('.notice').removeClass("transparent");});
+                      $(this).addClass("disabled");
+                    }
+              		});
+                  function shadeByType() {
+                  	$("#dashboard").addClass("color-coded");
+                      resetColor();
+                  	//}
+                  	if(!$('#type').hasClass("checked")) $('#type').addClass("checked");
+                    if($('#uniform').hasClass("checked"))$('#uniform').removeClass("checked");
+                  	shade_type = "type";
+
+                  }
+
+                  function shadeUniform() {
+
+                  	$("#dashboard").removeClass("color-coded");
+                      uniformColor();
+                  	shade_type = "uniform";
+                    if($('#type').hasClass("checked")) $('#type').removeClass("checked");
+                    if(!$('#uniform').hasClass("checked"))$('#uniform').addClass("checked");
+
+                  }
+
+                function toggleStations() {
+                  if (stations_showing) hideStations();
+                  else showStations();
+                }
+
+                function showStations() {
+                  if (stations_showing) return;
+                  if(shade_type == "uniform"){
+                    uniformColor();
+                  }
+                  $("#station-toggler").addClass("checked");
+                  $(".notice").addClass("transparent");
+                  $(".filter.color")
+                		.each(function() {
+                			var station_type = this.getAttribute("data-traffic-type");
+                      $(this).off("click");
+                			$(this).on("click", function() { toggleTrafficType(station_type); });
+                      $(this).removeClass("disabled")
+                		});
+
+
+                  stations_showing = true;
+                  filterMap();
+                }
+
+                function hideStations() {
+                  if (!stations_showing) return;
+                  $("#station-toggler").removeClass("checked");
+                  stations_showing = false;
+                  $(".filter.color")
+                    .each(function() {
+                      var station_type = this.getAttribute("data-traffic-type");
+                        $(this).off("click");
+                        $(this).on("click",function(){$('.notice').removeClass("transparent");});
+                        $(this).addClass("disabled");
+                    });
+                  filterMap();
+                }
+
+                // FLAG : Routes control
+                function toggleRoutes() {
+                  if (routes_showing) hideRoutes();
+                  else showRoutes();
+                }
+                function showRoutes() {
+                  if (routes_showing) return;
+                  $("#route-toggler").addClass("checked");
+                  edges_layer.setMap(map);
+                  routes_showing = true;
+
+                }
+
+                function hideRoutes() {
+                  if (!routes_showing) return;
+                  $("#route-toggler").removeClass("checked");
+                  edges_layer.setMap(null);
+                  routes_showing = false;
+                }
+
+                function toggleMap() {
+                  if (map_showing) hideMap();
+                	else showMap();
+                }
+
+                function showMap() {
+                	if(map_showing) return;
+                	//$('#map-canvas').removeClass("transparent");
+                  $("#map-toggler").addClass("checked");
+                  switzerland_layer.setMap(map);
+                  map_showing = true;
+                }
+
+                function hideMap() {
+                	if (!map_showing) return;
+                	//$('#map_canvas').addClass("transparent");
+                  $("#map-toggler").removeClass("checked");
+                  switzerland_layer.setMap(null);
+                  map_showing = false;
+                }
+
+                function toggleTrafficType(station_type) {
+                	if ($("#filter-type-" + station_type).hasClass("checked")) hideTrafficType(station_type);
+                	else showTrafficType(station_type);
+                }
+
+                function hideTrafficType(station_type) {
+                	$("#filter-type-" + station_type).removeClass("checked");
+                	type_filter[station_type] = 0.0;
+                	filterMap();
+                }
+
+                function showTrafficType(station_type) {
+                	$("#filter-type-" + station_type).addClass("checked");
+                	type_filter[station_type] = 1.0;
+                	filterMap();
+                };
+
+                function uniformColor(){
+                  stations_train_layer.setStyle({icon: 'static/images/stations_icons/stationsicon.png'});
+                  stations_tram_layer.setStyle({icon: 'static/images/stations_icons/stationsicon.png'});
+                  stations_ferry_layer.setStyle({icon: 'static/images/stations_icons/stationsicon.png'});
+                  stations_gondola_layer.setStyle({icon: 'static/images/stations_icons/stationsicon.png'});
+                }
+
+                function resetColor(){
+                  stations_train_layer.setStyle({icon: 'static/images/stations_icons/stationsicon-train.png'});
+                  stations_tram_layer.setStyle({icon: 'static/images/stations_icons/stationsicon-tram.png'});
+                  stations_ferry_layer.setStyle({icon: 'static/images/stations_icons/stationsicon-ferry.png'});
+                  stations_gondola_layer.setStyle({icon: 'static/images/stations_icons/stationsicon-gondola.png'});
+                }
+
+                function filterMap(){
+                  if(stations_showing){
+                    if(type_filter[0] == 1.0) stations_tram_layer.setMap(map);
+                    else stations_tram_layer.setMap(null);
+                    if(type_filter[1] == 1.0) stations_ferry_layer.setMap(map)
+                    else stations_ferry_layer.setMap(null);
+                    if(type_filter[2] == 1.0) stations_gondola_layer.setMap(map)
+                    else stations_gondola_layer.setMap(null);
+                    if(type_filter[3] == 1.0) stations_train_layer.setMap(map)
+                    else stations_train_layer.setMap(null);
+                  }
+                  else {
+                    stations_tram_layer.setMap(null);
+                    stations_ferry_layer.setMap(null);
+                    stations_gondola_layer.setMap(null);
+                    stations_train_layer.setMap(null);
+                  }
+                }
+
+                /*  Map initialization*/
+
+                if(map_showing) switzerland_layer.setMap(map);
+                if(stations_showing) {
+                  uniformColor();
+                  filterMap();
                 }
 
                 function trigger_toggleLayerVisibility() {
-                    if (config.getParam('debug') !== null) {
-                        console.log('Center: ' + map.getCenter().toUrlValue());
-                        console.log('Zoom: ' + map.getZoom());
-                    }
+                  if (config.getParam('debug') !== null) {
+                      console.log('Center: ' + map.getCenter().toUrlValue());
+                      console.log('Zoom: ' + map.getZoom());
+                  }
 
-                    function toggleLayerVisibility(layer, hide) {
-                        if ((typeof layer) === 'undefined') {
-                            return;
-                        }
+                  function toggleLayerVisibility(layer, hide) {
+                      if ((typeof layer) === 'undefined') {
+                          return;
+                      }
 
-                        if (hide) {
-                            if (layer.getMap() !== null) {
-                                layer.setMap(null);
-                            }
-                        } else {
-                            if (layer.getMap() === null) {
-                                layer.setMap(map);
-                            }
-                        }
-                    }
+                      if (hide) {
+                          if (layer.getMap() !== null) {
+                              layer.setMap(null);
+                          }
+                      } else {
+                          if (layer.getMap() === null) {
+                              layer.setMap(map);
+                          }
+                      }
+                  }
 
-                    var map_type_id = map.getMapTypeId();
-                    var is_satellite = (map_type_id === google.maps.MapTypeId.SATELLITE) && (map.getTilt() === 0);
-                    var config_preffix = is_satellite ? 'zoom.satellite' : 'zoom.roadmap';
+                  var map_type_id = map.getMapTypeId();
+                  var is_satellite = (map_type_id === google.maps.MapTypeId.SATELLITE) && (map.getTilt() === 0);
+                  var config_preffix = is_satellite ? 'zoom.satellite' : 'zoom.roadmap';
 
-                    var zoom = map.getZoom();
+                  var zoom = map.getZoom();
 
-                    $.each(['stops', 'shapes'], function(k, layer_type){
-                        var zoom_min = config.getParam(config_preffix + '.' + layer_type + '_min');
-                        if (zoom_min === null) {
-                            zoom_min = 0;
-                        }
+                  $.each(['stops', 'shapes'], function(k, layer_type){
+                      var zoom_min = config.getParam(config_preffix + '.' + layer_type + '_min');
+                      if (zoom_min === null) {
+                          zoom_min = 0;
+                      }
 
-                        var zoom_max = config.getParam(config_preffix + '.' + layer_type + '_max');
-                        if (zoom_max === null) {
-                            zoom_max = 30;
-                        }
+                      var zoom_max = config.getParam(config_preffix + '.' + layer_type + '_max');
+                      if (zoom_max === null) {
+                          zoom_max = 30;
+                      }
 
-                        var hide_layer = (zoom < zoom_min) || (zoom > zoom_max);
-                        if (layer_type === 'stops') {
-                            toggleLayerVisibility(stations_layer, hide_layer);
-                        }
+                  });
 
-                        if (layer_type === 'shapes') {
-                            toggleLayerVisibility(edges_layer, hide_layer);
-                        }
-                    });
-                }
+                  // FLAG : showStations or hideStations
+                  //if(stations_showing) toggleLayerVisibility(stations_layer,false);
+
+                } // end of trigger_toggleLayerVisibility
 
                 google.maps.event.addListener(map, 'idle', trigger_toggleLayerVisibility);
                 google.maps.event.addListener(map, 'maptypeid_changed', trigger_toggleLayerVisibility);
@@ -1034,10 +1566,10 @@ var simulation_manager = (function(){
                     // TODO - FIXME later ?
                     // Kind of a hack, getBounds is ready only after a while since loading, so we hook in the 'idle' event
                     map_inited = true;
-                    
+
                     map_layers_add();
                     listener_helpers.notify('map_init');
-                    
+
                     function update_detail_view_state() {
                         if (map.getMapTypeId() !== google.maps.MapTypeId.SATELLITE) {
                             has_detail_view = false;
@@ -1048,19 +1580,19 @@ var simulation_manager = (function(){
                             has_detail_view = false;
                             return;
                         }
-                        
+
                         if (map.getTilt() !== 0) {
                             has_detail_view = false;
                             return;
                         }
-                        
+
                         has_detail_view = true;
                     }
                     google.maps.event.addListener(map, 'zoom_changed', update_detail_view_state);
                     google.maps.event.addListener(map, 'tilt_changed', update_detail_view_state);
                     google.maps.event.addListener(map, 'maptypeid_changed', update_detail_view_state);
                     update_detail_view_state();
-                    
+
                     function update_extended_bounds() {
                         var map_bounds = map.getBounds();
 
@@ -1077,7 +1609,7 @@ var simulation_manager = (function(){
                 }
             });
         }
-        
+
         return {
             init: init,
             isDetailView: function() {
@@ -1088,7 +1620,7 @@ var simulation_manager = (function(){
             }
         };
     })();
-    
+
     // Vehicle helpers
     // Roles:
     // - check backend for new vehicles
@@ -1110,29 +1642,29 @@ var simulation_manager = (function(){
 
                 return true;
             }
-            
+
             function match(vehicle_name, vehicle_id) {
                 if (track_vehicle_id === null) {
                     track_vehicle_name = config.getParam('vehicle_name');
                     if (track_vehicle_name !== null) {
                         track_vehicle_name = track_vehicle_name.replace(/[^A-Z0-9]/i, '');
                     }
-            
+
                     track_vehicle_id = config.getParam('vehicle_id');
                 }
 
                 if (track_vehicle_id === vehicle_id) {
                     return true;
                 }
-                
+
                 return match_by_name(vehicle_name);
             }
-            
+
             listener_helpers.subscribe('vehicles_load', function(){
                 if (config.getParam('action') !== 'vehicle_add') {
                     return;
                 }
-                
+
                 function str_hhmm_2_sec_ar(str_hhmm) {
                     var sec_ar = [];
                     $.each(str_hhmm.split('_'), function(index, hhmm){
@@ -1141,12 +1673,12 @@ var simulation_manager = (function(){
                     });
                     return sec_ar;
                 }
-                
+
                 var station_ids = config.getParam('station_ids').split('_');
                 $.each(station_ids, function(index, station_id_s){
                     station_ids[index] = station_id_s;
                 });
-                
+
                 var vehicle_data = {
                     arrs: str_hhmm_2_sec_ar(config.getParam('arrs')),
                     deps: str_hhmm_2_sec_ar(config.getParam('deps')),
@@ -1156,21 +1688,21 @@ var simulation_manager = (function(){
                     type: config.getParam('vehicle_type'),
                     edges: []
                 };
-                
+
                 var v = new Vehicle(vehicle_data);
                 simulation_vehicles[vehicle_data.id] = v;
                 v.render();
-                
+
                 simulation_panel.displayVehicle(v);
                 simulation_panel.followVehicle(v);
             });
-            
+
             return {
                 match: match
             };
         })();
 
-        // Vehicle icons manager. 
+        // Vehicle icons manager.
         // Roles:
         // - keep a reference for each vehicle type (IC, ICE, etc..)
         var imagesPool = (function(){
@@ -1183,7 +1715,8 @@ var simulation_manager = (function(){
 
                 var routes_config = config.getParam('routes');
                 if ((typeof routes_config[type]) === 'undefined') {
-                    return null;
+                    type = "general"
+                    // return null;
                 }
 
                 if (routes_config[type].icon === false) {
@@ -1203,7 +1736,7 @@ var simulation_manager = (function(){
                 return icon;
             }
 
-            var vehicle_detail_base_zoom = 17;            
+            var vehicle_detail_base_zoom = 17;
             var vehicle_detail_config = {
                 "s-bahn-rear": {
                     base_zoom_width: 33,
@@ -1256,14 +1789,14 @@ var simulation_manager = (function(){
                     base_zoom_width: 32,
                     width: 207
                 },
-                
+
                 "ir-coach": {
                     base_zoom_width: 32,
                     width: 223
                 }
             };
             var vehicle_detail_icons = {};
-            
+
             var service_parts = {
                 s: {
                     offsets: [-40, -13, 14, 41],
@@ -1286,15 +1819,15 @@ var simulation_manager = (function(){
                     vehicles: ['ir-coach', 'ir-coach', 'ir-coach', 'ir-coach', 'ir-coach', 'ir-coach', 'ir-coach', 'ic-loco']
                 }
             };
-            
+
             function getVehicleIcon(zoom, type, heading) {
                 var key = zoom + '_' + type + '_' + heading;
                 if (typeof vehicle_detail_icons[key] === 'undefined') {
                     var original_width = vehicle_detail_config[type].width;
                     var icon_width = vehicle_detail_config[type].base_zoom_width * Math.pow(2, parseInt(zoom - vehicle_detail_base_zoom, 10));
-                    
+
                     var base_url = 'http://static.vasile.ch/simcity/service-vehicle-detail';
-                    
+
                     var icon = {
                         url: base_url + '/' + type + '/' + heading + '.png',
                         size: new google.maps.Size(original_width, original_width),
@@ -1304,7 +1837,7 @@ var simulation_manager = (function(){
                     };
                     vehicle_detail_icons[key] = icon;
                 }
-                
+
                 return vehicle_detail_icons[key];
             }
 
@@ -1332,37 +1865,37 @@ var simulation_manager = (function(){
         function Vehicle(params) {
             function parseTimes(times) {
                 var time_ar = [];
-                
+
                 $.each(times, function(k, time){
                     // 32855 = 9 * 3600 + 7 * 60 + 35
                     if ((typeof time) === 'number') {
                         if (time < (2 * 24 * 3600)) {
                             time += timer.getTSMidnight();
-                        }                        
+                        }
 
                         time_ar.push(time);
                         return;
                     }
-                    
+
                     // 09:07:35
                     if (time.match(/^[0-9]{2}:[0-9]{2}:[0-9]{2}$/) !== null) {
                         time = timer.getHMS2TS(time);
-                        
+
                         time_ar.push(time);
                         return;
                     }
-                    
+
                     // 09:07
                     if (time.match(/^[0-9]{2}:[0-9]{2}$/) !== null) {
                         var hms = time + ':00';
 
                         time = timer.getHMS2TS(hms);
-                        
+
                         time_ar.push(time);
                         return;
                     }
                 });
-                
+
                 return time_ar;
             }
 
@@ -1377,7 +1910,7 @@ var simulation_manager = (function(){
                 this.arrS               = parseTimes(params.arrs);
                 this.route_icon         = params.type;
                 this.service_type       = params.service_type;
-                
+
                 $.each(params.edges, function(k, edges) {
                     if (k === 0) { return; }
                     linesPool.routeAdd(edges);
@@ -1402,37 +1935,53 @@ var simulation_manager = (function(){
                     if (k < (params.stops.length - 1)) {
                         departures.push(stop.departure_time);
                     }
-                    
+
                     if (k > 0) {
                         arrivals.push(stop.arrival_time);
                     }
-                    
+
                     stations.push(stop.stop_id);
                     shape_percent.push(stop.stop_shape_percent);
                 });
-                
+
                 this.stations           = stations;
                 this.depS               = parseTimes(departures);
                 this.arrS               = parseTimes(arrivals);
                 this.shape_percent      = shape_percent;
 
-                this.route_icon         = params.route_short_name;
+                this.route_icon         = params.route_type;
             }
-            
+
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(0, 0),
                 map: null,
                 speed: null,
                 status: 'not on map'
             });
-            var icon = imagesPool.iconGet(this.route_icon);
+
+            var typeofvehicle;
+            if(this.route_icon == 0) typeofvehicle = "Eurocity";
+            else if(this.route_icon == 1) typeofvehicle = "Extrazug";
+            else if(this.route_icon == 2) typeofvehicle = "ICE";
+            else if(this.route_icon == 3) typeofvehicle = "InterRegio";
+            else if(this.route_icon == 4) typeofvehicle = "Intercity";
+            else if(this.route_icon == 5) typeofvehicle = "RegioExpress";
+            else if(this.route_icon == 6) typeofvehicle = "Regionalzug";
+            else if(this.route_icon == 7) typeofvehicle = "Standseilbahn";
+            else if(this.route_icon == 8) typeofvehicle = "S-N";
+            else if(this.route_icon == 9) typeofvehicle = "TER200";
+            else if(this.route_icon == 10) typeofvehicle = "TGV";
+            else if(this.route_icon == 11) typeofvehicle = "Zahnradbahn";
+
+            var icon = imagesPool.iconGet(typeofvehicle);
+
             if (icon !== null) {
                 marker.setIcon(icon);
             }
-            
+
             this.marker = marker;
             this.detail_markers = [];
-            
+
             // TODO - FIXME .apply
             var that = this;
 
@@ -1456,7 +2005,7 @@ var simulation_manager = (function(){
                 var route_config = config.getParam('routes')[that.route_icon];
                 if (route_config) {
                     $('span.vehicle_name', popup_div).css('background-color', route_config.route_color);
-                    $('span.vehicle_name', popup_div).css('color', route_config.route_text_color);                    
+                    $('span.vehicle_name', popup_div).css('color', route_config.route_text_color);
                 }
 
                 $('.status', popup_div).html(marker.get('status'));
@@ -1470,7 +2019,7 @@ var simulation_manager = (function(){
             };
             google.maps.event.addListener(marker, 'mouseover', this.mouseOverMarker);
             google.maps.event.addListener(marker, 'mouseout', this.mouseOutMarker);
-            
+
             if (vehicle_detect.match(this.name, this.id)) {
                 simulation_panel.displayVehicle(this);
                 simulation_panel.followVehicle(this);
@@ -1479,7 +2028,7 @@ var simulation_manager = (function(){
         Vehicle.prototype.render = function() {
             // TODO - FIXME .apply
             var that = this;
-            
+
             function animate() {
                 var ts = timer.getTS();
 
@@ -1497,24 +2046,24 @@ var simulation_manager = (function(){
                         var speed = that.marker.get('speed');
                         if (ts > that.depS[i]) {
                             var routeLength = linesPool.lengthGet(route_id);
-                            
+
                             // Vehicle is in motion between two stations
                             if ((speed === 0) || (speed === null)) {
                                 var trackLength = routeLength;
                                 if (that.source === 'gtfs') {
                                     trackLength = routeLength * (that.shape_percent[i+1] - that.shape_percent[i]) / 100;
                                 }
-                                
+
                                 var speed = trackLength * 0.001 * 3600 / (that.arrS[i] - that.depS[i]);
                                 that.marker.set('speed', parseInt(speed, 10));
                                 that.marker.set('status', 'Heading to ' + stationsPool.get(station_b) + '(' + timer.getHM(that.arrS[i]) + ')<br/>Speed: ' + that.marker.get('speed') + ' km/h');
                             }
-                            
+
                             route_percent = (ts - that.depS[i])/(that.arrS[i] - that.depS[i]);
                             if (that.source === 'gtfs') {
                                 route_percent = (that.shape_percent[i] + route_percent * (that.shape_percent[i+1] - that.shape_percent[i])) / 100;
                             }
-                            
+
                             d_AC = routeLength * route_percent;
                         } else {
                             // Vehicle is in a station
@@ -1527,31 +2076,31 @@ var simulation_manager = (function(){
                                 route_percent = that.shape_percent[i] / 100;
                             }
                         }
-                        
+
                         var vehicle_position_data = linesPool.positionGet(route_id, route_percent);
                         if (vehicle_position_data === null) {
                             break;
                         }
 
                         var vehicle_position = vehicle_position_data.position;
-                        
+
                         if (that.marker.get('follow') === 'yes-init') {
                             that.marker.set('follow', 'yes');
-                            
+
                             map.panTo(vehicle_position);
                             if (map.getZoom() < config.getParam('zoom.vehicle_follow')) {
                                 map.setZoom(config.getParam('zoom.vehicle_follow'));
                             }
-                            map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
+                            //map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
 
                             map.bindTo('center', that.marker, 'position');
                         }
-                        
+
                         that.updateIcon(vehicle_position_data, d_AC, i);
                         if (map.getZoom() >= 12) {
                             animation_timeout = timer.getRefreshValue();
                         }
-                        
+
                         setTimeout(animate, animation_timeout);
                         break;
                     }
@@ -1562,7 +2111,7 @@ var simulation_manager = (function(){
                     delete simulation_vehicles[that.id];
                 }
             }
-            
+
             animate();
         };
         Vehicle.prototype.updateIcon = function(data, d_AC, i) {
@@ -1570,12 +2119,12 @@ var simulation_manager = (function(){
             var render_in_detail = data.is_detailed && (service_parts !== null);
             var vehicle_position = data.position;
             this.marker.setPosition(data.position);
-            
+
             if (render_in_detail) {
                 if (this.marker.getMap() !== null) {
                     this.marker.setMap(null);
                 }
-                
+
                 if (map_helpers.getExtendedBounds().contains(vehicle_position)) {
                     var that = this;
                     $.each(service_parts.offsets, function(k, offset){
@@ -1638,7 +2187,7 @@ var simulation_manager = (function(){
                     marker.setMap(null);
                 });
                 this.detail_markers = [];
-                
+
                 if (map.getBounds().contains(vehicle_position)) {
                     if (this.marker.getMap() === null) {
                         this.marker.setMap(map);
@@ -1654,34 +2203,38 @@ var simulation_manager = (function(){
         return {
             load: function() {
                 var hm = timer.getHM();
-                
+                var ymd = timer.getYMD();
                 var url = config.getParam('api_paths.trips');
                 url = url.replace(/\[hhmm\]/, hm.replace(':', ''));
-                
+                url = url.replace(/\[ymd\]/, ymd.replace(':', ''));
+                url = url.replace(/\[vtype\]/, 2); // 1 if all except trains, 2 for trains, else all
+                console.log('url '+ url)
+
                 $.ajax({
                     url: url,
                     dataType: 'json',
                     success: function(vehicles) {
+                        console.log(vehicles)
                         $.each(vehicles, function(index, data) {
                             var vehicle_id = ((typeof data.trip_id) === 'undefined') ? data.id : data.trip_id;
-                            
+
                             if ((typeof simulation_vehicles[vehicle_id]) !== 'undefined') {
                                 return;
                             }
-                            
+
                             var v = new Vehicle(data);
                             v.render();
 
                             simulation_vehicles[vehicle_id] = v;
                         });
-                        
+
                         listener_helpers.notify('vehicles_load');
                     }
                 });
             }
         };
     })();
-    
+
     listener_helpers.subscribe('map_init', function(){
         function loadStations(url) {
             if (url === null) {
@@ -1718,7 +2271,7 @@ var simulation_manager = (function(){
                     if (typeof(geojson.features) === 'undefined') {
                         console.log('Malformed GeoJSON. URL: ' + url);
                     } else {
-                        linesPool.loadGeoJSONShapes(geojson.features);    
+                        linesPool.loadGeoJSONShapes(geojson.features);
                     }
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
@@ -1727,7 +2280,7 @@ var simulation_manager = (function(){
             });
         }
         loadStations(config.getParam('geojson.gtfs_stops'));
-
+/*
         // Custom topology approach
         var url = config.getParam('geojson.topology_edges');
         if (url !== null) {
@@ -1740,7 +2293,7 @@ var simulation_manager = (function(){
                         console.log('Malformed GeoJSON. URL: ' + url);
                     } else {
                         linesPool.loadGeoJSONEdges(geojson.features);
-                    }                   
+                    }
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     console.log('Error from server ' + textStatus + ' for url: ' + url);
@@ -1748,22 +2301,24 @@ var simulation_manager = (function(){
             });
         }
         loadStations(config.getParam('geojson.topology_stations'));
+        */
     });
-    
+
     function ui_init() {
         var view_mode = config.getParam('view_mode');
-        
+
         var panel_display = (ua_is_mobile === false) && (view_mode !== 'iframe');
         if (panel_display) {
             $('#panel').removeClass('hidden');
         }
-        
+/*
         var time_multiply = config.getParam('time_multiply');
         if (time_multiply !== null) {
             $('#time_multiply').val(time_multiply);
         }
+        */
     }
-    
+
     return {
         init: function(){
             config.init();
@@ -1777,5 +2332,5 @@ var simulation_manager = (function(){
         }
     };
 })();
-    
+
 $(document).ready(simulation_manager.init);

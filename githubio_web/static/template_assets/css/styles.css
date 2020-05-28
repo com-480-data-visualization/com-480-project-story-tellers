@@ -29,7 +29,7 @@
   --success: #28a745;
   --info: #17a2b8;
   --warning: #fed136;
-  --danger: #dc3545;
+  --danger: #ff8a5c;
   --light: #f8f9fa;
   --dark: #343a40;
   --breakpoint-xs: 0;
@@ -159,7 +159,7 @@ sup {
 }
 
 a {
-  color: #fed136;
+  color: #badfdb;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2457,8 +2457,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #badfdb;
+  border-color: #badfdb;
 }
 .btn-primary:hover {
   color: #fff;
@@ -10021,7 +10021,7 @@ img::-moz-selection {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: #badfdb;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10049,7 +10049,7 @@ img::-moz-selection {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #ff8a5c;
 }
 
 @media (min-width: 992px) {
@@ -10393,7 +10393,7 @@ header.masthead .masthead-heading {
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 .team-member h4 {
-  margin: 20px; 
+  margin: 20px;
   font-size: 1.4em;
 }
 

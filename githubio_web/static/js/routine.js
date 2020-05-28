@@ -1,25 +1,28 @@
-var svg1 = d3.select("#svg1"),
+var d3v4 = window.d3;
+window.d3 = null;
+
+var svg1 = d3v4.select("#svg1"),
     width = +svg1.attr("width"),
     height = +svg1.attr("height"),
     innerRadius = 180,
-    outerRadius = Math.min(width, height) / 2.5,
-    g_1 = svg1.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    outerRadius = Math.min(width, height) / 2,
+    g1 = svg1.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 
-var xScaleOffset = Math.PI * 75/180;
-var x = d3.scaleBand()
+var xScaleOffset = -0.06;
+var x = d3v4.scaleBand()
     .range([xScaleOffset, 2 * Math.PI + xScaleOffset])
     .align(0);
 
-var y = d3.scaleLinear()
+var y = d3v4.scaleLinear()
     .range([innerRadius, outerRadius]);
 
-var z = d3.scaleOrdinal()
+var z = d3v4.scaleOrdinal()
     .range(["#98abc5", "#8a89a6"]);
 
-var zClasses = ['Number of Starting transportation', 'Number of Finishing transportation'];
+var zClasses = ['The number of starting transportation', 'The number of finishing transportation'];
 
-d3.csv("data/time_routine.csv", function(d, i, columns) {
+d3v4.csv("data/time_routine1.csv", function(d, i, columns) {
   d.start = (+d.start);
   d.end =  (+d.end);
   return d;
@@ -27,46 +30,76 @@ d3.csv("data/time_routine.csv", function(d, i, columns) {
   if (error) throw error;
 
   var keys = data.columns.slice(1);
-  var meanAccidents = d3.mean(data, function(d) { return d3.sum(keys, function(key) { return d[key]; }); })
+  var meanTransports = d3v4.mean(data, function(d) { return d3v4.sum(keys, function(key) { return d[key]; }); })
 
   x.domain(data.map(function(d) { return d.time; }));
-  y.domain([0, d3.max(data, function(d) { return (d.start + d.end); })]);
+  y.domain([0, d3v4.max(data, function(d) { return (d.start + d.end); })]);
   z.domain(data.columns.slice(1));
 
-  g_1.append('g')
+  // ----------------
+    // Create a tooltip
+    // ----------------
+    var tooltip1 = d3v4.select("#my_dataviz_1")
+      .append("div")
+      .style("opacity", 0)
+      .attr("class", "tooltip")
+      .style("background-color", "white")
+      .style("border", "solid")
+      .style("border-width", "1px")
+      .style("border-radius", "5px")
+      .style("padding", "10px")
+
+
+    var mouseover = function(d) {
+      var subgroupName = d3v4.select(this.parentNode).datum().key;
+      var subgroupValue = d.data[subgroupName];
+      tooltip1
+          .html("Class: " + subgroupName + "<br>" + "Number: " + subgroupValue)
+          .style("opacity", 1)
+    }
+    var mousemove = function(d) {
+      tooltip1
+        .style("left", (d3v4.mouse(this)[0] + 500) + "px")
+        .style("top", (d3v4.mouse(this)[1] + 400) + "px")
+    }
+    var mouseleave = function(d) {
+      tooltip1
+        .style("opacity", 0)
+    }
+
+
+  // transports
+  g1.append('g')
       .selectAll("g")
-    .data(d3.stack().keys(data.columns.slice(1))(data))
+    .data(d3v4.stack().keys(data.columns.slice(1))(data))
     .enter().append("g")
       .attr("fill", function(d) { return z(d.key); })
     .selectAll("path")
     .data(function(d) { return d; })
     .enter().append("path")
-      .attr("d", d3.arc()
+      .attr("d", d3v4.arc()
           .innerRadius(function(d) { return y(d[0]); })
           .outerRadius(function(d) { return y(d[1]); })
           .startAngle(function(d) { return x(d.data.time); })
           .endAngle(function(d) { return x(d.data.time) + x.bandwidth(); })
-          .padAngle(0.01)
-          .padRadius(innerRadius));
+          .padAngle(0.005)
+          .padRadius(innerRadius))
+    .on("mouseover", mouseover)
+    .on("mousemove", mousemove)
+    .on("mouseleave", mouseleave);
 
   //yAxis and Mean
-
-  var yAxis = g_1.append("g")
+  var yAxis = g1.append("g")
       .attr("text-anchor", "middle");
 
-  var yTicksValues = d3.ticks(0, 40, 4);
+  var yTicksValues = d3v4.ticks(0, 30000, 4);
 
 
   // Mean value line
   var yMeanTick = yAxis
     .append("g")
-    .datum([meanAccidents]);
+    .datum([meanTransports]);
 
-  yMeanTick.append("circle")
-      .attr("fill", "none")
-      .attr("stroke", "#C0625E")
-      .attr("stroke-dasharray", "5 3")
-      .attr("r", y);
 
   var yTick = yAxis
     .selectAll("g")
@@ -93,41 +126,39 @@ d3.csv("data/time_routine.csv", function(d, i, columns) {
 
   yAxis.append("text")
       .attr("y", function(d) { return -y(yTicksValues.pop()); })
-      .attr("dy", "-2em")
-      .text("Number");
-
+      .attr("dy", "-2em");
   // Labels for xAxis
 
-  var label_1 = g_1.append("g")
+  var label = g1.append("g")
     .selectAll("g")
     .data(data)
     .enter().append("g")
       .attr("text-anchor", "middle")
       .attr("transform", function(d) { return "rotate(" + ((x(d.time) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)"; });
 
-  label_1.append("line")
-      .attr("x2", function(d) { return (((d.time % 5) == 0) | (d.time == '1')) ? -7 : -4 })
+  label.append("line")
+      .attr("x2", function(d) { return (((d.time % 1) == 0) | (d.time == '1')) ? -7 : -4 })
       .attr("stroke", "#000");
 
-  label_1.append("text")
+  label.append("text")
       .attr("transform", function(d) { return (x(d.time) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)"; })
       .text(function(d) {
-        var xlabel = (((d.time % 5) == 0) | (d.time == '1')) ? d.time : '';
+        var xlabel = (((d.time % 1) == 0) | (d.time == '1')) ? parseInt(d.time) : '';
         return xlabel; });
 
 // Legend
- var legend_1 = g_1.append("g")
+  var legend = g1.append("g")
     .selectAll("g")
     .data(zClasses)
     .enter().append("g")
       .attr("transform", function(d, i) { return "translate(-50," + (i - (zClasses.length - 1) / 2) * 25+ ")"; });
 
-  legend_1.append("circle")
+  legend.append("circle")
       .attr("r", 8)
       .attr("fill", z);
 
-  legend_1.append("text")
-      .attr("x", 15)
+  legend.append("text")
+      .attr("x", 100)
       .attr("y", 0)
       .attr("dy", "0.35em")
       .text(function(d) { return d; });

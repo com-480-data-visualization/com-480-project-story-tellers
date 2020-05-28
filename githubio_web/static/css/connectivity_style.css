@@ -60,7 +60,6 @@ g#voronoi {
   pointer-events: all;
 }
 
-/* shadow trick from bl.ocks.org */
 #tooltip {
   font-size: 10pt;
   font-weight: 900;

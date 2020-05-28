@@ -1,0 +1,4097 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.452516,46.946575 ]
+    },
+    "properties": {
+    "station_id":8500249,
+    "station_name":"Bern Matte",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.452516,46.946575 ]
+    },
+    "properties": {
+    "station_id":8500258,
+    "station_name":"Bern Münsterplattform",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.143834,46.4759 ]
+    },
+    "properties": {
+    "station_id":8501198,
+    "station_name":"Château-d'Oex La Palaz",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.91044,46.435884 ]
+    },
+    "properties": {
+    "station_id":8501300,
+    "station_name":"Montreux",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.870815,46.231789 ]
+    },
+    "properties": {
+    "station_id":8501335,
+    "station_name":"Stalden-Saas (Talstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.916118,46.068883 ]
+    },
+    "properties": {
+    "station_id":8501337,
+    "station_name":"Felskinn",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.648489,46.368982 ]
+    },
+    "properties": {
+    "station_id":8501339,
+    "station_name":"Rinderhütte",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.235592,46.365392 ]
+    },
+    "properties": {
+    "station_id":8501355,
+    "station_name":"Reusch",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.204737,46.459976 ]
+    },
+    "properties": {
+    "station_id":8501358,
+    "station_name":"La Videmanette",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.902329,46.45273 ]
+    },
+    "properties": {
+    "station_id":8501374,
+    "station_name":"Fontanivent",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.910079,46.44592 ]
+    },
+    "properties": {
+    "station_id":8501375,
+    "station_name":"Chernex",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.913499,46.44918 ]
+    },
+    "properties": {
+    "station_id":8501376,
+    "station_name":"Chamby",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.943319,46.45381 ]
+    },
+    "properties": {
+    "station_id":8501377,
+    "station_name":"Les Avants",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.007889,46.46982 ]
+    },
+    "properties": {
+    "station_id":8501378,
+    "station_name":"Allières",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.034219,46.49146 ]
+    },
+    "properties": {
+    "station_id":8501379,
+    "station_name":"Les Sciernes",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.921209,46.43905 ]
+    },
+    "properties": {
+    "station_id":8501384,
+    "station_name":"Sonzier",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.929069,46.44664 ]
+    },
+    "properties": {
+    "station_id":8501385,
+    "station_name":"Sendy-Sollard",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.965119,46.45467 ]
+    },
+    "properties": {
+    "station_id":8501386,
+    "station_name":"Jor",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.997709,46.45592 ]
+    },
+    "properties": {
+    "station_id":8501387,
+    "station_name":"Les Cases",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.171829,46.47747 ]
+    },
+    "properties": {
+    "station_id":8501388,
+    "station_name":"Les Combes",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.046569,46.46717 ]
+    },
+    "properties": {
+    "station_id":8501391,
+    "station_name":"La Tine",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.083239,46.46481 ]
+    },
+    "properties": {
+    "station_id":8501392,
+    "station_name":"Rossinière",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.096734,46.466052 ]
+    },
+    "properties": {
+    "station_id":8501393,
+    "station_name":"La Chaudanne-Les Moulins",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.131409,46.47467 ]
+    },
+    "properties": {
+    "station_id":8501394,
+    "station_name":"Château-d'Oex",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.15495,46.474165 ]
+    },
+    "properties": {
+    "station_id":8501395,
+    "station_name":"Les Granges-Gérignoz",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.186069,46.48209 ]
+    },
+    "properties": {
+    "station_id":8501396,
+    "station_name":"Flendruz",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.208959,46.48862 ]
+    },
+    "properties": {
+    "station_id":8501397,
+    "station_name":"Rougemont",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.260269,46.48857 ]
+    },
+    "properties": {
+    "station_id":8501398,
+    "station_name":"Saanen",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.284409,46.4748 ]
+    },
+    "properties": {
+    "station_id":8501399,
+    "station_name":"Gstaad",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.511878,46.267717 ]
+    },
+    "properties": {
+    "station_id":8501441,
+    "station_name":"Chalais (station aval)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.093412,46.427092 ]
+    },
+    "properties": {
+    "station_id":8501442,
+    "station_name":"Eggishorn",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.103441,46.413162 ]
+    },
+    "properties": {
+    "station_id":8501443,
+    "station_name":"Fiescheralp",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.845809,46.175205 ]
+    },
+    "properties": {
+    "station_id":8501450,
+    "station_name":"Croix-de-Culet",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.871154,46.174886 ]
+    },
+    "properties": {
+    "station_id":8501451,
+    "station_name":"Champéry (Planachaux)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.243983,46.164328 ]
+    },
+    "properties": {
+    "station_id":8501584,
+    "station_name":"Isérables",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.529911,46.292784 ]
+    },
+    "properties": {
+    "station_id":8501590,
+    "station_name":"Sierre/Siders (funi)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.526789,46.2966 ]
+    },
+    "properties": {
+    "station_id":8501591,
+    "station_name":"Muraz",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.518192,46.301482 ]
+    },
+    "properties": {
+    "station_id":8501592,
+    "station_name":"Venthône",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.51391,46.302582 ]
+    },
+    "properties": {
+    "station_id":8501593,
+    "station_name":"Darnona",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.508476,46.305698 ]
+    },
+    "properties": {
+    "station_id":8501594,
+    "station_name":"St-Maurice-de-Laques",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.499071,46.311137 ]
+    },
+    "properties": {
+    "station_id":8501595,
+    "station_name":"Bluche-Randogne",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.48922,46.312905 ]
+    },
+    "properties": {
+    "station_id":8501596,
+    "station_name":"Montana Gare",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.625421,46.383586 ]
+    },
+    "properties": {
+    "station_id":8501643,
+    "station_name":"Leukerbad (Talstation Gemmi)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.629117,46.373909 ]
+    },
+    "properties": {
+    "station_id":8501644,
+    "station_name":"Leukerbad (Torrentbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.801149,46.303252 ]
+    },
+    "properties": {
+    "station_id":8501645,
+    "station_name":"Raron (Talstation Unterbäch)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.616277,46.397994 ]
+    },
+    "properties": {
+    "station_id":8501657,
+    "station_name":"Gemmipass",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.800715,46.284867 ]
+    },
+    "properties": {
+    "station_id":8501659,
+    "station_name":"Unterbäch (Bergstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.895805,46.084755 ]
+    },
+    "properties": {
+    "station_id":8501695,
+    "station_name":"Längfluh",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.89968,46.091989 ]
+    },
+    "properties": {
+    "station_id":8501696,
+    "station_name":"Spielboden",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.033213,46.377991 ]
+    },
+    "properties": {
+    "station_id":8501698,
+    "station_name":"Riederalp Mitte",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.902037,46.22517 ]
+    },
+    "properties": {
+    "station_id":8501719,
+    "station_name":"Gspon (Bergstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.884846,46.229252 ]
+    },
+    "properties": {
+    "station_id":8501720,
+    "station_name":"Staldenried",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.974557,46.371698 ]
+    },
+    "properties": {
+    "station_id":8501953,
+    "station_name":"Belalp",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.057936,46.386108 ]
+    },
+    "properties": {
+    "station_id":8501954,
+    "station_name":"Bettmeralp",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.068065,46.375104 ]
+    },
+    "properties": {
+    "station_id":8501955,
+    "station_name":"Betten Dorf",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.507415,47.31014 ]
+    },
+    "properties": {
+    "station_id":8503081,
+    "station_name":"Felsenegg",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.520054,47.31317 ]
+    },
+    "properties": {
+    "station_id":8503082,
+    "station_name":"Adliswil (Luftseilbahnstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.56028,47.368089 ]
+    },
+    "properties": {
+    "station_id":8503083,
+    "station_name":"Zürich, Römerhof",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.57453,47.373203 ]
+    },
+    "properties": {
+    "station_id":8503084,
+    "station_name":"Zürich, Dolder",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.816744,47.224887 ]
+    },
+    "properties": {
+    "station_id":8503110,
+    "station_name":"Rapperswil",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.943381,47.22516 ]
+    },
+    "properties": {
+    "station_id":8503115,
+    "station_name":"Schmerikon",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.98069,47.224283 ]
+    },
+    "properties": {
+    "station_id":8503116,
+    "station_name":"Uznach",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.778129,47.202997 ]
+    },
+    "properties": {
+    "station_id":8503209,
+    "station_name":"Pfäffikon SZ",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.790316,47.011236 ]
+    },
+    "properties": {
+    "station_id":8503250,
+    "station_name":"Hoch-Ybrig Seebli",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.674659,47.10579 ]
+    },
+    "properties": {
+    "station_id":8503282,
+    "station_name":"Rothenthurm",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.722699,47.15637 ]
+    },
+    "properties": {
+    "station_id":8503284,
+    "station_name":"Biberbrugg",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.544037,47.376539 ]
+    },
+    "properties": {
+    "station_id":8503499,
+    "station_name":"Zürich Central (Polybahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.546401,47.376858 ]
+    },
+    "properties": {
+    "station_id":8503500,
+    "station_name":"Zürich Polyterrasse",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.04214,46.485426 ]
+    },
+    "properties": {
+    "station_id":8504070,
+    "station_name":"Montbovon",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.960943,47.008592 ]
+    },
+    "properties": {
+    "station_id":8504268,
+    "station_name":"Neuchâtel, La Coudre (FUNI)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.957468,47.026586 ]
+    },
+    "properties": {
+    "station_id":8504269,
+    "station_name":"Chaumont (FUNI)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.245336,47.142746 ]
+    },
+    "properties": {
+    "station_id":8504350,
+    "station_name":"Biel/Bienne Leubringenb.(Funi)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.242239,47.146204 ]
+    },
+    "properties": {
+    "station_id":8504351,
+    "station_name":"Biel/Bienne Beaumont",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.239167,47.149607 ]
+    },
+    "properties": {
+    "station_id":8504352,
+    "station_name":"Evilard/Leubringen",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.235645,47.136325 ]
+    },
+    "properties": {
+    "station_id":8504353,
+    "station_name":"Biel/Bienne Magglingenb.(Funi)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.22789,47.137345 ]
+    },
+    "properties": {
+    "station_id":8504354,
+    "station_name":"Biel/Bienne Hohfluh",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.214463,47.13911 ]
+    },
+    "properties": {
+    "station_id":8504355,
+    "station_name":"Magglingen/Macolin",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.134695,47.083949 ]
+    },
+    "properties": {
+    "station_id":8504356,
+    "station_name":"Ligerz (Talstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.132068,47.087306 ]
+    },
+    "properties": {
+    "station_id":8504357,
+    "station_name":"Ligerz Festi",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.132975,47.085329 ]
+    },
+    "properties": {
+    "station_id":8504358,
+    "station_name":"Ligerz Pilgerweg",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.130799,47.092735 ]
+    },
+    "properties": {
+    "station_id":8504359,
+    "station_name":"Prêles",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.018485,46.54729 ]
+    },
+    "properties": {
+    "station_id":8504748,
+    "station_name":"Le Moléson",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.023727,46.55572 ]
+    },
+    "properties": {
+    "station_id":8504749,
+    "station_name":"Plan-Francey",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.310183,47.050178 ]
+    },
+    "properties": {
+    "station_id":8505000,
+    "station_name":"Luzern",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.433517,47.083594 ]
+    },
+    "properties": {
+    "station_id":8505002,
+    "station_name":"Küssnacht am Rigi",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.549446,47.049045 ]
+    },
+    "properties": {
+    "station_id":8505004,
+    "station_name":"Arth-Goldau",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.374392,47.045194 ]
+    },
+    "properties": {
+    "station_id":8505018,
+    "station_name":"Meggen Zentrum",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.638381,46.990219 ]
+    },
+    "properties": {
+    "station_id":8505089,
+    "station_name":"Morschach Talstat. (Luftseilb)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.624302,46.90173 ]
+    },
+    "properties": {
+    "station_id":8505112,
+    "station_name":"Flüelen",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.588808,46.665815 ]
+    },
+    "properties": {
+    "station_id":8505119,
+    "station_name":"Göschenen",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.611721,46.602221 ]
+    },
+    "properties": {
+    "station_id":8505190,
+    "station_name":"Gemsstock",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.598363,46.618407 ]
+    },
+    "properties": {
+    "station_id":8505191,
+    "station_name":"Gurschen",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.591783,46.632536 ]
+    },
+    "properties": {
+    "station_id":8505192,
+    "station_name":"Andermatt (Gemsstockbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.608619,46.527526 ]
+    },
+    "properties": {
+    "station_id":8505201,
+    "station_name":"Airolo",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.029518,46.195432 ]
+    },
+    "properties": {
+    "station_id":8505213,
+    "station_name":"Bellinzona",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.674599,46.5231 ]
+    },
+    "properties": {
+    "station_id":8505259,
+    "station_name":"Altanca (funicolare)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.672349,46.52734 ]
+    },
+    "properties": {
+    "station_id":8505260,
+    "station_name":"Piora",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.675269,46.51754 ]
+    },
+    "properties": {
+    "station_id":8505273,
+    "station_name":"Piotta Centrale (funicolare)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.946995,46.005501 ]
+    },
+    "properties": {
+    "station_id":8505300,
+    "station_name":"Lugano",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.801829,46.17262 ]
+    },
+    "properties": {
+    "station_id":8505470,
+    "station_name":"Locarno FART",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.753309,46.18564 ]
+    },
+    "properties": {
+    "station_id":8505473,
+    "station_name":"Ponte Brolla",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.702269,46.17766 ]
+    },
+    "properties": {
+    "station_id":8505494,
+    "station_name":"Intragna",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.610999,46.15487 ]
+    },
+    "properties": {
+    "station_id":8505499,
+    "station_name":"Camedo",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.086459,47.29948 ]
+    },
+    "properties": {
+    "station_id":8506200,
+    "station_name":"Wattwil",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.312326,47.185437 ]
+    },
+    "properties": {
+    "station_id":8506251,
+    "station_name":"Iltios",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.456784,47.296498 ]
+    },
+    "properties": {
+    "station_id":8506261,
+    "station_name":"Brülisau (Kastenbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.484942,47.283756 ]
+    },
+    "properties": {
+    "station_id":8506262,
+    "station_name":"Hoher Kasten",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.327926,47.29152 ]
+    },
+    "properties": {
+    "station_id":8506265,
+    "station_name":"Kronberg",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.328336,47.319917 ]
+    },
+    "properties": {
+    "station_id":8506266,
+    "station_name":"Jakobsbad (Kronbergbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.317684,47.256409 ]
+    },
+    "properties": {
+    "station_id":8506268,
+    "station_name":"Schwägalp (Säntis-Schwebebahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.342103,47.249288 ]
+    },
+    "properties": {
+    "station_id":8506269,
+    "station_name":"Säntis",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.312455,47.15524 ]
+    },
+    "properties": {
+    "station_id":8506274,
+    "station_name":"Chäserrugg",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.276799,47.39017 ]
+    },
+    "properties": {
+    "station_id":8506290,
+    "station_name":"Herisau",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.369896,47.423179 ]
+    },
+    "properties": {
+    "station_id":8506302,
+    "station_name":"St. Gallen",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.545355,46.660142 ]
+    },
+    "properties": {
+    "station_id":8507258,
+    "station_name":"Erlenbach i.S. (Stockhornbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.542316,46.68374 ]
+    },
+    "properties": {
+    "station_id":8507259,
+    "station_name":"Chrindi",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.538373,46.693494 ]
+    },
+    "properties": {
+    "station_id":8507260,
+    "station_name":"Stockhorn",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.650446,46.457963 ]
+    },
+    "properties": {
+    "station_id":8507261,
+    "station_name":"Sunnbüel",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.663566,46.476667 ]
+    },
+    "properties": {
+    "station_id":8507262,
+    "station_name":"Kandersteg (Talst. Sunnbüel)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.280129,46.49054 ]
+    },
+    "properties": {
+    "station_id":8507270,
+    "station_name":"Gruben",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.291099,46.50454 ]
+    },
+    "properties": {
+    "station_id":8507271,
+    "station_name":"Schönried",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.311719,46.51761 ]
+    },
+    "properties": {
+    "station_id":8507272,
+    "station_name":"Saanenmöser",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.352289,46.53137 ]
+    },
+    "properties": {
+    "station_id":8507273,
+    "station_name":"Oeschseite",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.374861,46.553483 ]
+    },
+    "properties": {
+    "station_id":8507290,
+    "station_name":"Zweisimmen",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.921576,46.606303 ]
+    },
+    "properties": {
+    "station_id":8507356,
+    "station_name":"Wengen Wengiboden",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.940983,46.613083 ]
+    },
+    "properties": {
+    "station_id":8507357,
+    "station_name":"Männlichen (Luftseilb. Wengen)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.907179,46.598753 ]
+    },
+    "properties": {
+    "station_id":8507377,
+    "station_name":"Lauterbrunnen (Seilbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.890873,46.596516 ]
+    },
+    "properties": {
+    "station_id":8507378,
+    "station_name":"Grütschalp",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.901716,46.555155 ]
+    },
+    "properties": {
+    "station_id":8507453,
+    "station_name":"Stechelberg (Schilthornbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.893486,46.547137 ]
+    },
+    "properties": {
+    "station_id":8507454,
+    "station_name":"Gimmelwald (Schilthornbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.89128,46.557724 ]
+    },
+    "properties": {
+    "station_id":8507455,
+    "station_name":"Mürren (Schilthornbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.857797,46.561829 ]
+    },
+    "properties": {
+    "station_id":8507456,
+    "station_name":"Birg (Schilthornbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.835253,46.557259 ]
+    },
+    "properties": {
+    "station_id":8507457,
+    "station_name":"Schilthorn",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.774218,46.410978 ]
+    },
+    "properties": {
+    "station_id":8507460,
+    "station_name":"Lauchernalp",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.777776,46.401819 ]
+    },
+    "properties": {
+    "station_id":8507500,
+    "station_name":"Wiler (Lötschen) (Talstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.059659,46.80758 ]
+    },
+    "properties": {
+    "station_id":8508354,
+    "station_name":"Sörenberg-Schönenboden",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.044403,46.787214 ]
+    },
+    "properties": {
+    "station_id":8508355,
+    "station_name":"Brienzer Rothorn (Seilbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.14941,46.785107 ]
+    },
+    "properties": {
+    "station_id":8508364,
+    "station_name":"Lungern (Turren-Bahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.129832,46.78924 ]
+    },
+    "properties": {
+    "station_id":8508367,
+    "station_name":"Turren",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.40714,46.83208 ]
+    },
+    "properties": {
+    "station_id":8508368,
+    "station_name":"Ristis (Brunni-Bahnen)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.251241,46.990674 ]
+    },
+    "properties": {
+    "station_id":8508455,
+    "station_name":"Fräkmüntegg",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.255947,46.979432 ]
+    },
+    "properties": {
+    "station_id":8508456,
+    "station_name":"Pilatus Kulm",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.472965,46.940392 ]
+    },
+    "properties": {
+    "station_id":8508496,
+    "station_name":"Klewenalp",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.426969,46.929733 ]
+    },
+    "properties": {
+    "station_id":8508497,
+    "station_name":"Niederrickenbach Dorf",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.473215,46.966343 ]
+    },
+    "properties": {
+    "station_id":8508500,
+    "station_name":"Beckenried (Klewenalpbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.415408,46.818912 ]
+    },
+    "properties": {
+    "station_id":8508502,
+    "station_name":"Engelberg (Brunni-Bahnen)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.367209,46.913959 ]
+    },
+    "properties": {
+    "station_id":8508551,
+    "station_name":"Wirzweli",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.386968,46.925195 ]
+    },
+    "properties": {
+    "station_id":8508552,
+    "station_name":"Dallenwil (Wirzwelibahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.528937,46.853084 ]
+    },
+    "properties": {
+    "station_id":8509000,
+    "station_name":"Chur",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.880438,46.868962 ]
+    },
+    "properties": {
+    "station_id":8509080,
+    "station_name":"Klosters Platz (Gotschnabahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.858132,46.861994 ]
+    },
+    "properties": {
+    "station_id":8509081,
+    "station_name":"Gotschnaboden",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.847882,46.859015 ]
+    },
+    "properties": {
+    "station_id":8509082,
+    "station_name":"Gotschnagrat (Klosters)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.805787,46.832905 ]
+    },
+    "properties": {
+    "station_id":8509085,
+    "station_name":"Weissfluhjoch",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.79613,46.834284 ]
+    },
+    "properties": {
+    "station_id":8509087,
+    "station_name":"Weissfluhgipfel",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.823333,46.791197 ]
+    },
+    "properties": {
+    "station_id":8509090,
+    "station_name":"Davos Platz (Jakobshorn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.832426,46.786749 ]
+    },
+    "properties": {
+    "station_id":8509091,
+    "station_name":"Ischalp",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.848282,46.772457 ]
+    },
+    "properties": {
+    "station_id":8509093,
+    "station_name":"Jakobshorn",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.51631,46.829059 ]
+    },
+    "properties": {
+    "station_id":8509099,
+    "station_name":"Brambrüesch",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.659675,46.772657 ]
+    },
+    "properties": {
+    "station_id":8509158,
+    "station_name":"Arosa (Talstation) Hörnli",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.620958,46.767158 ]
+    },
+    "properties": {
+    "station_id":8509159,
+    "station_name":"Hörnligrat",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.678598,46.78359 ]
+    },
+    "properties": {
+    "station_id":8509160,
+    "station_name":"Arosa (Talstation) Weisshorn",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.639122,46.78928 ]
+    },
+    "properties": {
+    "station_id":8509162,
+    "station_name":"Weisshorn",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.855019,46.70497 ]
+    },
+    "properties": {
+    "station_id":8509179,
+    "station_name":"Disentis/Mustér",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.440499,46.6982 ]
+    },
+    "properties": {
+    "station_id":8509189,
+    "station_name":"Thusis",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.572859,46.66388 ]
+    },
+    "properties": {
+    "station_id":8509192,
+    "station_name":"Tiefencastel",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.682289,46.67533 ]
+    },
+    "properties": {
+    "station_id":8509195,
+    "station_name":"Filisur",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.746749,46.63107 ]
+    },
+    "properties": {
+    "station_id":8509197,
+    "station_name":"Bergün/Bravuogn",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.873629,46.53376 ]
+    },
+    "properties": {
+    "station_id":8509251,
+    "station_name":"Samedan",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.846389,46.49797 ]
+    },
+    "properties": {
+    "station_id":8509253,
+    "station_name":"St. Moritz",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.896069,46.49065 ]
+    },
+    "properties": {
+    "station_id":8509255,
+    "station_name":"Pontresina",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.837631,46.498819 ]
+    },
+    "properties": {
+    "station_id":8509270,
+    "station_name":"St. Moritz (Standseilbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.835244,46.501426 ]
+    },
+    "properties": {
+    "station_id":8509271,
+    "station_name":"Chantarella",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.818434,46.508007 ]
+    },
+    "properties": {
+    "station_id":8509273,
+    "station_name":"Corviglia (Talstat. Piz Nair)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.787692,46.505452 ]
+    },
+    "properties": {
+    "station_id":8509274,
+    "station_name":"Piz Nair",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.882872,46.509023 ]
+    },
+    "properties": {
+    "station_id":8509275,
+    "station_name":"Punt Muragl (Talstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.901879,46.521681 ]
+    },
+    "properties": {
+    "station_id":8509276,
+    "station_name":"Muottas Muragl",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.825114,46.516732 ]
+    },
+    "properties": {
+    "station_id":8509277,
+    "station_name":"Marguns (Val Saluver)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.289165,46.795304 ]
+    },
+    "properties": {
+    "station_id":8509280,
+    "station_name":"Scuol (pendicularas)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.272526,46.810868 ]
+    },
+    "properties": {
+    "station_id":8509281,
+    "station_name":"Motta Naluns",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.66315,46.786402 ]
+    },
+    "properties": {
+    "station_id":8509282,
+    "station_name":"Arosa (Mittelstation)Weisshorn",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.019699,46.40876 ]
+    },
+    "properties": {
+    "station_id":8509356,
+    "station_name":"Ospizio Bernina",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.031139,46.37475 ]
+    },
+    "properties": {
+    "station_id":8509357,
+    "station_name":"Alp Grüm",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.051369,46.34527 ]
+    },
+    "properties": {
+    "station_id":8509359,
+    "station_name":"Cadera",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.054319,46.3248 ]
+    },
+    "properties": {
+    "station_id":8509361,
+    "station_name":"Poschiavo",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.077849,46.29216 ]
+    },
+    "properties": {
+    "station_id":8509364,
+    "station_name":"Le Prese",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.994783,46.436716 ]
+    },
+    "properties": {
+    "station_id":8509375,
+    "station_name":"Curtinatsch",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.021954,46.429908 ]
+    },
+    "properties": {
+    "station_id":8509376,
+    "station_name":"Piz Lagalb",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.822584,46.494213 ]
+    },
+    "properties": {
+    "station_id":8509383,
+    "station_name":"Signal (St. Moritz)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.417035,46.979218 ]
+    },
+    "properties": {
+    "station_id":8509440,
+    "station_name":"Pizolhütte",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.401795,46.795829 ]
+    },
+    "properties": {
+    "station_id":8509679,
+    "station_name":"Rhäzüns (Luftseilbahn Feldis)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.429821,46.795119 ]
+    },
+    "properties": {
+    "station_id":8509680,
+    "station_name":"Feldis/Veulden",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.556857,46.74029 ]
+    },
+    "properties": {
+    "station_id":8509681,
+    "station_name":"Lenzerheide/Lai Canols",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.573071,46.74284 ]
+    },
+    "properties": {
+    "station_id":8509682,
+    "station_name":"Scharmoin",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.597355,46.742554 ]
+    },
+    "properties": {
+    "station_id":8509683,
+    "station_name":"Parpaner Rothorn",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.337297,47.053932 ]
+    },
+    "properties": {
+    "station_id":8517336,
+    "station_name":"Luzern Verkehrshaus",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.982289,46.44179 ]
+    },
+    "properties": {
+    "station_id":8519370,
+    "station_name":"Bernina Diavolezza",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.509898,46.612044 ]
+    },
+    "properties": {
+    "station_id":8530003,
+    "station_name":"Cossonay-Ville",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.548731,46.875983 ]
+    },
+    "properties": {
+    "station_id":8530004,
+    "station_name":"La Robella (télésiège)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.551343,46.886187 ]
+    },
+    "properties": {
+    "station_id":8530005,
+    "station_name":"Buttes (télésiège)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.927238,46.99355 ]
+    },
+    "properties": {
+    "station_id":8530006,
+    "station_name":"Neuchâtel, Ecluse (FUNI)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.927227,46.994683 ]
+    },
+    "properties": {
+    "station_id":8530007,
+    "station_name":"Neuchâtel, Boine (FUNI)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.927203,46.995852 ]
+    },
+    "properties": {
+    "station_id":8530008,
+    "station_name":"Neuchâtel, Côte (FUNI)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.158081,46.803645 ]
+    },
+    "properties": {
+    "station_id":8530013,
+    "station_name":"Fribourg-Neuveville/Motta",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.288321,46.669266 ]
+    },
+    "properties": {
+    "station_id":8530014,
+    "station_name":"Schwarzsee Gypsera (Talstat.)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.156887,46.804065 ]
+    },
+    "properties": {
+    "station_id":8530016,
+    "station_name":"Fribourg-St-Pierre",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.293654,46.658919 ]
+    },
+    "properties": {
+    "station_id":8530017,
+    "station_name":"Riggisalp (Bergstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.927192,46.997022 ]
+    },
+    "properties": {
+    "station_id":8530023,
+    "station_name":"Neuchâtel, Plan (FUNI)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.038378,46.5601 ]
+    },
+    "properties": {
+    "station_id":8530024,
+    "station_name":"Moléson-sur-Gruyères (funi)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.208493,46.485702 ]
+    },
+    "properties": {
+    "station_id":8530032,
+    "station_name":"Rougemont (télécabine)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.205312,46.354143 ]
+    },
+    "properties": {
+    "station_id":8530039,
+    "station_name":"Col-du-Pillon (téléphérique)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.076852,46.283746 ]
+    },
+    "properties": {
+    "station_id":8530040,
+    "station_name":"La Barboleuse (télécabine)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.104613,46.295085 ]
+    },
+    "properties": {
+    "station_id":8530041,
+    "station_name":"Les Chaux (Barboleuse)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.044333,46.150393 ]
+    },
+    "properties": {
+    "station_id":8530084,
+    "station_name":"Dorénaz (téléphérique)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.059207,46.148195 ]
+    },
+    "properties": {
+    "station_id":8530085,
+    "station_name":"Champex-d'Alesse",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.053882,46.148977 ]
+    },
+    "properties": {
+    "station_id":8530086,
+    "station_name":"Alesse",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.304207,46.113438 ]
+    },
+    "properties": {
+    "station_id":8530099,
+    "station_name":"Tortin (Col-des-Gentianes)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.302028,46.0851 ]
+    },
+    "properties": {
+    "station_id":8530101,
+    "station_name":"Col-des-Gentianes",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.318289,46.080108 ]
+    },
+    "properties": {
+    "station_id":8530102,
+    "station_name":"Mont-Fort",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.270319,46.079992 ]
+    },
+    "properties": {
+    "station_id":8530103,
+    "station_name":"La Chaux VS",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.221494,46.171087 ]
+    },
+    "properties": {
+    "station_id":8530107,
+    "station_name":"Riddes (téléphérique)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.403368,46.08453 ]
+    },
+    "properties": {
+    "station_id":8530127,
+    "station_name":"Dixence (téléphérique)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.397372,46.080993 ]
+    },
+    "properties": {
+    "station_id":8530128,
+    "station_name":"Lac-des-Dix (téléphérique)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.526285,46.256786 ]
+    },
+    "properties": {
+    "station_id":8530134,
+    "station_name":"Vercorin (station amont)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.573473,46.176211 ]
+    },
+    "properties": {
+    "station_id":8530139,
+    "station_name":"Grimentz (télé)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.624079,46.138304 ]
+    },
+    "properties": {
+    "station_id":8530144,
+    "station_name":"Zinal (télépherique)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.60373,46.144417 ]
+    },
+    "properties": {
+    "station_id":8530145,
+    "station_name":"Sorebois",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.490959,46.312238 ]
+    },
+    "properties": {
+    "station_id":8530166,
+    "station_name":"Marigny",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.4983,46.342469 ]
+    },
+    "properties": {
+    "station_id":8530169,
+    "station_name":"Cabane-des-Violettes",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.488934,46.36991 ]
+    },
+    "properties": {
+    "station_id":8530173,
+    "station_name":"Glacier-de-la-Plaine-Morte",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.701482,46.298588 ]
+    },
+    "properties": {
+    "station_id":8530180,
+    "station_name":"Turtmann (Talstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.69917,46.29281 ]
+    },
+    "properties": {
+    "station_id":8530181,
+    "station_name":"Unterems",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.695464,46.282968 ]
+    },
+    "properties": {
+    "station_id":8530182,
+    "station_name":"Oberems",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.739291,46.315496 ]
+    },
+    "properties": {
+    "station_id":8530183,
+    "station_name":"Gampel (Talstation Jeizinen)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.722794,46.326298 ]
+    },
+    "properties": {
+    "station_id":8530184,
+    "station_name":"Jeizinen (Bergstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.800798,46.303173 ]
+    },
+    "properties": {
+    "station_id":8530187,
+    "station_name":"Raron (Talstation Eischoll)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.783801,46.293969 ]
+    },
+    "properties": {
+    "station_id":8530188,
+    "station_name":"Eischoll (Bergstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.836816,46.214318 ]
+    },
+    "properties": {
+    "station_id":8530196,
+    "station_name":"Kalpetran (Seilbahn)Talstation",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.827732,46.216167 ]
+    },
+    "properties": {
+    "station_id":8530197,
+    "station_name":"Embd (Seilbahn) Bergstation",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.826026,46.215003 ]
+    },
+    "properties": {
+    "station_id":8530198,
+    "station_name":"Embd (Luftseilbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.81671,46.217023 ]
+    },
+    "properties": {
+    "station_id":8530199,
+    "station_name":"Schalb",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.732277,46.001739 ]
+    },
+    "properties": {
+    "station_id":8530207,
+    "station_name":"Furi",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.729621,45.939047 ]
+    },
+    "properties": {
+    "station_id":8530210,
+    "station_name":"Klein Matterhorn",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.72222,45.971396 ]
+    },
+    "properties": {
+    "station_id":8530211,
+    "station_name":"Trockener Steg",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.797399,46.021538 ]
+    },
+    "properties": {
+    "station_id":8530215,
+    "station_name":"Rothorn VS",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.78585,46.01678 ]
+    },
+    "properties": {
+    "station_id":8530217,
+    "station_name":"Blauherd",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.98428,46.358923 ]
+    },
+    "properties": {
+    "station_id":8530235,
+    "station_name":"Blatten b. Naters (Belalpbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.979765,46.364837 ]
+    },
+    "properties": {
+    "station_id":8530236,
+    "station_name":"Erich/Tschuggen",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.046011,46.356603 ]
+    },
+    "properties": {
+    "station_id":8530237,
+    "station_name":"Mörel (Riederalpbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.076794,46.37134 ]
+    },
+    "properties": {
+    "station_id":8530243,
+    "station_name":"Betten Talstation (Seilbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.152316,46.411939 ]
+    },
+    "properties": {
+    "station_id":8530250,
+    "station_name":"Fürgangen (Talstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.160657,46.423014 ]
+    },
+    "properties": {
+    "station_id":8530251,
+    "station_name":"Bellwald (Bergstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.238152,46.351436 ]
+    },
+    "properties": {
+    "station_id":8530297,
+    "station_name":"Oldenegg",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.661066,46.48923 ]
+    },
+    "properties": {
+    "station_id":8530301,
+    "station_name":"Kandersteg (Luftseilbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.649447,46.492292 ]
+    },
+    "properties": {
+    "station_id":8530302,
+    "station_name":"Allmenalp",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.606474,46.529093 ]
+    },
+    "properties": {
+    "station_id":8530304,
+    "station_name":"Elsigbach (Talstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.622496,46.522546 ]
+    },
+    "properties": {
+    "station_id":8530305,
+    "station_name":"Elsigenalp",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.566427,46.459141 ]
+    },
+    "properties": {
+    "station_id":8530312,
+    "station_name":"Unter dem Birg (Talstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.565142,46.4494 ]
+    },
+    "properties": {
+    "station_id":8530313,
+    "station_name":"Engstligenalp",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.046927,46.623173 ]
+    },
+    "properties": {
+    "station_id":8530320,
+    "station_name":"Grindelwald (Pfingsteggbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.056445,46.617382 ]
+    },
+    "properties": {
+    "station_id":8530321,
+    "station_name":"Pfingstegg",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.192109,46.72834 ]
+    },
+    "properties": {
+    "station_id":8530343,
+    "station_name":"Meiringen (Luftseilbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.209,46.733031 ]
+    },
+    "properties": {
+    "station_id":8530344,
+    "station_name":"Hasliberg Reuti (Gondelbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.295091,47.051228 ]
+    },
+    "properties": {
+    "station_id":8530358,
+    "station_name":"Luzern, Château Gütsch",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.281377,46.771391 ]
+    },
+    "properties": {
+    "station_id":8530364,
+    "station_name":"Distelboden (Talst. Bonistock)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.290027,46.777795 ]
+    },
+    "properties": {
+    "station_id":8530365,
+    "station_name":"Bonistock (Distelboden)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.421407,46.88338 ]
+    },
+    "properties": {
+    "station_id":8530374,
+    "station_name":"Fell",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.43535,46.871825 ]
+    },
+    "properties": {
+    "station_id":8530375,
+    "station_name":"Chrüzhütte",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.421512,46.881975 ]
+    },
+    "properties": {
+    "station_id":8530376,
+    "station_name":"Fellboden",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.425468,46.870184 ]
+    },
+    "properties": {
+    "station_id":8530377,
+    "station_name":"Bannalpsee",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.519011,46.955881 ]
+    },
+    "properties": {
+    "station_id":8530385,
+    "station_name":"Emmetten (Niederbauenbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.53486,46.946383 ]
+    },
+    "properties": {
+    "station_id":8530386,
+    "station_name":"Niederbauen",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.664164,46.982183 ]
+    },
+    "properties": {
+    "station_id":8530393,
+    "station_name":"Stoos Bergstat. (Luftseilb)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.724245,46.984098 ]
+    },
+    "properties": {
+    "station_id":8530400,
+    "station_name":"Ried (Muotathal) (Seilbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.723642,46.98692 ]
+    },
+    "properties": {
+    "station_id":8530401,
+    "station_name":"Illgau (Luftseilbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.703089,47.041999 ]
+    },
+    "properties": {
+    "station_id":8530402,
+    "station_name":"Brunni SZ (Talstation Holzegg)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.698384,47.028835 ]
+    },
+    "properties": {
+    "station_id":8530403,
+    "station_name":"Holzegg",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.808958,47.020137 ]
+    },
+    "properties": {
+    "station_id":8530406,
+    "station_name":"Unteriberg Weglosen (Talst.)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.62756,46.89348 ]
+    },
+    "properties": {
+    "station_id":8530418,
+    "station_name":"Flüelen (Talstation Eggberge)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.64444,46.9016 ]
+    },
+    "properties": {
+    "station_id":8530420,
+    "station_name":"Eggberge",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.682055,46.87721 ]
+    },
+    "properties": {
+    "station_id":8530421,
+    "station_name":"Brügg (Bürglen UR) (Seilbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.708868,46.895367 ]
+    },
+    "properties": {
+    "station_id":8530423,
+    "station_name":"Biel (Kinzig)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.655653,46.865376 ]
+    },
+    "properties": {
+    "station_id":8530424,
+    "station_name":"Schattdorf (Talstation Haldi)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.670334,46.864355 ]
+    },
+    "properties": {
+    "station_id":8530425,
+    "station_name":"Haldi",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.711514,46.766525 ]
+    },
+    "properties": {
+    "station_id":8530426,
+    "station_name":"Bristen (Talstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.721351,46.774953 ]
+    },
+    "properties": {
+    "station_id":8530427,
+    "station_name":"Golzern (Bergstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.529776,46.410043 ]
+    },
+    "properties": {
+    "station_id":8530457,
+    "station_name":"S. Carlo (Bavona) Funivia",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.512392,46.443208 ]
+    },
+    "properties": {
+    "station_id":8530458,
+    "station_name":"Robiei",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.553414,47.387333 ]
+    },
+    "properties": {
+    "station_id":8530473,
+    "station_name":"Zürich, Rigiblick",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.046703,47.125049 ]
+    },
+    "properties": {
+    "station_id":8530515,
+    "station_name":"Niederurnen",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.020143,47.125534 ]
+    },
+    "properties": {
+    "station_id":8530516,
+    "station_name":"Morgenholz",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.171469,46.960116 ]
+    },
+    "properties": {
+    "station_id":8530519,
+    "station_name":"Matt (Seilbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.179575,46.962881 ]
+    },
+    "properties": {
+    "station_id":8530520,
+    "station_name":"Weissenberge",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.569389,46.986196 ]
+    },
+    "properties": {
+    "station_id":8530527,
+    "station_name":"Malans (Älplibahn Talstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.588487,47.012582 ]
+    },
+    "properties": {
+    "station_id":8530528,
+    "station_name":"Älpli",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.825332,46.850498 ]
+    },
+    "properties": {
+    "station_id":8530535,
+    "station_name":"Parsennhütte",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.896091,46.802577 ]
+    },
+    "properties": {
+    "station_id":8530540,
+    "station_name":"Dörfji",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.918871,46.80942 ]
+    },
+    "properties": {
+    "station_id":8530541,
+    "station_name":"Pischa",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.525763,46.847334 ]
+    },
+    "properties": {
+    "station_id":8530545,
+    "station_name":"Chur (Brambrüeschbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.525582,46.838933 ]
+    },
+    "properties": {
+    "station_id":8530546,
+    "station_name":"Känzeli (Chur)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.841118,46.700949 ]
+    },
+    "properties": {
+    "station_id":8530573,
+    "station_name":"Disentis/Mustér (Talstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.815865,46.704496 ]
+    },
+    "properties": {
+    "station_id":8530574,
+    "station_name":"Caischavedra (Disentis)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.214723,46.340183 ]
+    },
+    "properties": {
+    "station_id":8530590,
+    "station_name":"Cabane-des-Diablerets",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.644196,46.358033 ]
+    },
+    "properties": {
+    "station_id":8530596,
+    "station_name":"Pranzaira (Albigna)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.645483,46.337895 ]
+    },
+    "properties": {
+    "station_id":8530597,
+    "station_name":"Albigna",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.852969,46.512831 ]
+    },
+    "properties": {
+    "station_id":8530604,
+    "station_name":"Celerina (Talstation Marguns)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.375223,46.951236 ]
+    },
+    "properties": {
+    "station_id":8530609,
+    "station_name":"Samnaun-Ravaisch (Bergbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.367265,46.970172 ]
+    },
+    "properties": {
+    "station_id":8530610,
+    "station_name":"Alptrider Sattel",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.397282,46.927772 ]
+    },
+    "properties": {
+    "station_id":8530681,
+    "station_name":"Niederrickenbach Talstation",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.832575,46.483509 ]
+    },
+    "properties": {
+    "station_id":8530685,
+    "station_name":"St. Moritz Bad (Signalbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.039683,46.367153 ]
+    },
+    "properties": {
+    "station_id":8530690,
+    "station_name":"Greich",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.664819,46.774854 ]
+    },
+    "properties": {
+    "station_id":8530692,
+    "station_name":"Amsteg (Talstation Arnisee)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.651389,46.77803 ]
+    },
+    "properties": {
+    "station_id":8530693,
+    "station_name":"Arni UR",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.280378,46.376223 ]
+    },
+    "properties": {
+    "station_id":8530745,
+    "station_name":"Innergsteig",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.295086,46.363109 ]
+    },
+    "properties": {
+    "station_id":8530746,
+    "station_name":"Sanetsch-Stausee",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.522648,46.901672 ]
+    },
+    "properties": {
+    "station_id":8530758,
+    "station_name":"St. Jakob (Isenthal)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.500463,46.900216 ]
+    },
+    "properties": {
+    "station_id":8530759,
+    "station_name":"Gitschenen",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.873764,46.915064 ]
+    },
+    "properties": {
+    "station_id":8530781,
+    "station_name":"Glattalp",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.846522,46.913612 ]
+    },
+    "properties": {
+    "station_id":8530782,
+    "station_name":"Sahli (Luftseilbahn Glattalp)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.935917,46.996499 ]
+    },
+    "properties": {
+    "station_id":8530791,
+    "station_name":"Neuchâtel-gare (FUNI)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.937688,46.994015 ]
+    },
+    "properties": {
+    "station_id":8530792,
+    "station_name":"Neuchâtel-Université (FUNI)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.540665,47.01297 ]
+    },
+    "properties": {
+    "station_id":8530797,
+    "station_name":"Gersau Gschwend",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.524606,47.025313 ]
+    },
+    "properties": {
+    "station_id":8530798,
+    "station_name":"Burggeist (Rigi Scheidegg)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.920022,46.09974 ]
+    },
+    "properties": {
+    "station_id":8530806,
+    "station_name":"Saas-Fee Bifig (Felskinn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.725992,46.987893 ]
+    },
+    "properties": {
+    "station_id":8530819,
+    "station_name":"Illgau Dorf",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.720141,46.999977 ]
+    },
+    "properties": {
+    "station_id":8530820,
+    "station_name":"Oberberg St. Karl",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.680604,46.87799 ]
+    },
+    "properties": {
+    "station_id":8530853,
+    "station_name":"Bürglen UR Brügg (Ruogigbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.680117,46.885328 ]
+    },
+    "properties": {
+    "station_id":8530854,
+    "station_name":"Eierschwand",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.687702,46.902851 ]
+    },
+    "properties": {
+    "station_id":8530855,
+    "station_name":"Ruogig",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.59518,46.150546 ]
+    },
+    "properties": {
+    "station_id":8530859,
+    "station_name":"La Vouarda",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.414627,46.991317 ]
+    },
+    "properties": {
+    "station_id":8530953,
+    "station_name":"Gaffia (Talstation)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.557545,46.493001 ]
+    },
+    "properties": {
+    "station_id":8531081,
+    "station_name":"Adelboden (Tschentenbahn)",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.545886,46.498707 ]
+    },
+    "properties": {
+    "station_id":8531082,
+    "station_name":"Tschentenalp",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.209403,46.326877 ]
+    },
+    "properties": {
+    "station_id":8531155,
+    "station_name":"Glacier du Sex Rouge",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.296218,47.052578 ]
+    },
+    "properties": {
+    "station_id":8589793,
+    "station_name":"Luzern, Gütsch",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.552525,47.387297 ]
+    },
+    "properties": {
+    "station_id":8591156,
+    "station_name":"Zürich, Germaniastrasse",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.550158,47.386204 ]
+    },
+    "properties": {
+    "station_id":8591164,
+    "station_name":"Zürich, Goldauerstrasse",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.551335,47.386794 ]
+    },
+    "properties": {
+    "station_id":8591171,
+    "station_name":"Zürich, Hadlaubstrasse",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.548364,47.385916 ]
+    },
+    "properties": {
+    "station_id":8591362,
+    "station_name":"Zürich, Seilbahn Rigiblick",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.564949,47.370976 ]
+    },
+    "properties": {
+    "station_id":8591394,
+    "station_name":"Zürich, Titlisstrasse",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.568545,47.373244 ]
+    },
+    "properties": {
+    "station_id":8591421,
+    "station_name":"Zürich, Waldhaus Dolder",
+    "route_type":"gondola"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.522861,46.605906 ]
+    },
+    "properties": {
+    "station_id":8593755,
+    "station_name":"Cossonay-Penthalaz (funi)",
+    "route_type":"gondola"
+    }
+  }
+]
+}

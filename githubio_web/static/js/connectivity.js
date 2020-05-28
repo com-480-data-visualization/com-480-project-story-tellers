@@ -1,3 +1,6 @@
+var d3v5 = window.d3;
+window.d3 = null;
+
 const urls = {
 
   map: "data/suisse_cantons.json",
@@ -9,54 +12,54 @@ const urls = {
     "data/trips.csv"
 };
 
-const svg2  = d3.select("#svg2");
+const svg2  = d3v5.select("#svg2");
 
 const width2  = parseInt(svg2.attr("width"));
 const height2 = parseInt(svg2.attr("height"));
 const hypotenuse = Math.sqrt(width2 * width2 + height2 * height2);
 
-const projection = d3.geoAlbers()
+const projection = d3v5.geoAlbers()
                       .rotate([0, 0])
                       .center([8.3, 46.8])
                       .scale(16000)
                       .translate([width2 / 2, height2 / 2])
                       .precision(.1);
 
-const path = d3.geoPath().projection(projection);
+const path = d3v5.geoPath().projection(projection);
 const scales = {
   // used to scale station bubbles
-  stations: d3.scaleSqrt()
+  stations: d3v5.scaleSqrt()
     .range([4, 18]),
 
   // used to scale number of segments per line
-  segments: d3.scaleLinear()
+  segments: d3v5.scaleLinear()
     .domain([0, hypotenuse])
     .range([1, 10])
 };
 
 // have these already created for easier drawing
-const g = {
+const g2 = {
   basemap:  svg2.select("g#basemap"),
   trips:  svg2.select("g#trips"),
   stations: svg2.select("g#stations"),
   voronoi:  svg2.select("g#voronoi")
 };
 
-console.assert(g.basemap.size()  === 1);
-console.assert(g.trips.size()  === 1);
-console.assert(g.stations.size() === 1);
-console.assert(g.voronoi.size()  === 1);
+console.assert(g2.basemap.size()  === 1);
+console.assert(g2.trips.size()  === 1);
+console.assert(g2.stations.size() === 1);
+console.assert(g2.voronoi.size()  === 1);
 
-const tooltip = d3.select("text#tooltip");
-console.assert(tooltip.size() === 1);
+const tooltip2 = d3v5.select("text#tooltip");
+console.log("tooltip size", tooltip2.size() === 1);
 
 // load and draw base map
-d3.json(urls.map).then(drawMap);
+d3v5.json(urls.map).then(drawMap);
 
 // load the station and trip data together
 const promises = [
-  d3.csv(urls.stations, typestation),
-  d3.csv(urls.trips,  typetrip)
+  d3v5.csv(urls.stations, typestation),
+  d3v5.csv(urls.trips,  typetrip)
 ];
 
 Promise.all(promises).then(processData);
@@ -72,13 +75,13 @@ function processData(values) {
   console.log(" trips: " + trips.length);
 
   // convert stations array (pre filter) into map for fast lookup
-  let iata = new Map(stations.map(node => [node.iata, node]));
+  let code = new Map(stations.map(node => [node.code, node]));
 
   // calculate incoming and outgoing degree based on trips
-  // trips are given by station iata code (not index)
+  // trips are given by station code (not index)
   trips.forEach(function(link) {
-    link.source = iata.get(link.origin);
-    link.target = iata.get(link.destination);
+    link.source = code.get(link.origin);
+    link.target = code.get(link.destination);
 
     link.source.outgoing += link.count;
     link.target.incoming += link.count;
@@ -98,12 +101,12 @@ function drawMap(swiss) {
 
   var cantons = topojson.feature(swiss, swiss.objects.dd_geojson_switzerland);
 
-  g.basemap.append("path")
+  g2.basemap.append("path")
       .datum(cantons)
       .attr("class", "canton")
       .attr("d", path);
 
-  g.basemap.append("path")
+  g2.basemap.append("path")
       .datum(topojson.mesh(swiss, swiss.objects.dd_geojson_switzerland, function(a, b) { return a !== b; }))
       .attr("class", "canton-boundary")
       .attr("d", path);
@@ -113,12 +116,12 @@ function drawMap(swiss) {
 
 function drawstations(stations) {
   // adjust scale
-  const extent = d3.extent(stations, d => d.outgoing);
+  const extent = d3v5.extent(stations, d => d.outgoing);
   scales.stations.domain(extent);
 
   // draw station bubbles
-  g.stations.selectAll("circle.station")
-    .data(stations, d => d.iata)
+  g2.stations.selectAll("circle.station")
+    .data(stations, d => d.code)
     .enter()
     .append("circle")
     .attr("r",  d => scales.stations(d.outgoing))
@@ -146,65 +149,65 @@ function drawPolygons(stations) {
   });
 
   // calculate voronoi polygons
-  const polygons = d3.geoVoronoi().polygons(geojson);
+  const polygons = d3v5.geoVoronoi().polygons(geojson);
   console.log(polygons);
 
-  g.voronoi.selectAll("path")
+ g2.voronoi.selectAll("path")
     .data(polygons.features)
     .enter()
     .append("path")
-    .attr("d", d3.geoPath(projection))
+    .attr("d", d3v5.geoPath(projection))
     .attr("class", "voronoi")
     .on("mouseover", function(d) {
       let station = d.properties.site.properties;
 
-      d3.select(station.bubble)
+      d3v5.select(station.bubble)
         .classed("highlight", true);
 
-      d3.selectAll(station.trips)
+      d3v5.selectAll(station.trips)
         .classed("highlight", true)
         .raise();
 
-      // make tooltip take up space but keep it invisible
-      tooltip.style("display", null);
-      tooltip.style("visibility", "hidden");
+      // make tooltip2 take up space but keep it invisible
+      tooltip2.style("display", null);
+      tooltip2.style("visibility", "hidden");
 
-      // set default tooltip positioning
-      tooltip.attr("text-anchor", "middle");
-      tooltip.attr("dy", -scales.stations(station.outgoing) - 4);
-      tooltip.attr("x", station.x);
-      tooltip.attr("y", station.y);
+      // set default tooltip2 positioning
+      tooltip2.attr("text-anchor", "middle");
+      tooltip2.attr("dy", -scales.stations(station.outgoing) - 4);
+      tooltip2.attr("x", station.x);
+      tooltip2.attr("y", station.y);
 
-      // set the tooltip text
-      tooltip.text(station.name + " in " + station.canton);
+      // set the tooltip2 text
+      tooltip2.text(station.name + " in " + station.canton);
 
       // double check if the anchor needs to be changed
-      let bbox = tooltip.node().getBBox();
+      let bbox = tooltip2.node().getBBox();
 
       if (bbox.x <= 0) {
-        tooltip.attr("text-anchor", "start");
+        tooltip2.attr("text-anchor", "start");
       }
-      else if (bbox.x + bbox.width >= width2) {
-        tooltip.attr("text-anchor", "end");
+      else if (bbox.x + bbox.width2 >= width2) {
+        tooltip2.attr("text-anchor", "end");
       }
 
-      tooltip.style("visibility", "visible");
+      tooltip2.style("visibility", "visible");
     })
     .on("mouseout", function(d) {
       let station = d.properties.site.properties;
 
-      d3.select(station.bubble)
+      d3v5.select(station.bubble)
         .classed("highlight", false);
 
-      d3.selectAll(station.trips)
+      d3v5.selectAll(station.trips)
         .classed("highlight", false);
 
-      d3.select("text#tooltip").style("visibility", "hidden");
+      d3v5.select("text#tooltip2").style("visibility", "hidden");
     })
     .on("dblclick", function(d) {
       // toggle voronoi outline
-      let toggle = d3.select(this).classed("highlight");
-      d3.select(this).classed("highlight", !toggle);
+      let toggle = d3v5.select(this).classed("highlight");
+      d3v5.select(this).classed("highlight", !toggle);
     });
 }
 
@@ -212,13 +215,13 @@ function drawtrips(stations, trips) {
   // break each trip between stations into multiple segments
   let bundle = generateSegments(stations, trips);
 
-  // https://github.com/d3/d3-shape#curveBundle
-  let line = d3.line()
-    .curve(d3.curveBundle)
+  // https://github.com/d3v5/d3v5-shape#curveBundle
+  let line = d3v5.line()
+    .curve(d3v5.curveBundle)
     .x(station => station.x)
     .y(station => station.y);
 
-  let links = g.trips.selectAll("path.trip")
+  let links = g2.trips.selectAll("path.trip")
     .data(bundle.paths)
     .enter()
     .append("path")
@@ -230,18 +233,18 @@ function drawtrips(stations, trips) {
       d[0].trips.push(this);
     });
 
-  // https://github.com/d3/d3-force
-  let layout = d3.forceSimulation()
+  // https://github.com/d3v5/d3v5-force
+  let layout = d3v5.forceSimulation()
     // settle at a layout faster
     .alphaDecay(0.1)
     // nearby nodes attract each other
-    .force("charge", d3.forceManyBody()
+    .force("charge", d3v5.forceManyBody()
       .strength(10)
       .distanceMax(scales.stations.range()[1] * 2)
     )
     // edges want to be as short as possible
     // prevents too much stretching
-    .force("link", d3.forceLink()
+    .force("link", d3v5.forceLink()
       .strength(0.7)
       .distance(0)
     )
@@ -279,11 +282,11 @@ function generateSegments(nodes, links) {
     let total = Math.round(scales.segments(length));
 
     // create scales from source to target
-    let xscale = d3.scaleLinear()
+    let xscale = d3v5.scaleLinear()
       .domain([0, total + 1]) // source, inner nodes, target
       .range([d.source.x, d.target.x]);
 
-    let yscale = d3.scaleLinear()
+    let yscale = d3v5.scaleLinear()
       .domain([0, total + 1])
       .range([d.source.y, d.target.y]);
 

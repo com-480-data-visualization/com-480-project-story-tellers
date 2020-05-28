@@ -1,0 +1,59 @@
+.canton {
+  fill: #dddddd;
+}
+
+.canton-boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+.station {
+  fill: white;
+  opacity: 0.6;
+  stroke: #252525;
+}
+text {
+  font-family: sans-serif;
+  font-size: 10px;
+  text-anchor: middle;
+}
+.vis-title {
+    font: 20px sans-serif;
+    font-weight: bold;
+    fill: #777;
+}
+
+div.tooltip {
+  position: absolute;
+  font-size: 10pt;
+  font-weight: 900
+  width:  auto;
+  height: auto;
+  pointer-events: none;
+  background-color: white;
+}
+
+
+.circle-hover {
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+.area {
+    fill: #98abc5;
+    fill-opacity: 0.7;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.brush .extent {
+    stroke: #fff;
+    fill: #000;
+    fill-opacity: .25;
+    shape-rendering: crispEdges;
+}

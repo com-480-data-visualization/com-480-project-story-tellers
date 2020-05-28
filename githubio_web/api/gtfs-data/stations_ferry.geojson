@@ -1,0 +1,2153 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.626861,46.505662 ]
+    },
+    "properties": {
+    "station_id":8501075,
+    "station_name":"Lausanne-Ouchy (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.909508,46.434539 ]
+    },
+    "properties": {
+    "station_id":8501077,
+    "station_name":"Montreux (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.805886,46.393391 ]
+    },
+    "properties": {
+    "station_id":8501078,
+    "station_name":"St-Gingolph (Suisse) (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.851468,46.387474 ]
+    },
+    "properties": {
+    "station_id":8501079,
+    "station_name":"Bouveret (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.24356,46.382292 ]
+    },
+    "properties": {
+    "station_id":8501227,
+    "station_name":"Nyon (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.500499,46.508385 ]
+    },
+    "properties": {
+    "station_id":8501228,
+    "station_name":"Morges (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.221347,46.278476 ]
+    },
+    "properties": {
+    "station_id":8501231,
+    "station_name":"Anières (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.156035,46.255162 ]
+    },
+    "properties": {
+    "station_id":8501232,
+    "station_name":"Bellevue (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.929203,46.412887 ]
+    },
+    "properties": {
+    "station_id":8501234,
+    "station_name":"Château-de-Chillon (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.210386,46.266859 ]
+    },
+    "properties": {
+    "station_id":8501235,
+    "station_name":"Corsier GE (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.154824,46.205414 ]
+    },
+    "properties": {
+    "station_id":8501236,
+    "station_name":"Genève-Jardin-Anglais (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.148925,46.207182 ]
+    },
+    "properties": {
+    "station_id":8501237,
+    "station_name":"Genève-Mt-Blanc (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.151002,46.208699 ]
+    },
+    "properties": {
+    "station_id":8501238,
+    "station_name":"Genève-Pâquis (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.241545,46.301633 ]
+    },
+    "properties": {
+    "station_id":8501239,
+    "station_name":"Hermance (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.784036,46.4736 ]
+    },
+    "properties": {
+    "station_id":8501243,
+    "station_name":"Rivaz-St-Saphorin (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.56141,46.508521 ]
+    },
+    "properties": {
+    "station_id":8501245,
+    "station_name":"St-Sulpice VD (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.850011,46.456942 ]
+    },
+    "properties": {
+    "station_id":8501247,
+    "station_name":"Vevey-La Tour (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.840632,46.458737 ]
+    },
+    "properties": {
+    "station_id":8501248,
+    "station_name":"Vevey-Marché (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.162226,46.209169 ]
+    },
+    "properties": {
+    "station_id":8501311,
+    "station_name":"Genève-Eaux-Vives (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.896002,46.439801 ]
+    },
+    "properties": {
+    "station_id":8501312,
+    "station_name":"Clarens (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.922317,46.425701 ]
+    },
+    "properties": {
+    "station_id":8501313,
+    "station_name":"Territet (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.924708,46.398617 ]
+    },
+    "properties": {
+    "station_id":8501314,
+    "station_name":"Villeneuve (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.209928,46.347924 ]
+    },
+    "properties": {
+    "station_id":8501315,
+    "station_name":"Céligny (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.192962,46.315053 ]
+    },
+    "properties": {
+    "station_id":8501316,
+    "station_name":"Coppet (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.731615,46.487472 ]
+    },
+    "properties": {
+    "station_id":8501317,
+    "station_name":"Cully (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.684054,46.501226 ]
+    },
+    "properties": {
+    "station_id":8501318,
+    "station_name":"Lutry (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.6613,46.5054 ]
+    },
+    "properties": {
+    "station_id":8501319,
+    "station_name":"Pully (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.337281,46.45499 ]
+    },
+    "properties": {
+    "station_id":8501320,
+    "station_name":"Rolle (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.461906,46.478749 ]
+    },
+    "properties": {
+    "station_id":8501321,
+    "station_name":"St-Prex (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.169728,46.277512 ]
+    },
+    "properties": {
+    "station_id":8501322,
+    "station_name":"Versoix (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.513455,47.167434 ]
+    },
+    "properties": {
+    "station_id":8502246,
+    "station_name":"Zug Landsgemeindeplatz (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.463468,47.178666 ]
+    },
+    "properties": {
+    "station_id":8502250,
+    "station_name":"Cham (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.513337,47.170098 ]
+    },
+    "properties": {
+    "station_id":8502251,
+    "station_name":"Zug Bahnhofsteg (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.506796,47.14901 ]
+    },
+    "properties": {
+    "station_id":8502252,
+    "station_name":"Oberwil bei Zug (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.458525,47.142224 ]
+    },
+    "properties": {
+    "station_id":8502253,
+    "station_name":"Buonas (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.467975,47.133828 ]
+    },
+    "properties": {
+    "station_id":8502254,
+    "station_name":"Risch (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.46411,47.096531 ]
+    },
+    "properties": {
+    "station_id":8502257,
+    "station_name":"Immensee (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.512491,47.099678 ]
+    },
+    "properties": {
+    "station_id":8502258,
+    "station_name":"Walchwil (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.541715,47.378846 ]
+    },
+    "properties": {
+    "station_id":8503446,
+    "station_name":"Zürich Landesmuseum (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.541963,47.371027 ]
+    },
+    "properties": {
+    "station_id":8503447,
+    "station_name":"Zürich Storchen",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.940313,47.224576 ]
+    },
+    "properties": {
+    "station_id":8503647,
+    "station_name":"Schmerikon (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.850226,47.193653 ]
+    },
+    "properties": {
+    "station_id":8503648,
+    "station_name":"Lachen SZ (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.541004,47.365665 ]
+    },
+    "properties": {
+    "station_id":8503651,
+    "station_name":"Zürich Bürkliplatz (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.553125,47.352624 ]
+    },
+    "properties": {
+    "station_id":8503653,
+    "station_name":"Zürichhorn (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.567522,47.338685 ]
+    },
+    "properties": {
+    "station_id":8503655,
+    "station_name":"Zollikon (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.577913,47.319018 ]
+    },
+    "properties": {
+    "station_id":8503657,
+    "station_name":"Küsnacht ZH (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.589302,47.303028 ]
+    },
+    "properties": {
+    "station_id":8503659,
+    "station_name":"Erlenbach ZH (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.609781,47.283482 ]
+    },
+    "properties": {
+    "station_id":8503660,
+    "station_name":"Herrliberg (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.640329,47.267551 ]
+    },
+    "properties": {
+    "station_id":8503661,
+    "station_name":"Meilen (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.689093,47.252792 ]
+    },
+    "properties": {
+    "station_id":8503664,
+    "station_name":"Männedorf (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.718443,47.238707 ]
+    },
+    "properties": {
+    "station_id":8503665,
+    "station_name":"Stäfa (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.758204,47.233481 ]
+    },
+    "properties": {
+    "station_id":8503666,
+    "station_name":"Uerikon (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.813555,47.225709 ]
+    },
+    "properties": {
+    "station_id":8503667,
+    "station_name":"Rapperswil (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.777433,47.218137 ]
+    },
+    "properties": {
+    "station_id":8503668,
+    "station_name":"Insel Ufenau",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.707292,47.209099 ]
+    },
+    "properties": {
+    "station_id":8503669,
+    "station_name":"Richterswil (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.675343,47.230137 ]
+    },
+    "properties": {
+    "station_id":8503670,
+    "station_name":"Wädenswil (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.648785,47.250569 ]
+    },
+    "properties": {
+    "station_id":8503671,
+    "station_name":"Halbinsel Au",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.597596,47.262349 ]
+    },
+    "properties": {
+    "station_id":8503672,
+    "station_name":"Horgen (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.581929,47.278625 ]
+    },
+    "properties": {
+    "station_id":8503673,
+    "station_name":"Oberrieden (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.568049,47.29669 ]
+    },
+    "properties": {
+    "station_id":8503674,
+    "station_name":"Thalwil (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.55838,47.309773 ]
+    },
+    "properties": {
+    "station_id":8503675,
+    "station_name":"Rüschlikon (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.551782,47.322556 ]
+    },
+    "properties": {
+    "station_id":8503677,
+    "station_name":"Kilchberg ZH (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.775131,47.207944 ]
+    },
+    "properties": {
+    "station_id":8503680,
+    "station_name":"Pfäffikon SZ (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.536698,47.34554 ]
+    },
+    "properties": {
+    "station_id":8503681,
+    "station_name":"Zürich Wollishofen (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.584082,47.308233 ]
+    },
+    "properties": {
+    "station_id":8503682,
+    "station_name":"Küsnacht ZH Heslibach",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.832481,47.194895 ]
+    },
+    "properties": {
+    "station_id":8503683,
+    "station_name":"Altendorf Seestatt",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.76125,46.878044 ]
+    },
+    "properties": {
+    "station_id":8504243,
+    "station_name":"Vaumarcus débarcadère",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.422522,47.172916 ]
+    },
+    "properties": {
+    "station_id":8504363,
+    "station_name":"Grenchen (Schiff)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.256599,47.118334 ]
+    },
+    "properties": {
+    "station_id":8504364,
+    "station_name":"Port",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.44888,47.190384 ]
+    },
+    "properties": {
+    "station_id":8504365,
+    "station_name":"Altreu",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.374034,47.140229 ]
+    },
+    "properties": {
+    "station_id":8504366,
+    "station_name":"Büren (Schiff)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.281321,47.122221 ]
+    },
+    "properties": {
+    "station_id":8504368,
+    "station_name":"Brügg (Schiff)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.24333,47.121803 ]
+    },
+    "properties": {
+    "station_id":8504369,
+    "station_name":"Nidau (Schiff)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.235282,47.131206 ]
+    },
+    "properties": {
+    "station_id":8504371,
+    "station_name":"Biel/Bienne (Schiff/bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.193441,47.112469 ]
+    },
+    "properties": {
+    "station_id":8504372,
+    "station_name":"Tüscherz (Schiff)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.177536,47.102152 ]
+    },
+    "properties": {
+    "station_id":8504373,
+    "station_name":"Engelberg-Wingreis",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.157032,47.093343 ]
+    },
+    "properties": {
+    "station_id":8504374,
+    "station_name":"Twann (Schiff)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.135475,47.083348 ]
+    },
+    "properties": {
+    "station_id":8504375,
+    "station_name":"Ligerz (Schiff)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.135613,47.068318 ]
+    },
+    "properties": {
+    "station_id":8504376,
+    "station_name":"St. Petersinsel Nord",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.09357,47.061362 ]
+    },
+    "properties": {
+    "station_id":8504377,
+    "station_name":"La Neuveville (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.097425,47.049276 ]
+    },
+    "properties": {
+    "station_id":8504378,
+    "station_name":"Erlach (Schiff)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.534077,47.203532 ]
+    },
+    "properties": {
+    "station_id":8504379,
+    "station_name":"Solothurn (Schiff)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.093268,46.97562 ]
+    },
+    "properties": {
+    "station_id":8504499,
+    "station_name":"Trois-Lacs (camping)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.933326,46.990964 ]
+    },
+    "properties": {
+    "station_id":8504550,
+    "station_name":"Neuchâtel (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.903557,46.979765 ]
+    },
+    "properties": {
+    "station_id":8504551,
+    "station_name":"Neuchâtel-Serrières (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.881617,46.973795 ]
+    },
+    "properties": {
+    "station_id":8504552,
+    "station_name":"Auvernier (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.787391,46.900002 ]
+    },
+    "properties": {
+    "station_id":8504554,
+    "station_name":"Gorgier-Chez-le-Bart",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.774996,46.889855 ]
+    },
+    "properties": {
+    "station_id":8504555,
+    "station_name":"St-Aubin NE (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.720292,46.848648 ]
+    },
+    "properties": {
+    "station_id":8504556,
+    "station_name":"Concise (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.642883,46.80598 ]
+    },
+    "properties": {
+    "station_id":8504557,
+    "station_name":"Grandson (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.640503,46.787198 ]
+    },
+    "properties": {
+    "station_id":8504558,
+    "station_name":"Yverdon-les-Bains (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.821893,46.92297 ]
+    },
+    "properties": {
+    "station_id":8504559,
+    "station_name":"Bevaix (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.982855,47.010116 ]
+    },
+    "properties": {
+    "station_id":8504560,
+    "station_name":"St-Blaise (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.014164,46.959216 ]
+    },
+    "properties": {
+    "station_id":8504561,
+    "station_name":"Cudrefin",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.952763,46.926489 ]
+    },
+    "properties": {
+    "station_id":8504562,
+    "station_name":"Portalban",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.896651,46.899736 ]
+    },
+    "properties": {
+    "station_id":8504563,
+    "station_name":"Chevroux",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.838349,46.852209 ]
+    },
+    "properties": {
+    "station_id":8504564,
+    "station_name":"Estavayer-le-Lac (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.076224,47.051171 ]
+    },
+    "properties": {
+    "station_id":8504565,
+    "station_name":"Le Landeron débarcadère",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.023033,47.004773 ]
+    },
+    "properties": {
+    "station_id":8504566,
+    "station_name":"La Tène",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.054632,46.975388 ]
+    },
+    "properties": {
+    "station_id":8504571,
+    "station_name":"La Sauge (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.114247,46.96414 ]
+    },
+    "properties": {
+    "station_id":8504572,
+    "station_name":"Sugiez (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.097337,46.951678 ]
+    },
+    "properties": {
+    "station_id":8504573,
+    "station_name":"Praz",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.084075,46.946942 ]
+    },
+    "properties": {
+    "station_id":8504574,
+    "station_name":"Môtier (Vully)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.116617,46.930622 ]
+    },
+    "properties": {
+    "station_id":8504577,
+    "station_name":"Murten/Morat (Schiff/bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.970666,47.005444 ]
+    },
+    "properties": {
+    "station_id":8504808,
+    "station_name":"Hauterive NE débarcadère",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.310183,47.050178 ]
+    },
+    "properties": {
+    "station_id":8505000,
+    "station_name":"Luzern",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.522323,47.064709 ]
+    },
+    "properties": {
+    "station_id":8505060,
+    "station_name":"Arth am See (Schiff)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.233181,46.887809 ]
+    },
+    "properties": {
+    "station_id":8505320,
+    "station_name":"Sarnen Kurhaus (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.560585,47.349862 ]
+    },
+    "properties": {
+    "station_id":8505332,
+    "station_name":"Zürich Tiefenbrunnen (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.544853,47.36544 ]
+    },
+    "properties": {
+    "station_id":8505333,
+    "station_name":"Zürich Bellevue (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.801171,46.170145 ]
+    },
+    "properties": {
+    "station_id":8505469,
+    "station_name":"Locarno NLM",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.843587,46.173836 ]
+    },
+    "properties": {
+    "station_id":8505519,
+    "station_name":"Tenero NLM",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.951554,46.002969 ]
+    },
+    "properties": {
+    "station_id":8505550,
+    "station_name":"Lugano Centrale (lago)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.937983,45.929933 ]
+    },
+    "properties": {
+    "station_id":8505556,
+    "station_name":"Brusino Arsizio (lago)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.917147,45.922741 ]
+    },
+    "properties": {
+    "station_id":8505557,
+    "station_name":"Morcote (lago)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.854655,46.147732 ]
+    },
+    "properties": {
+    "station_id":8505570,
+    "station_name":"Magadino",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.641013,47.695291 ]
+    },
+    "properties": {
+    "station_id":8506150,
+    "station_name":"Schaffhausen (Schifflände)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.748858,47.69042 ]
+    },
+    "properties": {
+    "station_id":8506152,
+    "station_name":"Diessenhofen (Schifflände)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.856652,47.659912 ]
+    },
+    "properties": {
+    "station_id":8506153,
+    "station_name":"Stein am Rhein (Schifflände)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.916734,47.648288 ]
+    },
+    "properties": {
+    "station_id":8506155,
+    "station_name":"Mammern (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.981434,47.668647 ]
+    },
+    "properties": {
+    "station_id":8506157,
+    "station_name":"Steckborn (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.017669,47.675339 ]
+    },
+    "properties": {
+    "station_id":8506159,
+    "station_name":"Berlingen (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.047564,47.675171 ]
+    },
+    "properties": {
+    "station_id":8506160,
+    "station_name":"Mannenbach (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.085444,47.675234 ]
+    },
+    "properties": {
+    "station_id":8506162,
+    "station_name":"Ermatingen (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.134678,47.664666 ]
+    },
+    "properties": {
+    "station_id":8506163,
+    "station_name":"Gottlieben (Schifflände)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.182645,47.652585 ]
+    },
+    "properties": {
+    "station_id":8506165,
+    "station_name":"Kreuzlingen Hafen (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.403446,47.02689 ]
+    },
+    "properties": {
+    "station_id":8508462,
+    "station_name":"Hertenstein (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.433223,47.031422 ]
+    },
+    "properties": {
+    "station_id":8508463,
+    "station_name":"Weggis",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.482382,47.009359 ]
+    },
+    "properties": {
+    "station_id":8508464,
+    "station_name":"Vitznau",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.475672,46.967031 ]
+    },
+    "properties": {
+    "station_id":8508467,
+    "station_name":"Beckenried (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.31016,47.051169 ]
+    },
+    "properties": {
+    "station_id":8508492,
+    "station_name":"Luzern Bahnhofquai",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.190382,46.235862 ]
+    },
+    "properties": {
+    "station_id":8530616,
+    "station_name":"La Belotte (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.325058,46.66761 ]
+    },
+    "properties": {
+    "station_id":8530621,
+    "station_name":"Le Pont (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.251723,46.622804 ]
+    },
+    "properties": {
+    "station_id":8530622,
+    "station_name":"Le Rocheray (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.272835,46.624138 ]
+    },
+    "properties": {
+    "station_id":8530623,
+    "station_name":"Les Bioux (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.697593,47.068471 ]
+    },
+    "properties": {
+    "station_id":8530624,
+    "station_name":"Les Brenets (Lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.640872,47.116147 ]
+    },
+    "properties": {
+    "station_id":8530633,
+    "station_name":"Eierhals (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.641294,47.106166 ]
+    },
+    "properties": {
+    "station_id":8530634,
+    "station_name":"Morgarten Denkmal (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.640029,47.103795 ]
+    },
+    "properties": {
+    "station_id":8530635,
+    "station_name":"Morgarten Hotel (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.621395,47.114361 ]
+    },
+    "properties": {
+    "station_id":8530636,
+    "station_name":"Naas (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.604637,47.259228 ]
+    },
+    "properties": {
+    "station_id":8530643,
+    "station_name":"Horgen Autoquai",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.638475,47.267975 ]
+    },
+    "properties": {
+    "station_id":8530644,
+    "station_name":"Meilen Autoquai",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.679022,47.340284 ]
+    },
+    "properties": {
+    "station_id":8530645,
+    "station_name":"Maur (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.690115,47.343223 ]
+    },
+    "properties": {
+    "station_id":8530646,
+    "station_name":"Uster (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.652711,47.36576 ]
+    },
+    "properties": {
+    "station_id":8530647,
+    "station_name":"Fällanden (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.674926,47.364535 ]
+    },
+    "properties": {
+    "station_id":8530648,
+    "station_name":"Greifensee (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.610643,47.678036 ]
+    },
+    "properties": {
+    "station_id":8530649,
+    "station_name":"Rheinfall Schlössli Wörth",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.525175,47.575054 ]
+    },
+    "properties": {
+    "station_id":8530650,
+    "station_name":"Eglisau bei der Kirche",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.602967,47.637818 ]
+    },
+    "properties": {
+    "station_id":8530651,
+    "station_name":"Rheinau Kraftwerk",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.596852,47.605814 ]
+    },
+    "properties": {
+    "station_id":8530652,
+    "station_name":"Ellikon am Rhein",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.572574,47.575661 ]
+    },
+    "properties": {
+    "station_id":8530653,
+    "station_name":"Rüdlingen (Schiffstation)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.555826,47.551656 ]
+    },
+    "properties": {
+    "station_id":8530654,
+    "station_name":"Tössegg",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.216007,47.128907 ]
+    },
+    "properties": {
+    "station_id":8530661,
+    "station_name":"Quinten",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.229434,47.12949 ]
+    },
+    "properties": {
+    "station_id":8530662,
+    "station_name":"Quinten Au",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.211164,47.113228 ]
+    },
+    "properties": {
+    "station_id":8530666,
+    "station_name":"Murg West (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.749451,46.428498 ]
+    },
+    "properties": {
+    "station_id":8530667,
+    "station_name":"Chastè",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.726575,46.420908 ]
+    },
+    "properties": {
+    "station_id":8530668,
+    "station_name":"Plaun da Lej (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.732179,46.409707 ]
+    },
+    "properties": {
+    "station_id":8530669,
+    "station_name":"Isola (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.699924,47.32598 ]
+    },
+    "properties": {
+    "station_id":8530696,
+    "station_name":"Mönchaltorf (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.148178,46.204267 ]
+    },
+    "properties": {
+    "station_id":8530699,
+    "station_name":"Genève-Molard",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.155929,46.205256 ]
+    },
+    "properties": {
+    "station_id":8530700,
+    "station_name":"Genève-Quai Gustave Ador",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.151851,46.217715 ]
+    },
+    "properties": {
+    "station_id":8530701,
+    "station_name":"Genève-De-Châteaubriand (lac)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.150663,46.208794 ]
+    },
+    "properties": {
+    "station_id":8530707,
+    "station_name":"Genève-Pâquis SMGN",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.704728,46.408171 ]
+    },
+    "properties": {
+    "station_id":8530714,
+    "station_name":"Maloja (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.754194,46.424064 ]
+    },
+    "properties": {
+    "station_id":8530715,
+    "station_name":"Sils/Segl Maria Barchiröls",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.589329,47.138048 ]
+    },
+    "properties": {
+    "station_id":8530742,
+    "station_name":"Unterägeri (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.608123,47.133559 ]
+    },
+    "properties": {
+    "station_id":8530743,
+    "station_name":"Oberägeri (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.854084,46.938854 ]
+    },
+    "properties": {
+    "station_id":8530793,
+    "station_name":"Cortaillod (bateau)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.243137,46.887569 ]
+    },
+    "properties": {
+    "station_id":8530814,
+    "station_name":"Sarnen Seefeld",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.221484,46.875665 ]
+    },
+    "properties": {
+    "station_id":8530815,
+    "station_name":"Wilen Waldheim",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.202574,46.84563 ]
+    },
+    "properties": {
+    "station_id":8530816,
+    "station_name":"Giswil Zollhaus",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.18889,46.853448 ]
+    },
+    "properties": {
+    "station_id":8530817,
+    "station_name":"Giswil Camping",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.23784,46.871081 ]
+    },
+    "properties": {
+    "station_id":8530818,
+    "station_name":"Sachseln Schiffstation",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.542631,47.373233 ]
+    },
+    "properties": {
+    "station_id":8530822,
+    "station_name":"Zürich Limmatquai",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.558442,47.553492 ]
+    },
+    "properties": {
+    "station_id":8530836,
+    "station_name":"Buchberg (Fähre)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.674218,47.685265 ]
+    },
+    "properties": {
+    "station_id":8530837,
+    "station_name":"Schlatt Paradies (Fähre)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.629969,47.129547 ]
+    },
+    "properties": {
+    "station_id":8530857,
+    "station_name":"Oberägeri Ländli (See)",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.616731,47.661344 ]
+    },
+    "properties": {
+    "station_id":8531256,
+    "station_name":"Dachsen Bachdelle/Badi",
+    "route_type":"ferry"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.17263,46.212012 ]
+    },
+    "properties": {
+    "station_id":8588813,
+    "station_name":"Port Noir",
+    "route_type":"ferry"
+    }
+  }
+]
+}
