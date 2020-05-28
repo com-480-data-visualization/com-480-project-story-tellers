@@ -51,7 +51,7 @@ console.assert(g2.stations.size() === 1);
 console.assert(g2.voronoi.size()  === 1);
 
 const tooltip2 = d3v5.select("text#tooltip");
-console.log("tooltip size", tooltip2.size() === 1);
+// console.log("tooltip size", tooltip2.size() === 1);
 
 // load and draw base map
 d3v5.json(urls.map).then(drawMap);
@@ -71,8 +71,8 @@ function processData(values) {
   let stations = values[0];
   let trips  = values[1];
 
-  console.log("stations: " + stations.length);
-  console.log(" trips: " + trips.length);
+  // console.log("stations: " + stations.length);
+  // console.log(" trips: " + trips.length);
 
   // convert stations array (pre filter) into map for fast lookup
   let code = new Map(stations.map(node => [node.code, node]));
@@ -92,8 +92,8 @@ function processData(values) {
   drawPolygons(stations);
   drawtrips(stations, trips);
 
-  console.log({stations: stations});
-  console.log({trips: trips});
+  // console.log({stations: stations});
+  // console.log({trips: trips});
 }
 
 // draws the underlying map
@@ -150,7 +150,7 @@ function drawPolygons(stations) {
 
   // calculate voronoi polygons
   const polygons = d3v5.geoVoronoi().polygons(geojson);
-  console.log(polygons);
+  // console.log(polygons);
 
  g2.voronoi.selectAll("path")
     .data(polygons.features)

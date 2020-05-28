@@ -93,12 +93,12 @@ getData();
 
 
 function getData() {
-      console.log("start to read data for stations capacity");
+      // console.log("start to read data for stations capacity");
 
       d3v3.csv("data/station_capacity_no_bus.csv", function(error, dataForMap) {
       if (error) return console.log("error");
 
-      console.log("finished reading");
+      // console.log("finished reading");
 
       var parseHourMin = d3v3.time.format("%H:%M").parse;
 
@@ -135,8 +135,8 @@ function makeTimeline(dataForMap, dataForTimeline) {
          var margin = { top: 10, right: 10, bottom: 20, left: 50 },
             width  = mapWidth - margin.left - margin.right,
             height = 80 - margin.top  - margin.bottom;
-            console.log("timeline width:", width);
-            console.log("timeline height:", height);
+            // console.log("timeline width:", width);
+            // console.log("timeline height:", height);
 
 
             var timelineSvg = d3v3.select("#timeline-container").append("svg")

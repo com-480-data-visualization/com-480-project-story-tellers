@@ -2207,14 +2207,15 @@ var simulation_manager = (function(){
                 var url = config.getParam('api_paths.trips');
                 url = url.replace(/\[hhmm\]/, hm.replace(':', ''));
                 url = url.replace(/\[ymd\]/, ymd.replace(':', ''));
-                url = url.replace(/\[vtype\]/, 2); // 1 if all except trains, 2 for trains, else all
-                console.log('url '+ url)
-
+                url = url.replace(/\[vtype\]/, 0); // 1 if all except trains, 2 for trains, else all
+                // console.log('url '+ url)
+                $("#loadingimg").show();
                 $.ajax({
                     url: url,
                     dataType: 'json',
                     success: function(vehicles) {
-                        console.log(vehicles)
+                        // console.log(vehicles)
+                        $("#loadingimg").hide();
                         $.each(vehicles, function(index, data) {
                             var vehicle_id = ((typeof data.trip_id) === 'undefined') ? data.id : data.trip_id;
 
