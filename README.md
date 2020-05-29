@@ -41,5 +41,6 @@ In this file we develop the following steps for Milestone 2.
 
 **80% of the final grade**
 
-## Web Skeleton
-You can find the work in progress website skeleton on [threestorytellers.github.io](https://threestorytellers.github.io/)
+The webpage - https://threestorytellers.github.io/
+The Screencast - https://www.youtube.com/watch?v=nHvX1FvPKV8&feature=emb_title
+The Process book - https://github.com/com-480-data-visualization/com-480-project-story-tellers/blob/master/Process_book.pdf
