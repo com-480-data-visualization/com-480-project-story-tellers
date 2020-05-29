@@ -65,8 +65,12 @@
         <div id="map_canvas"></div>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <div id ="recenter">
-          <button class = "icon-bar"><i class="fa fa-map-pin"></i> </button>
+        <div id ="recenter" >
+            <button class = "icon-bar"><i class="fa fa-map-pin"></i> </button>
+        </div>
+        <div id ="disclamer" class="hidden">
+            <button id="disclamer-button" type="button" class="btn btn-lg btn-info float-right" data-toggle="popover" title="Not all data has shown due to server limitations." data-content="Buses and some local train data was not shown due to the server limitations exist.">Disclaimer!</button>
+<!--            <button class = "icon-bar"><i class="fa fa-map-pin"></i> </button>-->
         </div>
         <div id="dashboard" >
           <div class="s tat" id="time-holder"><span class="result" style="color:#1b6ca8">Time <span id="day_time"></span></span></div>
@@ -133,7 +137,7 @@
                         </div>
                         <br>
                         <div class="row" style="text-align: left">
-                            <h2 style="font-weight: bold">Station Color</h2>
+                            <h2 style="font-weight: bold">Station Color<span class="notice1 transparent">(only works when stations show)</span></h2>
                         </div>
                         <div class="row" style="text-align: left">
                             <div id="uniform" data-value="shade-uniform" class="col-md-4 btn radio checked" style="text-align: left">
@@ -151,7 +155,7 @@
                         </div>
                         <br>
                         <div class="row" style="text-align: left">
-                            <h2 style="font-weight: bold">Station Type<span class="notice transparent">(only works when stations show)</span></h2>
+                            <h2 style="font-weight: bold">Station Type<span class="notice2 transparent">(only works when stations show)</span></h2>
                         </div>
                         <div class="row" style="text-align: left">
                             <div id="filter-type-3" data-traffic-type="3" class="col-md-4 btn check checked filter color" style="text-align: left">
@@ -212,17 +216,21 @@
                                 </label>
                             </div>
                         </div>
-<br>
+                        <br>
 
 
                     </div>
                 </div>
             </div>
-            <div id="loadingimg" >
+            <div >
+                <span id="loadingimg" >
                 <img height="20px" width="20px" src="static/images/loading.gif"/>
-                vehicle data is still loading...
+                vehicle data is updating...
+                </span>
+
             </div>
-          <div id="station_info" class="hidden section" data-type="panel">
+
+            <div id="station_info" class="hidden section" data-type="panel">
               <div>
                   <b>Station:</b> <span class="station_name"></span> <input type="button" class="panel_collapsible expanded" />
               </div>
@@ -242,45 +250,7 @@
               </div>
           </div>
 
-           <!-- <div id="options" class="hoverable">
-              <b><span class="nav-subhead">Options</span></b>
-              <div id="togglers" class="option">
-                <div class="option-name">Show <i class="fa fa-chevron-down"></i></div>
-                <div class="option-menu">
-                  <div id="station-toggler" class="btn check checked"><i class="fas fa-times" style="color:yellow"></i> <span class="radio-name">Stations</span></div>
-                  <div id="route-toggler" class="btn check "><i class="fas fa-times" style="color:yellow"></i> <span class="radio-name">Routes</span></div>
-                  &lt;!&ndash;<div id="train-toggler" class="btn check "><i class="fas fa-times" style="color:yellow"></i> <span class="radio-name">Trains</span></div>&ndash;&gt;
-                  &lt;!&ndash;<div id="bus-toggler" class="btn check "><i class="fas fa-times" style="color:yellow"></i> <span class="radio-name">Bus</span></div>&ndash;&gt;
-                  &lt;!&ndash; <div id="ship-toggler" class="btn check "><i class="fas fa-times" style="color:yellow"></i> <span class="radio-name">Ships</span></div> &ndash;&gt;
-                  <div id="map-toggler" class="btn check checked"><i class="fas fa-times" style="color:yellow"></i> <span class="radio-name">Map</span></div>
-                </div>
-              </div>
-              <div id="colours" class="option">
-                <div class="option-name">Colors <i class="fa fa-chevron-down"></i></div>
-                <div class="option-menu">
-                  <div id = "uniform" data-value="shade-uniform" class="btn radio selected"><i class="fas fa-check" aria-hidden="true"  style="color:yellow"></i> <span class="radio-name">Uniform</span></div>
-                  <div id = "type" data-value="shade-type" class="btn radio"><i class="fas fa-check" style="color:yellow"></i> <span class="radio-name">Color</span></div>
-                </div>
-              </div>
-              <div id="filters" class="option">
-                <div class="option-name">Filters <i class="fa fa-chevron-down"></i></div>
-                <div class="option-menu">
-                  <div id="filter-type-3" data-traffic-type="3" class="btn check checked filter color"><i class="fa fa-times color-by-traffic-type" style="color:#EA4335"></i> <span class="radio-name" style="color:#EA4335">train</span> </div>
-                  <div id="filter-type-0" data-traffic-type="0" class="btn check checked filter color"><i class="fa fa-times color-by-traffic-type" style="color:#FBBC05"></i> <span class="radio-name" style="color:#FBBC05">tram</span> </div>
-                  <div id="filter-type-1" data-traffic-type="1" class="btn check checked filter color"><i class="fa fa-times color-by-traffic-type" style="color:#34A853"></i> <span class="radio-name" style="color:#34A853" >ferry</span> </div>
-                  <div id="filter-type-2" data-traffic-type="2" class="btn check checked filter color"><i class="fa fa-times color-by-traffic-type" style="color:#4285F4"></i> <span class="radio-name" style="color:#4285F4">gondola</span> </div>
-                  <div id="filter-type-4" data-traffic-type="4" class="btn check checked filter color"><i class="fa fa-times color-by-traffic-type" style="color:#b6eb00"></i> <span class="radio-name" style="color:#b6eb00">other</span> </div>
-                </div>
-              </div>
-              <div id="Speedup" class="option">
-                <div class="option-name">Speed <i class="fa fa-chevron-down"></i></div>
-                <div class="option-menu">
-                  <div id="one-time" class="btn check checked"><i class="fa fa-times" style="color:yellow"></i> <span class="radio-name">1x</span></div>
-                  <div id="five-times" class="btn check"><i class="fa fa-times" style="color:yellow"></i> <span class="radio-name">5x</span></div>
-                  <div id="ten-times" class="btn check"><i class="fa fa-times" style="color:yellow"></i> <span class="radio-name">10x</span></div>
-                </div>
-              </div>
-            </div>-->
+
 
         </div>
         <div id="vehicle_popup_container" class="hidden">
@@ -299,19 +269,7 @@
         <script src="static/js/map.js"></script>
 
         <div id="scrubber"></div>
-        <script>
 
-        // we build the minutes as the setInterval of 10 mins
-
-        </script>
-            <!-- <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#routine">Tell Me More</a>
-            </div> -->
-        <!-- </header> -->
-
-        <!-- routine-->
         <section class="page-section bg_beige" id="routine">
             <div class="container">
                 <div class="text-center">
@@ -418,7 +376,7 @@
 
                 <div class="text-center">
                     <div class="col-md-12">
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/YHM8BurEMeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/nHvX1FvPKV8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                 </div>

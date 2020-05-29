@@ -1228,11 +1228,11 @@ var simulation_manager = (function(){
             });*/
 
             google.maps.event.addDomListener(map, 'idle', function() {
-              var recenterButton = document.querySelector("#recenter");
-              recenterButton.addEventListener("click", function() {
-                map.setZoom(parseInt(config.getParam('zoom.start'), 5));
-                map.setCenter(new google.maps.LatLng(46.8,8.3));
-              });
+                var recenterButton = document.querySelector("#recenter");
+                recenterButton.addEventListener("click", function() {
+                    map.setZoom(parseInt(config.getParam('zoom.start'), 5));
+                    map.setCenter(new google.maps.LatLng(46.8,8.3));
+                });
             });
 
             var stations_showing = false,
@@ -1330,25 +1330,39 @@ var simulation_manager = (function(){
                 $("#map-toggler").on("click",toggleMap);
                 //$("#ship-toggler").on("click", toggleShips);
                 //$("#train-toggler").on("click", toggleTrains);
-                $(".radio").on("click", function() {
-              		var clicked = this;
-              			shade_type = this.getAttribute("data-value").substr("shade-".length);
-              			if (shade_type == "type") shadeByType();
-              			else shadeUniform();
-              	});
+
+                $(".radio").each(function(){
+                  if(stations_showing){
+                    var clicked = this;
+                    $(this).removeClass("disabled");
+                    $(".notice1").addClass("transparent");
+                    $(this).off("click");
+                    $(this).on("click", function() {
+                      var shade_type = this.getAttribute("data-value").substr("shade-".length);
+                    	if (shade_type == "type") shadeByType();
+                    	else shadeUniform();
+                  	});
+                  }else {
+                    $(this).off("click");
+                    $(this).on("click",function(){$('.notice1').removeClass("transparent");});
+                    $(this).addClass("disabled");
+                  }
+                });
+
+
                 $(".filter.color")
               		.each(function() {
               			var station_type = this.getAttribute("data-traffic-type");
               			if(stations_showing) {
                       $(this).removeClass("disabled");
-                      $(".notice").addClass("transparent");
+                      $(".notice2").addClass("transparent");
                       $(this).on("click", function() {
                         toggleTrafficType(station_type);
                       });
                     }
                     else {
                       $(this).off("click");
-                      $(this).on("click",function(){$('.notice').removeClass("transparent");});
+                      $(this).on("click",function(){$('.notice2').removeClass("transparent");});
                       $(this).addClass("disabled");
                     }
               		});
@@ -1383,7 +1397,8 @@ var simulation_manager = (function(){
                     uniformColor();
                   }
                   $("#station-toggler").addClass("checked");
-                  $(".notice").addClass("transparent");
+                  $(".notice2").addClass("transparent");
+                  $(".notice1").addClass("transparent");
                   $(".filter.color")
                 		.each(function() {
                 			var station_type = this.getAttribute("data-traffic-type");
@@ -1391,8 +1406,15 @@ var simulation_manager = (function(){
                 			$(this).on("click", function() { toggleTrafficType(station_type); });
                       $(this).removeClass("disabled")
                 		});
-
-
+                  $(".radio").each(function(){
+                      $(this).removeClass("disabled");
+                      $(this).off("click");
+                      $(this).on("click", function() {
+                        var shade_type = this.getAttribute("data-value").substr("shade-".length);
+                      	if (shade_type == "type") shadeByType();
+                      	else shadeUniform();
+                    	});
+                  });
                   stations_showing = true;
                   filterMap();
                 }
@@ -1405,9 +1427,14 @@ var simulation_manager = (function(){
                     .each(function() {
                       var station_type = this.getAttribute("data-traffic-type");
                         $(this).off("click");
-                        $(this).on("click",function(){$('.notice').removeClass("transparent");});
+                        $(this).on("click",function(){$('.notice2').removeClass("transparent");});
                         $(this).addClass("disabled");
                     });
+                  $(".radio").each(function(){
+                      $(this).off("click");
+                      $(this).on("click",function(){$('.notice1').removeClass("transparent");});
+                      $(this).addClass("disabled");
+                  });
                   filterMap();
                 }
 
@@ -2214,8 +2241,9 @@ var simulation_manager = (function(){
                     url: url,
                     dataType: 'json',
                     success: function(vehicles) {
-                        // console.log(vehicles)
+                        console.log(vehicles)
                         $("#loadingimg").hide();
+                        $("#disclamer").show();
                         $.each(vehicles, function(index, data) {
                             var vehicle_id = ((typeof data.trip_id) === 'undefined') ? data.id : data.trip_id;
 
