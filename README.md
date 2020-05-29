@@ -42,7 +42,7 @@ The Screencast - https://www.youtube.com/watch?v=nHvX1FvPKV8&feature=emb_title
 The Process book - https://github.com/com-480-data-visualization/com-480-project-story-tellers/blob/master/Process_book.pdf
 
 ### Note
-Please do note that we have only included a fraction of data for the visualization, because the limit of our web host (github.io) is 100MB maximum file size. If you are interested to visualize the full data please download the data from [this link](https://drive.google.com/open?id=1nLsCipYOiNJrqZbq53XUXr9dTu-JL1bf) and add it to the <github.io project path>/api/gtfs-data and change the api to local api py altering  <github.io project path>/static/js/config.js line 26 as follows
+Please do note that we have only included a fraction of data for the visualization, because the limit of our web host (github.io) is 100MB maximum file size. If you are interested to visualize the full data please download the data from [this link](https://drive.google.com/open?id=1nLsCipYOiNJrqZbq53XUXr9dTu-JL1bf) and add it to the <github.io project path>/api/gtfs-data and change the api to local api by altering  <github.io project path>/static/js/config.js line 26 as follows
 ```
 "api_paths.trips": "api/inc/controllers/trips.php?hhmm=[hhmm]&ymd=[ymd]&vtype=[vtype]"
 ```
