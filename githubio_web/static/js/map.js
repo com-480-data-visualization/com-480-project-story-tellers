@@ -2088,7 +2088,7 @@ var simulation_manager = (function(){
 
                             route_percent = (ts - that.depS[i])/(that.arrS[i] - that.depS[i]);
                             if (that.source === 'gtfs') {
-                                route_percent = (that.shape_percent[i] + route_percent * (that.shape_percent[i+1] - that.shape_percent[i])) / 100;
+                                route_percent = (parseFloat(that.shape_percent[i]) + parseFloat(route_percent) * (parseFloat(that.shape_percent[i+1]) - parseFloat(that.shape_percent[i]))) / 100;
                             }
 
                             d_AC = routeLength * route_percent;
@@ -2241,7 +2241,7 @@ var simulation_manager = (function(){
                     url: url,
                     dataType: 'json',
                     success: function(vehicles) {
-                        console.log(vehicles)
+                        // console.log(vehicles)
                         $("#loadingimg").hide();
                         $("#disclamer").show();
                         $.each(vehicles, function(index, data) {
