@@ -14,12 +14,6 @@
 
 The project aims to visualize the swiss transport connections in different parts of the country and provide statistical-graphical visualization on the nodes connectivity, travelling time from station to station and pessenger capacities.
 
-The **overview** of the visualization will be a process of interactive map in modes and graphical figures for statistical story-telling.
-
-The **motivation** behind the idea is to visualize the process of the biggest almost-neutral CO2 transport system work in Switzerland.
-
-The **target audience** is planned to include people who are interested in transportation systems, newtork visualizations, Switzerland and who are just curious about things in world. Will require a basic knowledge to understand the statistical figures.
-
 **Please find the full report on [Milestone1.ipynb](https://github.com/com-480-data-visualization/com-480-project-story-tellers/blob/master/Milestone%201.ipynb)**
 
 ## Milestone 2 (Friday 1st May, 5pm)
